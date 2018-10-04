@@ -16,8 +16,8 @@
     "projectTypes": ["app", "addon"],
     "nodeVersion": "6.0.0",
     "commands": [
-      "ember-test-helpers-codemod --type=integration tests/integration",
-      "ember-test-helpers-codemod --type=acceptance tests/acceptance"
+      "ember-test-helpers-codemod integration tests/integration",
+      "ember-test-helpers-codemod acceptance tests/acceptance"
     ]
   },
   "es5-getter-ember-codemod": {
