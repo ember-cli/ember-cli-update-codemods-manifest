@@ -24,7 +24,7 @@
     "version": "3.1.0-beta.1",
     "projectTypes": ["app", "addon"],
     "nodeVersion": "4.0.0",
-    "commands": ["jscodeshift -t https://rawgit.com/rondale-sc/es5-getter-ember-codemod/4e7b78d2a67a98242802328f7418d01143081979/es5-getter-ember-codemod.js ./app"]
+    "commands": ["jscodeshift -t https://rawgit.com/rondale-sc/es5-getter-ember-codemod/a2f9fc1c14ba30afc48cb7106ad259eb78dee9b7/es5-getter-ember-codemod.js ./app"]
   },
   "qunit-dom-codemod": {
     "version": "3.2.0-beta.1",
