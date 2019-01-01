@@ -30,6 +30,6 @@
     "version": "3.2.0-beta.1",
     "projectTypes": ["app", "addon"],
     "nodeVersion": "6.0.0",
-    "commands": ["jscodeshift@0.5.1 -t https://raw.githubusercontent.com/simplabs/qunit-dom-codemod/ed4d7e2017d3f166f8f504efb9d101ef042dbcb4/qunit-dom-codemod.js ./tests"]
+    "commands": ["jscodeshift@0.5.1 -t https://raw.githubusercontent.com/simplabs/qunit-dom-codemod/master/qunit-dom-codemod.js ./tests"]
   }
 }
