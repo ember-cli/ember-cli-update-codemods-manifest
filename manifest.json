@@ -1,18 +1,24 @@
 {
   "ember-modules-codemod": {
-    "version": "2.16.0-beta.1",
+    "versions": {
+      "ember-cli": "2.16.0-beta.1"
+    },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "4.0.0",
     "commands": ["ember-modules-codemod"]
   },
   "ember-qunit-codemod": {
-    "version": "3.0.0-beta.1",
+    "versions": {
+      "ember-cli": "3.0.0-beta.1"
+    },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "4.0.0",
     "commands": ["jscodeshift -t https://rawgit.com/rwjblue/ember-qunit-codemod/913a9b18b240a54f8d1ac08657a2701b908e2d34/ember-qunit-codemod.js ./tests/"]
   },
   "ember-test-helpers-codemod": {
-    "version": "3.0.0-beta.1",
+    "versions": {
+      "ember-cli": "3.0.0-beta.1"
+    },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
     "commands": [
@@ -21,13 +27,17 @@
     ]
   },
   "es5-getter-ember-codemod": {
-    "version": "3.1.0-beta.1",
+    "versions": {
+      "ember-source": "3.1.0-beta.1"
+    },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "4.0.0",
     "commands": ["jscodeshift -t https://rawgit.com/rondale-sc/es5-getter-ember-codemod/a2f9fc1c14ba30afc48cb7106ad259eb78dee9b7/es5-getter-ember-codemod.js ./app"]
   },
   "qunit-dom-codemod": {
-    "version": "3.2.0-beta.1",
+    "versions": {
+      "ember-cli": "3.2.0-beta.1"
+    },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
     "commands": ["jscodeshift -t https://raw.githubusercontent.com/simplabs/qunit-dom-codemod/master/qunit-dom-codemod.js ./tests"]
