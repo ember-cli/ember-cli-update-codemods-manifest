@@ -13,7 +13,7 @@
     },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "4.0.0",
-    "commands": ["npx ember-qunit-codemod convert-module-for-to-setup-test ./tests/"]
+    "commands": ["ember-qunit-codemod convert-module-for-to-setup-test ./tests/"]
   },
   "ember-test-helpers-codemod": {
     "versions": {
