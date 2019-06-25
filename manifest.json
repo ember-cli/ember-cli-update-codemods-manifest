@@ -13,7 +13,7 @@
     },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "4.0.0",
-    "commands": ["jscodeshift -t https://rawgit.com/rwjblue/ember-qunit-codemod/913a9b18b240a54f8d1ac08657a2701b908e2d34/ember-qunit-codemod.js ./tests/"]
+    "commands": ["npx ember-qunit-codemod convert-module-for-to-setup-test ./tests/"]
   },
   "ember-test-helpers-codemod": {
     "versions": {
