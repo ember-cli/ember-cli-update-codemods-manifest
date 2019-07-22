@@ -90,6 +90,14 @@
     "nodeVersion": "6.0.0",
     "commands": ["ember-3x-codemods cp-property-map app/**/*.js"]
   },
+  "ember-angle-brackets-codemod": {
+    "versions": {
+      "ember-cli": "3.10.0-beta.1"
+    },
+    "projectOptions": ["app", "addon"],
+    "nodeVersion": "6.0.0",
+    "commands" : ["npx ember-angle-brackets-codemod angle-brackets ./app/templates"]
+  },
   "fpe-on-codemod": {
     "versions": {
       "ember-source": "3.11.0-beta.1"
