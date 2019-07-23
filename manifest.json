@@ -96,7 +96,7 @@
     },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
-    "commands" : ["npx ember-angle-brackets-codemod angle-brackets ./app/templates"]
+    "commands" : ["ember-angle-brackets-codemod angle-brackets ./app/templates"]
   },
   "fpe-on-codemod": {
     "versions": {
