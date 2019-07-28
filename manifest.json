@@ -92,10 +92,10 @@
   },
   "ember-angle-brackets-codemod": {
     "versions": {
-      "ember-cli": "3.10.0-beta.1"
+      "ember-cli": "3.10.0-alpha.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersion": "8.0.0",
     "commands" : ["ember-angle-brackets-codemod angle-brackets ./app/templates"]
   },
   "fpe-on-codemod": {
