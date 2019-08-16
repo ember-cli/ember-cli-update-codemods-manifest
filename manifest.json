@@ -1,4 +1,12 @@
 {
+  "ember-no-implicit-this-codemod": {
+    "versions": {
+      "ember-source": "3.12.0"
+    },
+    "projectOptions": ["app", "addon"],
+    "nodeVErsion": "8.0.0",
+    "commands": ["ember-no-implicit-this-codemod http://localhost:4200 app/"]
+  },
   "ember-modules-codemod": {
     "versions": {
       "ember-cli": "2.16.0-beta.1"
