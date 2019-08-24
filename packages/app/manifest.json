@@ -113,5 +113,12 @@
     },
     "nodeVersionRange": ">=8",
     "commands": ["github:ember-codemods/ember-data-codemod globals-to-ember-data-imports app/**/*.js"]
+  },
+  "ember-no-implicit-this-codemod": {
+    "versionRanges": {
+      "ember-source": ">=3.12"
+    },
+    "nodeVersionRange": ">=8",
+    "script": "let ps = execa.command(\"ember s\", { stderr: \"inherit\", preferLocal: true }); ps.stdout.pipe(process.stdout); try { let url = await new Promise((resolve, reject) => { ps.stdout.on(\"data\", data => { let str = data.toString(); let matches = str.match(/^Build successful \\(\\d+ms\\) – Serving on (.*)$/m); if (matches) { resolve(matches[1]); } }); ps.once(\"error\", reject); ps.once(\"exit\", reject); }); await execa.command(`npx ember-no-implicit-this-codemod ${url} app/`, { stdio: \"inherit\" }); } finally { if (!ps.exitCode) { ps.kill(); await new Promise(resolve => { ps.once(\"exit\", resolve); }); } }"
   }
 }
