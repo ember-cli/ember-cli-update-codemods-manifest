@@ -32,7 +32,10 @@
     },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "4.0.0",
-    "commands": ["github:rondale-sc/es5-getter-ember-codemod es5-getter-ember-codemod app/**/*.js"]
+    "commands": [
+      " github:rondale-sc/es5-getter-ember-codemod es5-getter-ember-codemod app/**/*.js",
+       "ember-3x-codemods notify-property-change app/**/*.js"
+    ]
   },
   "qunit-dom-codemod": {
     "versions": {
