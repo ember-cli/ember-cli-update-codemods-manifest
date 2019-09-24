@@ -33,7 +33,16 @@
     "projectOptions": ["app", "addon"],
     "nodeVersion": "4.0.0",
     "commands": [
-      " github:rondale-sc/es5-getter-ember-codemod es5-getter-ember-codemod app/**/*.js",
+      " github:rondale-sc/es5-getter-ember-codemod es5-getter-ember-codemod app/**/*.js"
+    ]
+  },
+  "ember-3x-codemods": {
+    "versions": {
+      "ember-source": "3.1.0-beta.1"
+    },
+    "projectOptions": ["app", "addon"],
+    "nodeVersion": "4.0.0",
+    "commands": [
        "ember-3x-codemods notify-property-change app/**/*.js"
     ]
   },
