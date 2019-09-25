@@ -39,7 +39,7 @@
       "ember-source": "3.1.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "4.0.0",
+    "nodeVersion": "6.0.0",
     "commands": [
        "ember-3x-codemods notify-property-change app/**/*.js"
     ]
