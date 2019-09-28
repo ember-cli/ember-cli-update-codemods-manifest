@@ -40,9 +40,7 @@
     },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
-    "commands": [
-       "ember-3x-codemods notify-property-change app/**/*.js"
-    ]
+    "commands": ["ember-3x-codemods notify-property-change app/**/*.js"]
   },
   "qunit-dom-codemod": {
     "versions": {
