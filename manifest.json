@@ -49,5 +49,13 @@
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
     "commands": ["jscodeshift -t https://raw.githubusercontent.com/simplabs/qunit-dom-codemod/master/qunit-dom-codemod.js ./tests"]
+  },
+  "deprecate-merge-codemod": {
+    "versions": {
+      "ember-cli": "3.6.0-beta.1"
+    },
+    "projectOptions": ["app", "addon"],
+    "nodeVersion": "6.0.0",
+    "commands": ["ember-3x-codemods deprecate-merge app/**/*.js"]
   }
 }
