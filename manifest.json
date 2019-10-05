@@ -57,5 +57,13 @@
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
     "commands": ["ember-3x-codemods deprecate-merge app/**/*.js"]
+  },
+  "deprecate-router-events-codemod": {
+    "versions": {
+      "ember-cli": "3.6.0-beta.1"
+    },
+    "projectOptions": ["app", "addon"],
+    "nodeVersion": "6.0.0",
+    "commands": ["ember-3x-codemods deprecate-router-events app/**/*.js"]
   }
 }
