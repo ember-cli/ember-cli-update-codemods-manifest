@@ -81,5 +81,13 @@
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
     "commands": ["ember-3x-codemods cp-volatile app/**/*.js"]
+  },
+  "cp-property-map-codemod": {
+    "versions": {
+      "ember-cli": "3.8.0-beta.1"
+    },
+    "projectOptions": ["app", "addon"],
+    "nodeVersion": "6.0.0",
+    "commands": ["ember-3x-codemods cp-property-map app/**/*.js"]
   }
 }
