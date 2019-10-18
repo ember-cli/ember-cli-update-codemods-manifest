@@ -68,7 +68,7 @@
   },
   "cp-property-codemod": {
     "versions": {
-      "ember-cli": "3.8.0-beta.1"
+      "ember-cli": "3.9.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
@@ -76,7 +76,7 @@
   },
   "cp-volatile-codemod": {
     "versions": {
-      "ember-cli": "3.8.0-beta.1"
+      "ember-cli": "3.9.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
