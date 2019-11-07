@@ -105,5 +105,13 @@
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
     "commands": ["ember-3x-codemods fpe-observes app/**/*.js"]
+  },
+  "fpe-computed-codemod": {
+    "versions": {
+      "ember-source": "3.11.0-beta.1"
+    },
+    "projectOptions": ["app", "addon"],
+    "nodeVersion": "6.0.0",
+    "commands": ["ember-3x-codemods fpe-computed app/**/*.js"]
   }
 }
