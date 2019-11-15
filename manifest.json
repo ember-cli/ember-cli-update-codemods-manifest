@@ -92,7 +92,7 @@
   },
   "ember-angle-brackets-codemod": {
     "versions": {
-      "ember-source": "3.10.0-alpha.1"
+      "ember-source": "3.10.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "8.0.0",
