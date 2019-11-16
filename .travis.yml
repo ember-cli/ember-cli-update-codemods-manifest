@@ -8,3 +8,13 @@ branches:
 cache:
   directories:
   - "$HOME/.npm"
+env:
+  global:
+    - DEBUG=ember-cli-update,boilerplate-update,git-diff-apply,git-fixtures
+jobs:
+  allow_failures:
+  - os: osx
+  include:
+  - os: osx
+  - script:
+    - npm run lint
