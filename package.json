@@ -1,0 +1,39 @@
+{
+  "name": "ember-cli-update-codemods-manifest",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Master list of codemods and their instructions used by [ember-cli-update](https://github.com/ember-cli/ember-cli-update)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext js,json",
+    "test": "mocha test/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ember-cli/ember-cli-update-codemods-manifest.git"
+  },
+  "author": "Kelly Selden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ember-cli/ember-cli-update-codemods-manifest/issues"
+  },
+  "homepage": "https://github.com/ember-cli/ember-cli-update-codemods-manifest#readme",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "ember-cli-update": "0.44.0",
+    "eslint": "^6.1.0",
+    "eslint-config-sane": "0.8.5",
+    "eslint-config-sane-node": "0.2.2",
+    "eslint-plugin-json-files": "0.8.0",
+    "eslint-plugin-mocha": "^6.0.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prefer-let": "^1.0.1",
+    "fs-extra": "^8.1.0",
+    "git-fixtures": "^2.1.0",
+    "mocha": "^6.0.0",
+    "renovate-config-standard": "^2.0.0"
+  }
+}
