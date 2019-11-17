@@ -17,7 +17,7 @@ const manifest = require('../manifest');
 const codemods = Object.keys(manifest);
 
 describe('runs codemods', function() {
-  this.timeout(2 * 60 * 1000);
+  this.timeout(5 * 60 * 1000);
 
   let tmpPath;
 
