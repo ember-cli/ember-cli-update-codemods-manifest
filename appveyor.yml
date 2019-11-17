@@ -13,10 +13,10 @@ init:
 # Install scripts. (runs after repo cloning)
 install:
   - ps: Install-Product node $env:nodejs_version
+  - npm ci
 
 # Post-install test scripts.
 test_script:
-  - node --version
   - npm --version
   - npm test
 
