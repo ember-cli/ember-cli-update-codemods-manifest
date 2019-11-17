@@ -9,8 +9,8 @@ const {
   fixtureCompare: _fixtureCompare
 } = require('git-fixtures');
 const {
-  assertNoUnstaged
-  // assertCodemodRan
+  assertNoUnstaged,
+  assertCodemodRan
 } = require('./helpers/assertions');
 const manifest = require('../manifest');
 
@@ -120,7 +120,7 @@ describe('runs codemods', function() {
       });
 
       assertNoUnstaged(status);
-      // assertCodemodRan(status);
+      assertCodemodRan(status);
     });
   }
 });
