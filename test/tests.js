@@ -34,7 +34,10 @@ describe('runs codemods', function() {
 
     return processBin({
       bin: 'ember-cli-update',
-      args: ['--run-codemods'],
+      args: [
+        '--run-codemods',
+        `--codemods-json='${JSON.stringify(manifest)}'`
+      ],
       cwd: tmpPath,
       commitMessage,
       expect
