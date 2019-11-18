@@ -104,6 +104,9 @@ describe('runs codemods', function() {
         status
       } = await promise;
 
+      assertNoUnstaged(status);
+      assertCodemodRan(status);
+
       // file is indeterminent between OS's, so ignore
       await fs.remove(path.join(tmpPath, 'MODULE_REPORT.md'));
 
@@ -122,9 +125,6 @@ describe('runs codemods', function() {
       fixtureCompare({
         mergeFixtures
       });
-
-      assertNoUnstaged(status);
-      assertCodemodRan(status);
     });
   }
 });
