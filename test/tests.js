@@ -86,15 +86,19 @@ describe('runs codemods', function() {
         }
       });
 
-      ps.stdout.on('data', data => {
+      function stdoutData(data) {
         let str = data.toString();
         if (str.includes('These codemods apply to your project.')) {
           let down = '\u001b[B';
           let space = ' ';
           let enter = '\n';
           ps.stdin.write(`${down.repeat(i)}${space}${enter}`);
+
+          ps.stdout.removeListener('data', stdoutData);
         }
-      });
+      }
+
+      ps.stdout.on('data', stdoutData);
 
       let {
         status
