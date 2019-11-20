@@ -96,7 +96,7 @@
     },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "8.0.0",
-    "commands" : ["ember-angle-brackets-codemod angle-brackets ./app/templates"]
+    "commands" : ["ember-angle-brackets-codemod@2 angle-brackets ./app/templates"]
   },
   "fpe-on-codemod": {
     "versions": {
