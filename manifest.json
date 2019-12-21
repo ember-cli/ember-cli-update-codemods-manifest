@@ -121,5 +121,13 @@
     "projectOptions": ["app", "addon"],
     "nodeVersion": "6.0.0",
     "commands": ["ember-3x-codemods fpe-computed app/**/*.js"]
+  },
+  "ember-data-codemod": {
+    "versions": {
+      "ember-data": "3.11.0-beta.1"
+    },
+    "projectOptions": ["app", "addon"],
+    "nodeVersion": "8.0.0",
+    "commands": ["ember-data-codemod . app/**/*.js"]
   }
 }
