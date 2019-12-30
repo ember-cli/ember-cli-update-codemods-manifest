@@ -128,6 +128,6 @@
     },
     "projectOptions": ["app", "addon"],
     "nodeVersion": "8.0.0",
-    "commands": ["ember-data-codemod . app/**/*.js"]
+    "commands": ["github:ember-codemods/ember-data-codemod globals-to-ember-data-imports app/**/*.js"]
   }
 }
