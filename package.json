@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.0",
-    "ember-cli-update": "0.49.6",
+    "ember-cli-update": "0.49.7",
     "eslint": "^6.1.0",
     "eslint-config-sane": "0.8.5",
     "eslint-config-sane-node": "0.2.2",
