@@ -4,7 +4,7 @@ environment:
 
 branches:
   only:
-    - v4
+    - master
 
 # Fix line endings in Windows. (runs before repo cloning)
 init:
@@ -14,7 +14,8 @@ init:
 # Install scripts. (runs after repo cloning)
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm ci
+  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  - pnpm install
 
 # Post-install test scripts.
 test_script:

@@ -12,7 +12,7 @@ const {
   assertNoUnstaged,
   assertCodemodRan
 } = require('./helpers/assertions');
-const manifest = require('../manifest');
+const manifest = require('ember-app-codemods-manifest');
 
 const codemods = Object.keys(manifest);
 
