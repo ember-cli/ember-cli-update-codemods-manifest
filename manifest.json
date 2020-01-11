@@ -1,133 +1,133 @@
 {
   "ember-modules-codemod": {
-    "versions": {
-      "ember-cli": "2.16.0-beta.1"
+    "versionRanges": {
+      "ember-cli": ">=2.16.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "4.0.0",
+    "nodeVersionRange": ">=4",
     "commands": ["ember-modules-codemod"]
   },
   "ember-qunit-codemod": {
-    "versions": {
-      "ember-cli": "3.0.0-beta.1"
+    "versionRanges": {
+      "ember-cli": ">=3.0.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "4.0.0",
+    "nodeVersionRange": ">=4",
     "commands": ["ember-qunit-codemod convert-module-for-to-setup-test ./tests/"]
   },
   "ember-test-helpers-codemod": {
-    "versions": {
-      "ember-cli": "3.0.0-beta.1"
+    "versionRanges": {
+      "ember-cli": ">=3.0.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": [
       "ember-test-helpers-codemod integration tests/integration",
       "ember-test-helpers-codemod acceptance tests/acceptance"
     ]
   },
   "es5-getter-ember-codemod": {
-    "versions": {
-      "ember-source": "3.1.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.1.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "4.0.0",
+    "nodeVersionRange": ">=4",
     "commands": ["github:rondale-sc/es5-getter-ember-codemod es5-getter-ember-codemod app/**/*.js"]
   },
   "notify-property-change": {
-    "versions": {
-      "ember-source": "3.1.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.1.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": ["ember-3x-codemods notify-property-change app/**/*.js"]
   },
   "qunit-dom-codemod": {
-    "versions": {
-      "ember-cli": "3.2.0-beta.1"
+    "versionRanges": {
+      "ember-cli": ">=3.2.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": ["jscodeshift -t https://raw.githubusercontent.com/simplabs/qunit-dom-codemod/master/qunit-dom-codemod.js ./tests"]
   },
   "deprecate-merge-codemod": {
-    "versions": {
-      "ember-source": "3.6.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.6.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": ["ember-3x-codemods deprecate-merge app/**/*.js"]
   },
   "deprecate-router-events-codemod": {
-    "versions": {
-      "ember-source": "3.6.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.6.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": ["ember-3x-codemods deprecate-router-events app/**/*.js"]
   },
   "cp-property-codemod": {
-    "versions": {
-      "ember-source": "3.9.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.9.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": ["ember-3x-codemods cp-property app/**/*.js"]
   },
   "cp-volatile-codemod": {
-    "versions": {
-      "ember-source": "3.9.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.9.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": ["ember-3x-codemods cp-volatile app/**/*.js"]
   },
   "cp-property-map-codemod": {
-    "versions": {
-      "ember-source": "3.9.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.9.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": ["ember-3x-codemods cp-property-map app/**/*.js"]
   },
   "ember-angle-brackets-codemod": {
-    "versions": {
-      "ember-source": "3.10.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.10.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "8.0.0",
+    "nodeVersionRange": ">=8",
     "commands" : ["ember-angle-brackets-codemod@2 angle-brackets ./app/templates"]
   },
   "fpe-on-codemod": {
-    "versions": {
-      "ember-source": "3.11.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.11.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": ["ember-3x-codemods fpe-on app/**/*.js"]
   },
   "fpe-observes-codemod": {
-    "versions": {
-      "ember-source": "3.11.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.11.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": ["ember-3x-codemods fpe-observes app/**/*.js"]
   },
   "fpe-computed-codemod": {
-    "versions": {
-      "ember-source": "3.11.0-beta.1"
+    "versionRanges": {
+      "ember-source": ">=3.11.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "6.0.0",
+    "nodeVersionRange": ">=6",
     "commands": ["ember-3x-codemods fpe-computed app/**/*.js"]
   },
   "ember-data-codemod": {
-    "versions": {
-      "ember-data": "3.11.0-beta.1"
+    "versionRanges": {
+      "ember-data": ">=3.11.0-beta.1"
     },
     "projectOptions": ["app", "addon"],
-    "nodeVersion": "8.0.0",
+    "nodeVersionRange": ">=8",
     "commands": ["github:ember-codemods/ember-data-codemod globals-to-ember-data-imports app/**/*.js"]
   }
 }
