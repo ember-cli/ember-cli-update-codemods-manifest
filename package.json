@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "description": "Master list of codemods and their instructions used by [ember-cli-update](https://github.com/ember-cli/ember-cli-update)",
-  "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext js,json",
     "test": "mocha test/tests.js"
