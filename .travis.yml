@@ -26,7 +26,6 @@ jobs:
     - npm run lint:js
   - if: branch = master AND tag IS blank AND type = push
     script:
-    - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
     - git checkout master
     - git config --global user.email "travis@travis-ci.org"
     - git config --global user.name "Travis CI"
@@ -34,4 +33,5 @@ jobs:
     - git remote add origin https://$GITHUB_TOKEN@github.com/ember-cli/ember-cli-update-codemods-manifest.git
     - git fetch origin
     - git branch -u origin/master
+    - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
     - npm run release
