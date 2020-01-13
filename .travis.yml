@@ -25,6 +25,8 @@ jobs:
     - npm run lint:git
     - npm run lint:js
   - if: branch = master AND tag IS blank AND type = push
+    git:
+      depth: false
     script:
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
     - npm run release
