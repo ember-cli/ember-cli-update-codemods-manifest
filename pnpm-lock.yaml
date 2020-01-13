@@ -16,13 +16,13 @@ importers:
       fs-extra: 8.1.0
       git-fixtures: 2.3.1
       mocha: 7.0.0
-      monorepo-next: 0.2.22
+      monorepo-next: 0.2.24
       renovate-config-standard: 2.0.0
     specifiers:
       '@crowdstrike/commitlint': ^1.0.4
       chai: ^4.1.0
-      ember-addon-codemods-manifest: ^1.0.1
-      ember-app-codemods-manifest: ^1.0.1
+      ember-addon-codemods-manifest: ^1.0.2
+      ember-app-codemods-manifest: ^1.0.2
       ember-cli-update: 0.49.8
       eslint: ^6.1.0
       eslint-config-sane: 0.8.5
@@ -34,7 +34,7 @@ importers:
       fs-extra: ^8.1.0
       git-fixtures: ^2.1.0
       mocha: ^7.0.0
-      monorepo-next: 0.2.22
+      monorepo-next: 0.2.24
       renovate-config-standard: ^2.0.0
   packages/addon:
     specifiers: {}
@@ -904,7 +904,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-g81GQOR392I+57Cw3IyP1f+f42ME6aEkbR+L7v1FBBWolB0xkjKTeCWVguzRrp6UiT1O6gBpJbEy2eq7AnV1rw==
-  /conventional-changelog/3.1.12:
+  /conventional-changelog/3.1.15:
     dependencies:
       conventional-changelog-angular: 5.0.6
       conventional-changelog-atom: 2.0.3
@@ -921,7 +921,7 @@ packages:
     engines:
       node: '>=6.9.0'
     resolution:
-      integrity: sha512-zyGKwii8Z5zOq1nGFm5jn9Ou1jQ6UBoRT0+nqBIU8fEzh64+AcVxrY97tVuK77Ati0xwpBiFHpDXAW7pkq1jEw==
+      integrity: sha512-CoWM+Z9bYyF00QzNpTnxkCLiuLAeRocJz3C/foFjvhsdltdtkJgMChp7GytQNjm4pT7JFBVJTpqLHTpxNtOzaA==
   /conventional-commits-filter/2.0.2:
     dependencies:
       lodash.ismatch: 4.4.0
@@ -946,22 +946,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-YcBSGkZbYp7d+Cr3NWUeXbPDFUN6g3SaSIzOybi8bjHL5IJ5225OSCxJJ4LgziyEJ7AaJtE9L2/EU6H7Nt/DDQ==
-  /conventional-recommended-bump/6.0.2:
-    dependencies:
-      concat-stream: 2.0.0
-      conventional-changelog-preset-loader: 2.3.0
-      conventional-commits-filter: 2.0.2
-      conventional-commits-parser: 3.0.8
-      git-raw-commits: 2.0.0
-      git-semver-tags: 3.0.1
-      meow: 4.0.1
-      q: 1.5.1
-    dev: true
-    engines:
-      node: '>=6.9.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-9qWhAweJbT6CAHcCprBYzUb3tySsaRrUx0ckpMprHbtWOBfl3gxakUCBNd/4T3m2Iv9Cb8Y4P2Px3cR5ysXPDw==
   /conventional-recommended-bump/6.0.5:
     dependencies:
       concat-stream: 2.0.0
@@ -1128,12 +1112,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-oSyFlqaTHCItVRGK5RmrmjB+CmaMOW7IaNA/kdxqhoa6d17j/5ce9O9eWXmV/KEdRwqpQA+Vqe8a8Bsybu4YnA==
-  /detect-newline/3.0.0:
-    dev: true
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-JAP22dVPAqvhdRFFxK1G5GViIokyUn0UWXRNW0ztK96fsqi9cuM8w8ESbSk+T2w5OVorcMcL6m7yUg1RrX+2CA==
   /detect-newline/3.1.0:
     dev: true
     engines:
@@ -1538,14 +1516,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-jmxqQ3Z/nXoeyDmWAzF9kH1aGZSis6e/SbfPmJpUnyZ0ogr6iscHQaml4wsEepEWSdtmpy+eVXmCRIMpxaXqOA==
-  /figures/3.0.0:
-    dependencies:
-      escape-string-regexp: 1.0.5
-    dev: true
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-HKri+WoWoUgr83pehn/SIgLOMZ9nAWC6dcGj26RY2R4F50u4+RTUz0RCrUlOV3nKRAICW1UGzyb+kcX2qK1S/g==
   /figures/3.1.0:
     dependencies:
       escape-string-regexp: 1.0.5
@@ -1807,16 +1777,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-UoJlna4hBxRaERJhEq0yFuxfpl8=
-  /git-semver-tags/3.0.0:
-    dependencies:
-      meow: 4.0.1
-      semver: 6.3.0
-    dev: true
-    engines:
-      node: '>=6.9.0'
-    hasBin: true
-    resolution:
-      integrity: sha512-T4C/gJ9k2Bnxz+PubtcyiMtUUKrC+Nh9Q4zaECcnmVMwJgPhrNyP/Rf+YpdRqsJbCV/+kYrCH24Xg+IeAmbOPg==
   /git-semver-tags/3.0.1:
     dependencies:
       meow: 5.0.0
@@ -2662,21 +2622,21 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
-  /monorepo-next/0.2.22:
+  /monorepo-next/0.2.24:
     dependencies:
       conventional-recommended-bump: 6.0.5
       execa: 3.4.0
       glob: 7.1.6
       inquirer: 7.0.3
       semver: 6.3.0
-      standard-version: 7.0.1
+      standard-version: 7.1.0
       yargs: 15.1.0
     dev: true
     engines:
       node: '>=8.10'
     hasBin: true
     resolution:
-      integrity: sha512-F+/Zn1PSdHJy4bqarBBWYfhVwxlRhWWZj8I5BDe6qMJ2tkEfeZO9L45LI8lOqbw+/z7rcKnoOPIjB0w+m2RCMg==
+      integrity: sha512-DQJ66LLLWVXDX0FhZaMYnlhbXpXyNp8cPutH6Yls/sFQXxORJr0/T8GKqPeHA1cysxfMgMvTMVXC14GOhCZfoQ==
   /ms/2.1.1:
     dev: true
     resolution:
@@ -3539,28 +3499,29 @@ packages:
     dev: true
     resolution:
       integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
-  /standard-version/7.0.1:
+  /standard-version/7.1.0:
     dependencies:
       chalk: 2.4.2
-      conventional-changelog: 3.1.12
+      conventional-changelog: 3.1.15
       conventional-changelog-config-spec: 2.1.0
-      conventional-recommended-bump: 6.0.2
+      conventional-changelog-conventionalcommits: 4.2.3
+      conventional-recommended-bump: 6.0.5
       detect-indent: 6.0.0
-      detect-newline: 3.0.0
+      detect-newline: 3.1.0
       dotgitignore: 2.1.0
-      figures: 3.0.0
+      figures: 3.1.0
       find-up: 4.1.0
       fs-access: 1.0.1
-      git-semver-tags: 3.0.0
+      git-semver-tags: 3.0.1
       semver: 6.3.0
       stringify-package: 1.0.1
-      yargs: 14.2.0
+      yargs: 15.0.2
     dev: true
     engines:
       node: '>=8.0'
     hasBin: true
     resolution:
-      integrity: sha512-3GR9dPlNpC/osTwb9YsU2KQelGvSORMPUFN7zOUE3HN4yjCTsT57IJAFsyPXPP512QDMSxwwjhxa8Em5vF5F5Q==
+      integrity: sha512-bHY2E/1tYGeVl+0XSXFivb+54h2fA4pWJocXAd6FGbtSFUvGsnfmMbIXYDxrYErpq7oEqoKreV8xTAp78WoATA==
   /string-width/2.1.1:
     dependencies:
       is-fullwidth-code-point: 2.0.0
@@ -4055,13 +4016,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-oVAVsHz6uFrg3XQheFII8ESO2ssAf9luWuAd6Wexsu4F3OtIW0o8IribPXYrD4WC24LWtPrJlGy87y5udK+dxQ==
-  /yargs-parser/15.0.0:
-    dependencies:
-      camelcase: 5.3.1
-      decamelize: 1.2.0
-    dev: true
-    resolution:
-      integrity: sha512-xLTUnCMc4JhxrPEPUYD5IBR1mWCK/aT6+RJ/K29JY2y1vD+FhtgKK0AXRWvI262q3QSffAQuTouFIKUuHX89wQ==
   /yargs-parser/16.1.0:
     dependencies:
       camelcase: 5.3.1
@@ -4094,22 +4048,22 @@ packages:
     dev: true
     resolution:
       integrity: sha512-2eehun/8ALW8TLoIl7MVaRUrg+yCnenu8B4kBlRxj3GJGDKU1Og7sMXPNm1BYyM1DOJmTZ4YeN/Nwxv+8XJsUA==
-  /yargs/14.2.0:
+  /yargs/15.0.2:
     dependencies:
-      cliui: 5.0.0
+      cliui: 6.0.0
       decamelize: 1.2.0
-      find-up: 3.0.0
+      find-up: 4.1.0
       get-caller-file: 2.0.5
       require-directory: 2.1.1
       require-main-filename: 2.0.0
       set-blocking: 2.0.0
-      string-width: 3.1.0
+      string-width: 4.2.0
       which-module: 2.0.0
       y18n: 4.0.0
-      yargs-parser: 15.0.0
+      yargs-parser: 16.1.0
     dev: true
     resolution:
-      integrity: sha512-/is78VKbKs70bVZH7w4YaZea6xcJWOAwkhbR0CFuZBmYtfTYF0xjGJF43AYd8g2Uii1yJwmS5GR2vBmrc32sbg==
+      integrity: sha512-GH/X/hYt+x5hOat4LMnCqMd8r5Cv78heOMIJn1hr7QPPBqfeC6p89Y78+WB9yGDvfpCvgasfmWLzNzEioOUD9Q==
   /yargs/15.1.0:
     dependencies:
       cliui: 6.0.0
