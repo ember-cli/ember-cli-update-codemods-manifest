@@ -28,4 +28,10 @@ jobs:
     script:
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
     - git checkout master
+    - git config --global user.email "travis@travis-ci.org"
+    - git config --global user.name "Travis CI"
+    - git remote remove origin
+    - git remote add origin https://$GITHUB_TOKEN@github.com/ember-cli/ember-cli-update-codemods-manifest.git
+    - git fetch origin
+    - git branch -u origin/master
     - npm run release
