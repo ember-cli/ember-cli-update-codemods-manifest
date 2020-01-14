@@ -13,7 +13,8 @@ env:
   global:
   - DEBUG=ember-cli-update,boilerplate-update,git-diff-apply,git-fixtures
 before_install:
-- curl -L https://unpkg.com/@pnpm/self-installer | node
+# - curl -L https://unpkg.com/@pnpm/self-installer | node
+- npm i -g pnpm
 install:
 - pnpm install
 jobs:
