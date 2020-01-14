@@ -93,7 +93,7 @@ describe('runs codemods', function() {
   }
 
   // eslint-disable-next-line mocha/no-hooks-for-single-case
-  beforeEach(async function() {
+  before(async function() {
     applicableCodemods = await getApplicableCodemods();
   });
 
