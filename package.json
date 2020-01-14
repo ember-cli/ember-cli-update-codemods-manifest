@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-update-codemods-manifest",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Master list of codemods and their instructions used by [ember-cli-update](https://github.com/ember-cli/ember-cli-update)",
   "scripts": {
     "lint:git": "commitlint",
@@ -25,8 +25,8 @@
   "devDependencies": {
     "@crowdstrike/commitlint": "^1.0.4",
     "chai": "^4.1.0",
-    "ember-addon-codemods-manifest": "^1.0.3",
-    "ember-app-codemods-manifest": "^1.0.3",
+    "ember-addon-codemods-manifest": "^1.0.4",
+    "ember-app-codemods-manifest": "^1.0.4",
     "ember-cli-update": "0.49.8",
     "eslint": "^6.1.0",
     "eslint-config-sane": "0.8.5",
