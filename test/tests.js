@@ -20,10 +20,12 @@ describe('runs codemods', function() {
   this.timeout(5 * 60 * 1000);
 
   let tmpPath;
+  let applicableCodemods;
 
   async function merge({
     fixturesPath,
     commitMessage,
+    statsOnly,
     beforeMerge = () => Promise.resolve()
   }) {
     tmpPath = await buildTmp({
@@ -35,7 +37,7 @@ describe('runs codemods', function() {
     return processBin({
       bin: 'ember-cli-update',
       args: [
-        '--run-codemods',
+        statsOnly ? '--stats-only' : '--run-codemods',
         `--codemods-json='${JSON.stringify(manifest)}'`
       ],
       cwd: tmpPath,
@@ -57,12 +59,43 @@ describe('runs codemods', function() {
     });
   }
 
-  // eslint-disable-next-line mocha/no-setup-in-describe
-  for (let i = 0; i < codemods.length; i++) {
-    // eslint-disable-next-line mocha/no-setup-in-describe
-    let codemod = codemods[i];
+  async function getApplicableCodemods() {
+    let {
+      ps,
+      promise
+    } = await merge({
+      fixturesPath: 'test/fixtures/local',
+      commitMessage: 'my-app',
+      statsOnly: true
+    });
 
+    ps.stdout.pipe(process.stdout);
+
+    let stdout = '';
+
+    ps.stdout.on('data', data => {
+      stdout += data.toString();
+    });
+
+    await promise;
+
+    let applicableCodemods = stdout.match(/^applicable codemods: (.+)$/m)[1].split(', ');
+
+    return applicableCodemods;
+  }
+
+  // eslint-disable-next-line mocha/no-hooks-for-single-case
+  beforeEach(async function() {
+    applicableCodemods = await getApplicableCodemods();
+  });
+
+  for (let codemod of codemods) {
     it(codemod, async function() {
+      if (!applicableCodemods.includes(codemod)) {
+        this.skip();
+        return;
+      }
+
       async function _merge(src, dest) {
         await fs.copy(
           path.join(__dirname, `fixtures/codemods/${codemod}/${src}/my-app`),
@@ -93,6 +126,7 @@ describe('runs codemods', function() {
           let down = '\u001b[B';
           let space = ' ';
           let enter = '\n';
+          let i = applicableCodemods.indexOf(codemod);
           ps.stdin.write(`${down.repeat(i)}${space}${enter}`);
 
           ps.stdout.removeListener('data', stdoutData);
