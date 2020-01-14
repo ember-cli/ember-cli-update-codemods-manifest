@@ -26,7 +26,7 @@ jobs:
     - npm run lint:js
   - if: branch = master AND tag IS blank AND type = push
     script:
-    - git checkout master
+    - git checkout -B master
     - git config --global user.email "travis@travis-ci.org"
     - git config --global user.name "Travis CI"
     - git remote remove origin
