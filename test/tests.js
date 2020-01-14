@@ -80,7 +80,6 @@ describe('runs codemods', function() {
       } = await merge({
         fixturesPath: 'test/fixtures/local',
         commitMessage: 'my-app',
-        runCodemods: true,
         async beforeMerge() {
           await _merge('local', tmpPath);
         }
