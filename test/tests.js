@@ -12,7 +12,19 @@ const {
   assertNoUnstaged,
   assertCodemodRan
 } = require('./helpers/assertions');
-const manifest = require('ember-app-codemods-manifest');
+
+let manifest;
+let fixturesPath;
+let commitMessage;
+if (process.env.TEST_TYPE === 'addon') {
+  manifest = require('ember-addon-codemods-manifest');
+  fixturesPath = 'test/fixtures/addon';
+  commitMessage = 'my-addon';
+} else {
+  manifest = require('ember-app-codemods-manifest');
+  fixturesPath = 'test/fixtures/app';
+  commitMessage = 'my-app';
+}
 
 const codemods = Object.keys(manifest);
 
@@ -23,8 +35,6 @@ describe('runs codemods', function() {
   let applicableCodemods;
 
   async function merge({
-    fixturesPath,
-    commitMessage,
     statsOnly,
     beforeMerge = () => Promise.resolve()
   }) {
@@ -64,8 +74,6 @@ describe('runs codemods', function() {
       ps,
       promise
     } = await merge({
-      fixturesPath: 'test/fixtures/local',
-      commitMessage: 'my-app',
       statsOnly: true
     });
 
@@ -111,8 +119,6 @@ describe('runs codemods', function() {
         ps,
         promise
       } = await merge({
-        fixturesPath: 'test/fixtures/local',
-        commitMessage: 'my-app',
         async beforeMerge() {
           await _merge('local', tmpPath);
         }
@@ -151,7 +157,7 @@ describe('runs codemods', function() {
       }
 
       let mergeFixtures = await buildTmp({
-        fixturesPath: 'test/fixtures/local',
+        fixturesPath,
         noGit: true
       });
 
