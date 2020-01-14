@@ -13,9 +13,7 @@
         "--timeout",
         "999999",
         "--colors",
-        "test/tests.js",
-        "-f",
-        "ember-modules-codemod"
+        "test/tests.js"
       ],
       "env": {
         "DEBUG": "ember-cli-update,boilerplate-update,git-diff-apply,git-fixtures"
