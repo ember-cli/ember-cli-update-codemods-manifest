@@ -12,8 +12,5 @@
     "directory": "packages/app"
   },
   "author": "Kelly Selden",
-  "license": "MIT",
-  "engines": {
-    "node": ">=8.10"
-  }
+  "license": "MIT"
 }
