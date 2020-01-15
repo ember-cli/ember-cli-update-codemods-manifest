@@ -5,7 +5,7 @@ importers:
       chai: 4.2.0
       ember-addon-codemods-manifest: 'link:packages/addon'
       ember-app-codemods-manifest: 'link:packages/app'
-      ember-cli-update: 0.50.0
+      ember-cli-update: 0.51.0
       eslint: 6.8.0
       eslint-config-sane: 0.8.5_b2af8de385cea2a63947ee7cd37f83d0
       eslint-config-sane-node: 0.2.2_cbdb7bcf0f2c550e795f2fdaf870f730
@@ -23,7 +23,7 @@ importers:
       chai: ^4.1.0
       ember-addon-codemods-manifest: ^1.0.4
       ember-app-codemods-manifest: ^1.0.4
-      ember-cli-update: 0.50.0
+      ember-cli-update: 0.51.0
       eslint: ^6.1.0
       eslint-config-sane: 0.8.5
       eslint-config-sane-node: 0.2.2
@@ -485,12 +485,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
-  /boilerplate-update/0.35.0:
+  /boilerplate-update/0.36.1:
     dependencies:
       cpr: 3.0.1
       debug: 4.1.1
       execa: 3.4.0
       git-diff-apply: 0.22.5
+      https-proxy-agent: 3.0.1
       inquirer: 7.0.3
       merge-package.json: 3.1.5
       npm-package-arg: 7.0.0
@@ -506,7 +507,7 @@ packages:
     engines:
       node: '>=8.10'
     resolution:
-      integrity: sha512-Fb24q/m2LgLgDeIxoT5Y2CBcCIExknosjEAckzxvK9KY1abKrZ1l+t3KkisCXm0IT1IRQBAydrKRDsiMZqqzYQ==
+      integrity: sha512-UFlfvdp+WejsVDiNkd4176GESsTCPUrovzdK0INfS4UXVnBPqFyVEYQyQ+8Eu77MiP8Mr88F2ChyIic+BQXMXg==
   /boxen/4.2.0:
     dependencies:
       ansi-align: 3.0.0
@@ -1255,9 +1256,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
-  /ember-cli-update/0.50.0:
+  /ember-cli-update/0.51.0:
     dependencies:
-      boilerplate-update: 0.35.0
+      boilerplate-update: 0.36.1
       debug: 4.1.1
       execa: 3.4.0
       fs-extra: 8.1.0
@@ -1273,7 +1274,7 @@ packages:
       node: '>=8.10'
     hasBin: true
     resolution:
-      integrity: sha512-pn5RXtIkAYm/cXtK4HowJTEjLSf6eqvhg76LXfPbgw2f9dX7KmgYVqba7b6rfaEkKVBeLS9LDtqoYqA/LyU0FQ==
+      integrity: sha512-Ta0UCAslWjXLVOxiUX2WBxEyx4uACDacyOCxRopApGxxShe6GTCXLHxTEu/YN0PrbRRKfnzew2q3gNNJ3MlzCg==
   /emoji-regex/7.0.3:
     dev: true
     resolution:
