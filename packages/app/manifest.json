@@ -84,7 +84,7 @@
       "ember-source": ">=3.10.0-beta.1"
     },
     "nodeVersionRange": ">=8",
-    "commands" : ["ember-angle-brackets-codemod@2 angle-brackets ./app/templates"]
+    "script": "let ps = execa.command(\"ember s\", { stderr: \"inherit\", preferLocal: true }); ps.stdout.pipe(process.stdout); try { let url = await new Promise((resolve, reject) => { ps.stdout.on(\"data\", data => { let str = data.toString(); let matches = str.match(/^Build successful \\(\\d+ms\\) – Serving on (.*)$/m); if (matches) { resolve(matches[1]); } }); ps.once(\"error\", reject); ps.once(\"exit\", reject); }); await execa.command(`npx ember-angle-brackets-codemod@3 ${url} app/`, { stdio: \"inherit\" }); } finally { if (!ps.exitCode) { ps.kill(); await new Promise(resolve => { ps.once(\"exit\", resolve); }); } }"
   },
   "fpe-on-codemod": {
     "versionRanges": {
