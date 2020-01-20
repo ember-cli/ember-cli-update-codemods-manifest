@@ -5,7 +5,7 @@ importers:
       chai: 4.2.0
       ember-addon-codemods-manifest: 'link:packages/addon'
       ember-app-codemods-manifest: 'link:packages/app'
-      ember-cli-update: 0.51.0
+      ember-cli-update: 0.52.0
       eslint: 6.8.0
       eslint-config-sane: 0.8.5_b2af8de385cea2a63947ee7cd37f83d0
       eslint-config-sane-node: 0.3.0_cbdb7bcf0f2c550e795f2fdaf870f730
@@ -23,7 +23,7 @@ importers:
       chai: ^4.1.0
       ember-addon-codemods-manifest: ^1.0.4
       ember-app-codemods-manifest: ^1.0.4
-      ember-cli-update: 0.51.0
+      ember-cli-update: 0.52.0
       eslint: ^6.1.0
       eslint-config-sane: 0.8.5
       eslint-config-sane-node: 0.3.0
@@ -495,7 +495,7 @@ packages:
       inquirer: 7.0.3
       merge-package.json: 3.1.5
       npm-package-arg: 7.0.0
-      npx: 10.2.0
+      npx: 10.2.1
       open: 7.0.0
       p-reduce: 2.1.0
       pacote: 10.2.1
@@ -1256,7 +1256,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
-  /ember-cli-update/0.51.0:
+  /ember-cli-update/0.52.0:
     dependencies:
       boilerplate-update: 0.36.1
       debug: 4.1.1
@@ -1274,7 +1274,7 @@ packages:
       node: '>=8.10'
     hasBin: true
     resolution:
-      integrity: sha512-Ta0UCAslWjXLVOxiUX2WBxEyx4uACDacyOCxRopApGxxShe6GTCXLHxTEu/YN0PrbRRKfnzew2q3gNNJ3MlzCg==
+      integrity: sha512-y2okdomkzulJCNcRVcBbDTQl1pyTU6aVVX3xLtAhgPMCxHVTVZwOJvAcdaRsGRlpk+TYA929j4GY3wfmehjWxg==
   /emoji-regex/7.0.3:
     dev: true
     resolution:
@@ -1837,7 +1837,7 @@ packages:
       fixturify: 1.2.0
       fs-extra: 8.1.0
       tmp: 0.1.0
-      uuid: 3.3.3
+      uuid: 3.4.0
       yargs: 15.1.0
     dev: true
     engines:
@@ -3017,14 +3017,14 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==
-  /npx/10.2.0:
+  /npx/10.2.1:
     bundledDependencies:
       - npm
       - libnpx
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-DqjFkzET0DeaXYXNJnirnvEovwk4lBa33ZQCw1jxMuas4yH9jdU8q2U8L3cLaB2UqzgmW2Ssqk8lcGiPRL8pRg==
+      integrity: sha512-3drNIp6RLYMD64rym3PBwJM+VXTuM76metmioc8hRoCtMgRPM5CEUX3rzNXfg5LZHExNipumCLFmscP77klNkQ==
   /null-check/1.0.0:
     dev: true
     engines:
@@ -3215,7 +3215,7 @@ packages:
   /package-json/6.5.0:
     dependencies:
       got: 9.6.0
-      registry-auth-token: 4.0.0
+      registry-auth-token: 4.1.0
       registry-url: 5.1.0
       semver: 6.3.0
     dev: true
@@ -3239,7 +3239,7 @@ packages:
       osenv: 0.1.5
       promise-inflight: 1.0.1
       promise-retry: 1.1.1
-      read-package-json-fast: 1.1.1
+      read-package-json-fast: 1.1.3
       semver: 6.3.0
       ssri: 7.1.0
       tar: 5.0.5
@@ -3456,13 +3456,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
-  /read-package-json-fast/1.1.1:
+  /read-package-json-fast/1.1.3:
     dependencies:
       json-parse-even-better-errors: 2.0.1
       npm-normalize-package-bin: 1.0.1
     dev: true
     resolution:
-      integrity: sha512-vDw3wiWLwUXhYBCVvjAQJGCI5+DcgwGSYlFETCV9m/b107/yNBnYfCkoVrwHj7338j1z24/dxUXvtrXVjVjL1Q==
+      integrity: sha512-MmFqiyfCXV2Dmm4jH24DEGhxdkUDFivJQj4oPZQPOKywxR7HWBE6WnMWDAapfFHi3wm1b+mhR+XHlUH0CL8axg==
   /read-pkg-up/1.0.1:
     dependencies:
       find-up: 1.1.2
@@ -3565,7 +3565,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-Z+hNr7RAVWxznLPuA7DIh8UNX1j9CDrUQxskw9IrBE1Dxue2lyXT+shqEIeLUjrokxIP8CMy1WkjgG3rTsd5/g==
-  /registry-auth-token/4.0.0:
+  /registry-auth-token/4.1.0:
     dependencies:
       rc: 1.2.8
       safe-buffer: 5.2.0
@@ -3573,7 +3573,7 @@ packages:
     engines:
       node: '>=6.0.0'
     resolution:
-      integrity: sha512-lpQkHxd9UL6tb3k/aHAVfnVtn+Bcs9ob5InuFLLEDqSqeq+AljB8GZW9xY0x7F+xYwEcjKe07nyoxzEYz6yvkw==
+      integrity: sha512-7uxS951DeOBOwsv8deX+l7HcjY2VZxaOgHtM6RKzg3HhpE+bJ0O7VbuMJLosC1T5WSFpHm0DuFIbqUl43jHpsA==
   /registry-url/5.1.0:
     dependencies:
       rc: 1.2.8
@@ -4315,6 +4315,11 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
+  /uuid/3.4.0:
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
   /v8-compile-cache/2.1.0:
     dev: true
     resolution:
