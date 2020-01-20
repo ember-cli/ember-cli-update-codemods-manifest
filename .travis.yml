@@ -32,7 +32,7 @@ jobs:
     - git config user.email "travis@travis-ci.org"
     - git config user.name "Travis CI"
     - git remote set-url origin https://$GITHUB_TOKEN@github.com/ember-cli/ember-cli-update-codemods-manifest.git
-    - git fetch origin
+    - git fetch
     - git branch -u origin/master
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
     - npm run release
