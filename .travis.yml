@@ -29,8 +29,8 @@ jobs:
   - if: branch = master AND tag IS blank AND type = push
     script:
     - git checkout -B master
-    - git config --global user.email "travis@travis-ci.org"
-    - git config --global user.name "Travis CI"
+    - git config user.email "travis@travis-ci.org"
+    - git config user.name "Travis CI"
     - git remote set-url origin https://$GITHUB_TOKEN@github.com/ember-cli/ember-cli-update-codemods-manifest.git
     - git fetch origin
     - git branch -u origin/master
