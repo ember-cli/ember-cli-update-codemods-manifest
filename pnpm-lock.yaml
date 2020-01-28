@@ -16,7 +16,7 @@ importers:
       fs-extra: 8.1.0
       git-fixtures: 2.3.1
       mocha: 7.0.0
-      monorepo-next: 0.2.33
+      monorepo-next: 0.2.35
       renovate-config-standard: 2.0.0
     specifiers:
       '@crowdstrike/commitlint': ^1.0.4
@@ -34,7 +34,7 @@ importers:
       fs-extra: ^8.1.0
       git-fixtures: ^2.1.0
       mocha: ^7.0.0
-      monorepo-next: 0.2.33
+      monorepo-next: 0.2.35
       renovate-config-standard: ^2.0.0
   packages/addon:
     specifiers: {}
@@ -2226,6 +2226,26 @@ packages:
       node: '>=6.0.0'
     resolution:
       integrity: sha512-+OiOVeVydu4hnCGLCSX+wedovR/Yzskv9BFqUNNKq9uU2qg7LCcCo3R86S2E7WLo0y/x2pnEZfZe1CoYnORUAw==
+  /inquirer/7.0.4:
+    dependencies:
+      ansi-escapes: 4.3.0
+      chalk: 2.4.2
+      cli-cursor: 3.1.0
+      cli-width: 2.2.0
+      external-editor: 3.1.0
+      figures: 3.1.0
+      lodash: 4.17.15
+      mute-stream: 0.0.8
+      run-async: 2.3.0
+      rxjs: 6.5.4
+      string-width: 4.2.0
+      strip-ansi: 5.2.0
+      through: 2.3.8
+    dev: true
+    engines:
+      node: '>=6.0.0'
+    resolution:
+      integrity: sha512-Bu5Td5+j11sCkqfqmUTiwv+tWisMtP0L7Q8WrqA2C/BbBhy1YTdFrvjjlrKq8oagA/tLQBski2Gcx/Sqyi2qSQ==
   /ip/1.1.5:
     dev: true
     resolution:
@@ -2878,12 +2898,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
-  /monorepo-next/0.2.33:
+  /monorepo-next/0.2.35:
     dependencies:
       conventional-recommended-bump: 6.0.5
       execa: 3.4.0
       glob: 7.1.6
-      inquirer: 7.0.3
+      inquirer: 7.0.4
       semver: 6.3.0
       standard-version: 7.1.0
       yargs: 15.1.0
@@ -2892,7 +2912,7 @@ packages:
       node: '>=8.10'
     hasBin: true
     resolution:
-      integrity: sha512-/MGR7UDMvkiuPxYrIS69+UqJ7tM0fXddmRUbSTAtFMV2X9/WEgaXnUm0vmIAL/uyf2IDYCNr+IDlDikQiW+ggg==
+      integrity: sha512-DwRlweRDbKaPimxdiQ8Qq9aHQhMAjnGw9jjhnsA8ZvryFN7BpkaIhYbJFtfX5l3OSeNVHAQU+FVMmNmTt19ZSg==
   /move-concurrently/1.0.1:
     dependencies:
       aproba: 1.2.0
