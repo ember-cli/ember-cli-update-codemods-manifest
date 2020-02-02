@@ -18,6 +18,7 @@ importers:
       mocha: 7.0.1
       monorepo-next: 0.2.35
       renovate-config-standard: 2.0.0
+      standard-node-template: 0.0.1
     specifiers:
       '@crowdstrike/commitlint': ^1.0.4
       chai: ^4.1.0
@@ -36,6 +37,7 @@ importers:
       mocha: ^7.0.0
       monorepo-next: 0.2.35
       renovate-config-standard: ^2.0.0
+      standard-node-template: 0.0.1
   packages/addon:
     specifiers: {}
   packages/app:
@@ -3886,6 +3888,12 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-77/WrDZUWocK0mvA5NTRQyveUf+wsrIc6vyrxpS8tVvYBcX215QbafrJR3KtkpskIzoFLqqNuuYQvxaMjXJ/0g==
+  /standard-node-template/0.0.1:
+    dev: true
+    engines:
+      node: '>=8.10'
+    resolution:
+      integrity: sha512-pTrIJ9OOQ81H4rfBljsELWgYS6DiOJlfj/BVYLE3hecKG+c+YAu0l00wH0/maZjmY5RRG/N5sSXVGrcw8Lo1fQ==
   /standard-version/7.1.0:
     dependencies:
       chalk: 2.4.2
