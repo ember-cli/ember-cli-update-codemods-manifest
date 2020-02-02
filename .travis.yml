@@ -12,6 +12,10 @@ cache:
 env:
   global:
   - DEBUG=ember-cli-update,boilerplate-update,git-diff-apply,git-fixtures
+stages:
+  - lint
+  - test
+  - deploy
 before_install:
 - curl -L https://unpkg.com/@pnpm/self-installer | node
 install:
@@ -20,13 +24,16 @@ jobs:
   allow_failures:
   - os: osx
   include:
-  - env:
-    - TEST_TYPE=addon
-  - os: osx
-  - script:
+  - stage: lint
+    script:
     - npm run lint:git
     - npm run lint:js
-  - if: branch = master AND tag IS blank AND type = push
+  - stage: test
+    env:
+    - TEST_TYPE=addon
+  - os: osx
+  - stage: deploy
+    if: branch = master AND tag IS blank AND type = push
     script:
     - git checkout -B master
     - git config user.email "travis@travis-ci.org"

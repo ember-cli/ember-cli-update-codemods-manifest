@@ -19,7 +19,8 @@ install:
 
 # Post-install test scripts.
 test_script:
-  - npm --version
+  - npm run lint:git
+  - npm run lint:js
   - npm test
 
 # http://help.appveyor.com/discussions/questions/1310-delete-cache
