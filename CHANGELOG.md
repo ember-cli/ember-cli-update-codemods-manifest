@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.27](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.26...ember-cli-update-codemods-manifest@0.0.27) (2020-02-02)
+
+
+### Bug Fixes
+
+* @kellyselden/node-template ([00e5144](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/00e5144d522c706da65e26bd0a56ebec225d9f81))
+* ignore node_modules ([8e8ada1](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/8e8ada1c4582727948f380eaec84b140bc58e4c1))
+* standard-node-template ([2c773a7](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/2c773a780ee8f0f58bba3969def5649d92e48720))
+
 ### [0.0.26](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.25...ember-cli-update-codemods-manifest@0.0.26) (2020-02-02)
 
 ### [0.0.25](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.24...ember-cli-update-codemods-manifest@0.0.25) (2020-02-02)
