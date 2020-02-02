@@ -1,8 +1,9 @@
 'use strict';
 
+const { describe } = require('./helpers/mocha');
+const { expect } = require('./helpers/chai');
 const fs = require('fs-extra');
 const path = require('path');
-const { expect } = require('chai');
 const {
   buildTmp,
   processBin,
