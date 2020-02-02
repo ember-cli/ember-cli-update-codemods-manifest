@@ -21,8 +21,8 @@ importers:
     specifiers:
       '@crowdstrike/commitlint': ^1.0.4
       chai: ^4.1.0
-      ember-addon-codemods-manifest: ^1.0.4
-      ember-app-codemods-manifest: ^1.0.4
+      ember-addon-codemods-manifest: ^1.0.5
+      ember-app-codemods-manifest: ^1.0.5
       ember-cli-update: 0.52.1
       eslint: ^6.1.0
       eslint-config-sane: 0.8.5
