@@ -1,6 +1,7 @@
 environment:
   matrix:
     - nodejs_version: "10"
+  DEBUG: "ember-cli-update,boilerplate-update,git-diff-apply,git-fixtures"
 
 branches:
   only:
@@ -9,7 +10,6 @@ branches:
 # Fix line endings in Windows. (runs before repo cloning)
 init:
   - git config --global core.autocrlf true
-  - set DEBUG=ember-cli-update,boilerplate-update,git-diff-apply,git-fixtures
 
 # Install scripts. (runs after repo cloning)
 install:
