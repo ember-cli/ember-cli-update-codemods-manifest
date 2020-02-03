@@ -11,7 +11,7 @@
       "ember-cli": ">=3.0.0-beta.1"
     },
     "nodeVersionRange": ">=4",
-    "commands": ["ember-qunit-codemod convert-module-for-to-setup-test ./tests/"]
+    "commands": ["ember-qunit-codemod convert-module-for-to-setup-test ./tests/**/*.js"]
   },
   "ember-test-helpers-codemod": {
     "versionRanges": {
