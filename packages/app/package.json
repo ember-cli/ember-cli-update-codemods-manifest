@@ -1,6 +1,6 @@
 {
   "name": "ember-app-codemods-manifest",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Master list of codemods and their instructions used by [ember-cli-update](https://github.com/ember-cli/ember-cli-update)",
   "main": "manifest",
   "scripts": {

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.6](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-addon-codemods-manifest@1.0.5...ember-addon-codemods-manifest@1.0.6) (2020-02-03)
+
+
+### Bug Fixes
+
+* ember-quit-codemod fails with non-js files ([#128](https://github.com/ember-cli/ember-cli-update-codemods-manifest/issues/128)) ([dea9306](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/dea9306c5cd0a5b451c4948ea51749dfd1e62e20)), closes [#126](https://github.com/ember-cli/ember-cli-update-codemods-manifest/issues/126)
+
 ### [1.0.5](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-addon-codemods-manifest@1.0.4...ember-addon-codemods-manifest@1.0.5) (2020-02-02)
 
 ### [1.0.4](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-addon-codemods-manifest@1.0.3...ember-addon-codemods-manifest@1.0.4) (2020-01-14)
