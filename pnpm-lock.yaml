@@ -18,7 +18,7 @@ importers:
       git-fixtures: 2.3.2
       mocha: 7.0.1
       mocha-helpers: 4.2.1
-      monorepo-next: 0.2.35
+      monorepo-next: 0.2.36
       renovate-config-standard: 2.0.0
       standard-node-template: 0.0.1
     specifiers:
@@ -39,7 +39,7 @@ importers:
       git-fixtures: ^2.1.0
       mocha: ^7.0.0
       mocha-helpers: ^4.2.1
-      monorepo-next: 0.2.35
+      monorepo-next: 0.2.36
       renovate-config-standard: ^2.0.0
       standard-node-template: 0.0.1
   packages/addon:
@@ -818,7 +818,7 @@ packages:
     dependencies:
       buffer-from: 1.1.1
       inherits: 2.0.4
-      readable-stream: 3.5.0
+      readable-stream: 3.6.0
       typedarray: 0.0.6
     dev: true
     engines:
@@ -967,7 +967,7 @@ packages:
       compare-func: 1.3.2
       conventional-commits-filter: 2.0.2
       dateformat: 3.0.3
-      handlebars: 4.7.2
+      handlebars: 4.7.3
       json-stringify-safe: 5.0.1
       lodash: 4.17.15
       meow: 5.0.0
@@ -998,6 +998,24 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-CoWM+Z9bYyF00QzNpTnxkCLiuLAeRocJz3C/foFjvhsdltdtkJgMChp7GytQNjm4pT7JFBVJTpqLHTpxNtOzaA==
+  /conventional-changelog/3.1.18:
+    dependencies:
+      conventional-changelog-angular: 5.0.6
+      conventional-changelog-atom: 2.0.3
+      conventional-changelog-codemirror: 2.0.3
+      conventional-changelog-conventionalcommits: 4.2.3
+      conventional-changelog-core: 4.1.4
+      conventional-changelog-ember: 2.0.4
+      conventional-changelog-eslint: 3.0.4
+      conventional-changelog-express: 2.0.1
+      conventional-changelog-jquery: 3.0.6
+      conventional-changelog-jshint: 2.0.3
+      conventional-changelog-preset-loader: 2.3.0
+    dev: true
+    engines:
+      node: '>=6.9.0'
+    resolution:
+      integrity: sha512-aN6a3rjgV8qwAJj3sC/Lme2kvswWO7fFSGQc32gREcwIOsaiqBaO6f2p0NomFaPDnTqZ+mMZFLL3hlzvEnZ0mQ==
   /conventional-commits-filter/2.0.2:
     dependencies:
       lodash.ismatch: 4.4.0
@@ -2000,7 +2018,7 @@ packages:
       node: '>=4.x'
     resolution:
       integrity: sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==
-  /handlebars/4.7.2:
+  /handlebars/4.7.3:
     dependencies:
       neo-async: 2.6.1
       optimist: 0.6.1
@@ -2010,9 +2028,9 @@ packages:
       node: '>=0.4.7'
     hasBin: true
     optionalDependencies:
-      uglify-js: 3.7.6
+      uglify-js: 3.8.0
     resolution:
-      integrity: sha512-4PwqDL2laXtTWZghzzCtunQUTLbo31pcCJrd/B/9JP8XbhVzpS5ZXuKqlOzsd1rtcaLo4KqAn8nl8mkknS4MHw==
+      integrity: sha512-SRGwSYuNfx8DwHD/6InAPzD6RgeruWLT+B8e8a7gGs8FWgHzlExpTFMEq2IA6QpAfOClpKHy6+8IqTjeBCu6Kg==
   /has-flag/3.0.0:
     dev: true
     engines:
@@ -2276,14 +2294,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=
-  /is-finite/1.0.2:
-    dependencies:
-      number-is-nan: 1.0.1
+  /is-finite/1.1.0:
     dev: true
     engines:
       node: '>=0.10.0'
     resolution:
-      integrity: sha1-zGZ3aVYCvlUO8R6LSqYwU0K20Ko=
+      integrity: sha512-cdyMtqX/BOqqNBBiKlIVkytNHm49MtMlYyn1zxzvJKWmFMlGzm+ry5BBfYyeY9YmNKbRSo/o7OX9w9ale0wg3w==
   /is-fullwidth-code-point/2.0.0:
     dev: true
     engines:
@@ -2879,8 +2895,9 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
-  /monorepo-next/0.2.35:
+  /monorepo-next/0.2.36:
     dependencies:
+      conventional-changelog: 3.1.18
       conventional-recommended-bump: 6.0.5
       execa: 3.4.0
       glob: 7.1.6
@@ -2893,7 +2910,7 @@ packages:
       node: '>=8.10'
     hasBin: true
     resolution:
-      integrity: sha512-DwRlweRDbKaPimxdiQ8Qq9aHQhMAjnGw9jjhnsA8ZvryFN7BpkaIhYbJFtfX5l3OSeNVHAQU+FVMmNmTt19ZSg==
+      integrity: sha512-bmSL2fihpMqcp0zDxHdDmbajB4e/EwXIzuQQrTGK3qTQtcvgEeT6a19vr07NglSw6XxhjIWqgBWFDFny4wcH8Q==
   /move-concurrently/1.0.1:
     dependencies:
       aproba: 1.2.0
@@ -3526,6 +3543,16 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-gSz026xs2LfxBPudDuI41V1lka8cxg64E66SGe78zJlsUofOg/yqwezdIcdfwik6B4h8LFmWPA9ef9X3FiNFLA==
+  /readable-stream/3.6.0:
+    dependencies:
+      inherits: 2.0.4
+      string_decoder: 1.3.0
+      util-deprecate: 1.0.2
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
   /readdirp/3.2.0:
     dependencies:
       picomatch: 2.2.1
@@ -3590,7 +3617,7 @@ packages:
       integrity: sha512-QhKlkh8BCTFIFdSgWDbyAAO2dWkmy4ex7Ax62Slo5OE3Vc710a1k1dD+5JNpdBuSRPt6+uW47AD79Y+CP0+rhg==
   /repeating/2.0.1:
     dependencies:
-      is-finite: 1.0.2
+      is-finite: 1.1.0
     dev: true
     engines:
       node: '>=0.10.0'
@@ -4250,7 +4277,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /uglify-js/3.7.6:
+  /uglify-js/3.8.0:
     dependencies:
       commander: 2.20.3
       source-map: 0.6.1
@@ -4260,7 +4287,7 @@ packages:
     hasBin: true
     optional: true
     resolution:
-      integrity: sha512-yYqjArOYSxvqeeiYH2VGjZOqq6SVmhxzaPjJC1W2F9e+bqvFL9QXQ2osQuKUFjM2hGjKG2YclQnRKWQSt/nOTQ==
+      integrity: sha512-ugNSTT8ierCsDHso2jkBHXYrU8Y5/fY2ZUprfrJUiD7YpuFvV4jODLFmb3h4btQjqr5Nh4TX4XtgDfCU1WdioQ==
   /unique-filename/1.1.1:
     dependencies:
       unique-slug: 2.0.2
