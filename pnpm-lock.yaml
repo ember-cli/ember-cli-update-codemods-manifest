@@ -6,7 +6,7 @@ importers:
       chai: 4.2.0
       ember-addon-codemods-manifest: 'link:packages/addon'
       ember-app-codemods-manifest: 'link:packages/app'
-      ember-cli-update: 0.53.1
+      ember-cli-update: 0.53.2
       eslint: 6.8.0
       eslint-config-sane: 0.8.5_b2af8de385cea2a63947ee7cd37f83d0
       eslint-config-sane-node: 0.3.0_cbdb7bcf0f2c550e795f2fdaf870f730
@@ -27,7 +27,7 @@ importers:
       chai: ^4.2.0
       ember-addon-codemods-manifest: ^1.0.6
       ember-app-codemods-manifest: ^1.0.6
-      ember-cli-update: 0.53.1
+      ember-cli-update: 0.53.2
       eslint: ^6.8.0
       eslint-config-sane: 0.8.5
       eslint-config-sane-node: 0.3.0
@@ -1288,7 +1288,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
-  /ember-cli-update/0.53.1:
+  /ember-cli-update/0.53.2:
     dependencies:
       boilerplate-update: 0.37.2
       debug: 4.1.1
@@ -1306,7 +1306,7 @@ packages:
       node: '>=8.10'
     hasBin: true
     resolution:
-      integrity: sha512-On0PA+u06cpuLVvS4s4YtCrdF/klTZnWdzfUREYEXPHqyGM1mONP3G9k2DiwE+z9R7WtJN1mTt5jZUEbMBoX7A==
+      integrity: sha512-rDQQh4P2Y9pTXf/6gkvTw05JbVC4cncZpvaockXiGAHmDvgcZ3+7u7/poXrz8NleAApu5Xug5/mc2I/Jt9LA5Q==
   /emoji-regex/7.0.3:
     dev: true
     resolution:
