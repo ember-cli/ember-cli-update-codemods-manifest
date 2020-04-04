@@ -6,7 +6,7 @@ importers:
       chai: 4.2.0
       ember-addon-codemods-manifest: 'link:packages/addon'
       ember-app-codemods-manifest: 'link:packages/app'
-      ember-cli-update: 0.53.3
+      ember-cli-update: 0.54.0
       eslint: 6.8.0
       eslint-config-sane: 0.8.5_b2af8de385cea2a63947ee7cd37f83d0
       eslint-config-sane-node: 0.3.0_d16a97854ec04973d9f27ed5158528ad
@@ -27,7 +27,7 @@ importers:
       chai: ^4.2.0
       ember-addon-codemods-manifest: ^1.0.6
       ember-app-codemods-manifest: ^1.0.6
-      ember-cli-update: 0.53.3
+      ember-cli-update: 0.54.0
       eslint: ^6.8.0
       eslint-config-sane: 0.8.5
       eslint-config-sane-node: 0.3.0
@@ -569,7 +569,7 @@ packages:
       minipass-collect: 1.0.2
       minipass-flush: 1.0.5
       minipass-pipeline: 1.2.2
-      mkdirp: 0.5.4
+      mkdirp: 0.5.5
       move-concurrently: 1.0.1
       p-map: 3.0.0
       promise-inflight: 1.0.1
@@ -1065,7 +1065,7 @@ packages:
       aproba: 1.2.0
       fs-write-stream-atomic: 1.0.10
       iferr: 0.1.5
-      mkdirp: 0.5.4
+      mkdirp: 0.5.5
       rimraf: 2.7.1
       run-queue: 1.0.3
     dev: true
@@ -1096,7 +1096,7 @@ packages:
     dependencies:
       graceful-fs: 4.2.3
       minimist: 1.2.5
-      mkdirp: 0.5.4
+      mkdirp: 0.5.5
       rimraf: 2.7.1
     dev: true
     hasBin: true
@@ -1284,7 +1284,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
-  /ember-cli-update/0.53.3:
+  /ember-cli-update/0.54.0:
     dependencies:
       boilerplate-update: 0.37.2
       debug: 4.1.1
@@ -1302,7 +1302,7 @@ packages:
       node: '>=8.10'
     hasBin: true
     resolution:
-      integrity: sha512-6R5ORG83qg7uQjWZWTt20bdK+pvwGMHYoS5BMzcWVBC+i8irC54E+VjZ9k0hjvh+ZLYNE+5xKLBDtPYKLNscBA==
+      integrity: sha512-LZOkL2xyRN2h49H9xiwCSBuKXFj6qBslSYdalTSZAKDar+qp5C0q0ENLZEUQu7xYIx+H4GoRXwkmuqer7wb77w==
   /emoji-regex/7.0.3:
     dev: true
     resolution:
@@ -2900,6 +2900,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-iG9AK/dJLtJ0XNgTuDbSyNS3zECqDlAhnQW4CsNxBG3LQJBbHmRX1egw39DmtOdCAqY+dKXV+sgPgilNWUKMVw==
+  /mkdirp/0.5.5:
+    dependencies:
+      minimist: 1.2.5
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   /mocha-helpers/4.3.0:
     dependencies:
       callsites: 3.1.0
@@ -2969,7 +2976,7 @@ packages:
       aproba: 1.2.0
       copy-concurrently: 1.0.5
       fs-write-stream-atomic: 1.0.10
-      mkdirp: 0.5.4
+      mkdirp: 0.5.5
       rimraf: 2.7.1
       run-queue: 1.0.3
     dev: true
@@ -4211,7 +4218,7 @@ packages:
       fs-minipass: 2.1.0
       minipass: 3.1.1
       minizlib: 2.1.0
-      mkdirp: 0.5.4
+      mkdirp: 0.5.5
       yallist: 4.0.0
     dev: true
     engines:
