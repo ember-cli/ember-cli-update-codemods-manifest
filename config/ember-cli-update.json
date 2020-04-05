@@ -20,7 +20,8 @@
           "options": [
             "--repo-slug=ember-cli/ember-cli-update-codemods-manifest",
             "--travis-ci",
-            "--appveyor=h4qxyasxo2nsrd10"
+            "--appveyor=h4qxyasxo2nsrd10",
+            "--renovate"
           ]
         }
       ]
