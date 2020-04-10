@@ -6,7 +6,7 @@ importers:
       chai: 4.2.0
       ember-addon-codemods-manifest: 'link:packages/addon'
       ember-app-codemods-manifest: 'link:packages/app'
-      ember-cli-update: 0.54.3
+      ember-cli-update: 0.54.4
       eslint: 6.8.0
       eslint-config-sane: 0.8.5_b2af8de385cea2a63947ee7cd37f83d0
       eslint-config-sane-node: 0.3.0_d16a97854ec04973d9f27ed5158528ad
@@ -27,7 +27,7 @@ importers:
       chai: ^4.2.0
       ember-addon-codemods-manifest: ^1.0.6
       ember-app-codemods-manifest: ^1.0.6
-      ember-cli-update: 0.54.3
+      ember-cli-update: 0.54.4
       eslint: ^6.8.0
       eslint-config-sane: 0.8.5
       eslint-config-sane-node: 0.3.0
@@ -491,7 +491,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
-  /boilerplate-update/0.37.2:
+  /boilerplate-update/0.37.4:
     dependencies:
       cpr: 3.0.1
       debug: 4.1.1
@@ -499,7 +499,7 @@ packages:
       git-diff-apply: 0.22.7
       https-proxy-agent: 3.0.1
       inquirer: 7.1.0
-      merge-package.json: 3.1.6
+      merge-package.json: 3.1.8
       npm-package-arg: 7.0.0
       npx: 10.2.2
       open: 7.0.3
@@ -513,7 +513,7 @@ packages:
     engines:
       node: '>=8.10'
     resolution:
-      integrity: sha512-d3Z6ylzF7aifHJsBELJJIAAL/3gWEvqYkUBRGKAqY5468v/7VXGe4wTUKHqbaiXs2dRwBkPXEd1D5WnHNBRwVQ==
+      integrity: sha512-BMUFsxjugQAsRXHT3QPWckpiB+0jp7YU7U7cGSDbL7IATMfJJDCE7/LGppaIzN97/3iLemkbCeRpmjZWRHYdMA==
   /boxen/4.2.0:
     dependencies:
       ansi-align: 3.0.0
@@ -1284,9 +1284,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=
-  /ember-cli-update/0.54.3:
+  /ember-cli-update/0.54.4:
     dependencies:
-      boilerplate-update: 0.37.2
+      boilerplate-update: 0.37.4
       debug: 4.1.1
       execa: 3.4.0
       fs-extra: 8.1.0
@@ -1302,7 +1302,7 @@ packages:
       node: '>=8.10'
     hasBin: true
     resolution:
-      integrity: sha512-cfcavvlEnG4+DNnMPKAsLqHKCV1bZMoMBYzBmkAEeWLMt1xrumr3bif+LtcfRdOppybzxsqm96uZX9kahcFyWw==
+      integrity: sha512-wqAgWkf6ThdhfcLZJn+vwZ26ed03lLx4oDy39WZjPTDq6MajLRWP3+BqXLPwgORu8lpdKhStY/hosw1muH7Xsg==
   /emoji-regex/7.0.3:
     dev: true
     resolution:
@@ -2362,7 +2362,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-5G0tKtBTFImOqDnLB2hG6Bp2qcKEFduo4tZu9MT/H6NQv/ghhy30o55ufafxJ/LdH79LLs2Kfrn85TLKyA7BUg==
-  /is-installed-globally/0.3.1:
+  /is-installed-globally/0.3.2:
     dependencies:
       global-dirs: 2.0.1
       is-path-inside: 3.0.2
@@ -2370,7 +2370,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-oiEcGoQbGc+3/iijAijrK2qFpkNoNjsHOm/5V5iaeydyrS/hnwaRCEgH5cpW0P3T1lSjV5piB7S5b5lEugNLhg==
+      integrity: sha512-wZ8x1js7Ia0kecP/CHM/3ABkAmujX7WPvQk6uu3Fly/Mk44pySulQpnHG46OMjHGXApINnV4QhY3SWnECO2z5g==
   /is-npm/4.0.0:
     dev: true
     engines:
@@ -2752,15 +2752,15 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-CbTqYU17ABaLefO8vCU153ZZlprKYWDljcndKKDCFcYQITzWCXZAVk4QMFZPgvzrnUQ3uItnIE/LoUOwrT15Ig==
-  /merge-package.json/3.1.6:
+  /merge-package.json/3.1.8:
     dependencies:
       rfc6902-ordered: 4.0.5
-      three-way-merger: 0.6.1
+      three-way-merger: 0.6.3
     dev: true
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-eJtijfWnfUmIWw1/rtQ1joG9kod7ZKWACdRqJ9vcEcZPXLN2X/LdRU3534fCBF4Z6wxTYJUhIIFyNFojYoRDfg==
+      integrity: sha512-3/xqeMFcGqMpX79qNs3SDAsNNZ1Q31nqeH0ma4ilB++4SqDnkzmHcbDNEVy67RWIy+pdAdw6XnY31dircVG5lQ==
   /merge-stream/2.0.0:
     dev: true
     resolution:
@@ -4241,12 +4241,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
-  /three-way-merger/0.6.1:
+  /three-way-merger/0.6.3:
     dependencies:
       semver: 6.3.0
     dev: true
     resolution:
-      integrity: sha512-58UkFHJaZ9G5s5GkQk4eaolsJNhfQdSNpPpfYGfBcW3aIMzdZykX12KQUUQoCZKLff584nLOfZc0gYplWLVTVA==
+      integrity: sha512-sjXsAqIiluhRBvbXfri1dBI5NSqfl/fe8R3QypAR15qeMRrsBodrGeROBtve2BQnxB9Ub6Fs0e/H1OZdaELD7A==
   /through/2.3.8:
     dev: true
     resolution:
@@ -4403,7 +4403,7 @@ packages:
       has-yarn: 2.1.0
       import-lazy: 2.1.0
       is-ci: 2.0.0
-      is-installed-globally: 0.3.1
+      is-installed-globally: 0.3.2
       is-npm: 4.0.0
       is-yarn-global: 0.3.0
       latest-version: 5.1.0
