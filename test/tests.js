@@ -13,6 +13,7 @@ const {
   assertNoUnstaged,
   assertCodemodRan
 } = require('./helpers/assertions');
+const run = require('ember-cli-update/src/run');
 
 let manifest;
 let fixturesPath;
@@ -122,6 +123,10 @@ describe('runs codemods', function() {
       } = await merge({
         async beforeMerge() {
           await _merge('local', tmpPath);
+
+          if (manifest[codemod].script) {
+            await run('npm install', { cwd: tmpPath });
+          }
         }
       });
 
@@ -149,8 +154,13 @@ describe('runs codemods', function() {
       assertNoUnstaged(status);
       assertCodemodRan(status);
 
+      await fs.remove(path.join(tmpPath, 'package-lock.json'));
+
       // file is indeterminent between OS's, so ignore
       await fs.remove(path.join(tmpPath, 'MODULE_REPORT.md'));
+
+      // remove dist and node_modules before fixture compare
+      await run('git clean -fdX', { cwd: tmpPath });
 
       let nodeVersion = 'latest-node';
       if (process.env.NODE_LTS) {
