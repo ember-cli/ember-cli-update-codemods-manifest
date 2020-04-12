@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.43](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.42...ember-cli-update-codemods-manifest@0.0.43) (2020-04-12)
+
+
+### Bug Fixes
+
+* fix `lint:js` command ([9fc890e](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/9fc890e0eff55a200bb88b1b6fb3f7e35f948707))
+* remove markdown from `package.json` ([45ce2a8](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/45ce2a8c6dc731185ce74a30c6766b9564c08b30))
+
 ### [0.0.42](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.41...ember-cli-update-codemods-manifest@0.0.42) (2020-04-10)
 
 ### [0.0.41](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.40...ember-cli-update-codemods-manifest@0.0.41) (2020-04-05)
