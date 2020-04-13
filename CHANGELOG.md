@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.49](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.48...ember-cli-update-codemods-manifest@0.0.49) (2020-04-13)
+
+
+### Bug Fixes
+
+* ember-angle-brackets-codemod addon target ([ca94cd3](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/ca94cd3c4185b3b94392cd48fecc664ca5e65bcd))
+
 ### [0.0.48](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.47...ember-cli-update-codemods-manifest@0.0.48) (2020-04-13)
 
 ### [0.0.47](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.46...ember-cli-update-codemods-manifest@0.0.47) (2020-04-12)
