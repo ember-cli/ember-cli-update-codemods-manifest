@@ -14,17 +14,22 @@ const {
   assertCodemodRan
 } = require('./helpers/assertions');
 
+const fixturesPath = path.resolve(__dirname, 'fixtures');
+
 let manifest;
-let fixturesPath;
+let projectFixturesPath;
 let commitMessage;
+let codemodsFixturesPath;
 if (process.env.TEST_TYPE === 'addon') {
   manifest = require('ember-addon-codemods-manifest');
-  fixturesPath = 'test/fixtures/addon';
+  projectFixturesPath = path.join(fixturesPath, 'addon');
   commitMessage = 'my-addon';
+  codemodsFixturesPath = path.join(fixturesPath, 'codemods/addon');
 } else {
   manifest = require('ember-app-codemods-manifest');
-  fixturesPath = 'test/fixtures/app';
+  projectFixturesPath = path.join(fixturesPath, 'app');
   commitMessage = 'my-app';
+  codemodsFixturesPath = path.join(fixturesPath, 'codemods/app');
 }
 
 const codemods = Object.keys(manifest);
@@ -40,7 +45,7 @@ describe('runs codemods', function() {
     beforeMerge = () => Promise.resolve()
   }) {
     tmpPath = await buildTmp({
-      fixturesPath
+      fixturesPath: projectFixturesPath
     });
 
     await beforeMerge();
@@ -107,7 +112,7 @@ describe('runs codemods', function() {
 
       async function _merge(src, dest) {
         await fs.copy(
-          path.join(__dirname, `fixtures/codemods/${codemod}/${src}/my-app`),
+          path.join(codemodsFixturesPath, codemod, src, commitMessage),
           dest,
           {
             overwrite: true,
@@ -158,7 +163,7 @@ describe('runs codemods', function() {
       }
 
       let mergeFixtures = await buildTmp({
-        fixturesPath,
+        fixturesPath: projectFixturesPath,
         noGit: true
       });
 
