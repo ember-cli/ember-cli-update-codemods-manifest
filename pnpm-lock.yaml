@@ -25,8 +25,8 @@ importers:
       '@crowdstrike/commitlint': ^1.0.4
       '@kellyselden/node-template': 0.12.2
       chai: ^4.2.0
-      ember-addon-codemods-manifest: ^1.0.7
-      ember-app-codemods-manifest: ^1.0.6
+      ember-addon-codemods-manifest: ^1.0.8
+      ember-app-codemods-manifest: ^1.0.7
       ember-cli-update: 0.54.6
       eslint: ^6.8.0
       eslint-config-sane: 0.8.5
