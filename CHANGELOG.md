@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.52](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.51...ember-cli-update-codemods-manifest@0.0.52) (2020-04-18)
+
+
+### Bug Fixes
+
+* `git add pnpm-lock.yaml` ([b375fd9](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/b375fd913cf5100e21f9aa28ad0b9207309a468b))
+
 ### [0.0.51](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.50...ember-cli-update-codemods-manifest@0.0.51) (2020-04-18)
 
 
