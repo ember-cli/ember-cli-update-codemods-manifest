@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-update-codemods-manifest",
   "private": true,
-  "version": "0.0.52",
+  "version": "0.0.53",
   "description": "Master list of codemods and their instructions used by ember-cli-update",
   "scripts": {
     "lint:git": "commitlint",
@@ -26,8 +26,8 @@
     "@crowdstrike/commitlint": "^1.0.4",
     "@kellyselden/node-template": "0.12.2",
     "chai": "^4.2.0",
-    "ember-addon-codemods-manifest": "^1.0.8",
-    "ember-app-codemods-manifest": "^1.0.7",
+    "ember-addon-codemods-manifest": "^1.0.9",
+    "ember-app-codemods-manifest": "^1.0.8",
     "ember-cli-update": "0.54.6",
     "eslint": "^6.8.0",
     "eslint-config-sane": "0.8.5",

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.53](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.52...ember-cli-update-codemods-manifest@0.0.53) (2020-04-26)
+
+
+### Bug Fixes
+
+* support addon dir of `es5-getter-ember-codemod` ([6b8a4f0](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/6b8a4f0366cb60f9c4161fb45d559480d9af8a4c))
+
 ### [0.0.52](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.51...ember-cli-update-codemods-manifest@0.0.52) (2020-04-18)
 
 
