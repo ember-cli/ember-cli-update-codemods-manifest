@@ -28,7 +28,7 @@
       "ember-source": ">=3.1.0-beta.1"
     },
     "nodeVersionRange": ">=4",
-    "commands": ["github:rondale-sc/es5-getter-ember-codemod es5-getter-ember-codemod app/**/*.js tests/*.js tests/!(dummy)/**/*.js tests/dummy/app/**/*.js"]
+    "commands": ["ember-codemods/es5-getter-ember-codemod es5-getter-ember-codemod app/**/*.js tests/*.js tests/!(dummy)/**/*.js tests/dummy/app/**/*.js"]
   },
   "notify-property-change": {
     "versionRanges": {
