@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.54](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.53...ember-cli-update-codemods-manifest@0.0.54) (2020-04-26)
+
 ### [0.0.53](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.52...ember-cli-update-codemods-manifest@0.0.53) (2020-04-26)
 
 
