@@ -18,7 +18,7 @@ importers:
       git-fixtures: 2.3.2
       mocha: 7.1.1
       mocha-helpers: 4.3.0
-      monorepo-next: 0.2.39
+      monorepo-next: 0.2.42
       renovate-config-standard: 2.0.0
       standard-node-template: 0.0.1
     specifiers:
@@ -39,7 +39,7 @@ importers:
       git-fixtures: ^2.1.0
       mocha: ^7.0.0
       mocha-helpers: ^4.2.1
-      monorepo-next: 0.2.39
+      monorepo-next: 0.2.42
       renovate-config-standard: ^2.0.0
       standard-node-template: 0.0.1
   packages/addon:
@@ -971,7 +971,7 @@ packages:
       compare-func: 1.3.2
       conventional-commits-filter: 2.0.2
       dateformat: 3.0.3
-      handlebars: 4.7.3
+      handlebars: 4.7.6
       json-stringify-safe: 5.0.1
       lodash: 4.17.15
       meow: 5.0.0
@@ -2052,25 +2052,30 @@ packages:
     dev: true
     resolution:
       integrity: sha512-a30VEBm4PEdx1dRB7MFK7BejejvCvBronbLjht+sHuGYj8PHs7M/5Z+rt5lw551vZ7yfTCj4Vuyy3mSJytDWRQ==
+  /graceful-fs/4.2.4:
+    dev: true
+    resolution:
+      integrity: sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
   /growl/1.10.5:
     dev: true
     engines:
       node: '>=4.x'
     resolution:
       integrity: sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==
-  /handlebars/4.7.3:
+  /handlebars/4.7.6:
     dependencies:
+      minimist: 1.2.5
       neo-async: 2.6.1
-      optimist: 0.6.1
       source-map: 0.6.1
+      wordwrap: 1.0.0
     dev: true
     engines:
       node: '>=0.4.7'
     hasBin: true
     optionalDependencies:
-      uglify-js: 3.8.1
+      uglify-js: 3.9.1
     resolution:
-      integrity: sha512-SRGwSYuNfx8DwHD/6InAPzD6RgeruWLT+B8e8a7gGs8FWgHzlExpTFMEq2IA6QpAfOClpKHy6+8IqTjeBCu6Kg==
+      integrity: sha512-1f2BACcBfiwAfStCKZNrUCgqNZkGsAT7UM3kkYtXuLo0KnaVfjKOyf7PRzB6++aK9STyT1Pd2ZCPe3EGOXleXA==
   /has-flag/3.0.0:
     dev: true
     engines:
@@ -2544,7 +2549,7 @@ packages:
       integrity: sha1-OwmSTt+fCDwEkP3UwLxEIeBHZO4=
   /load-json-file/1.1.0:
     dependencies:
-      graceful-fs: 4.2.3
+      graceful-fs: 4.2.4
       parse-json: 2.2.0
       pify: 2.3.0
       pinkie-promise: 2.0.1
@@ -2805,10 +2810,6 @@ packages:
       node: '>= 4'
     resolution:
       integrity: sha512-FyBrT/d0d4+uiZRbqznPXqw3IpZZG3gl3wKWiX784FycUKVwBt0uLBFkQrtE4tZOrgo78nZp2jnKz3L65T5LdQ==
-  /minimist/0.0.10:
-    dev: true
-    resolution:
-      integrity: sha1-3j+YVD2/lggr5IrRoMfNqDYwHc8=
   /minimist/1.2.5:
     dev: true
     resolution:
@@ -2953,7 +2954,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
-  /monorepo-next/0.2.39:
+  /monorepo-next/0.2.42:
     dependencies:
       conventional-changelog: 3.1.18
       conventional-recommended-bump: 6.0.5
@@ -2968,7 +2969,7 @@ packages:
       node: '>=8.10'
     hasBin: true
     resolution:
-      integrity: sha512-IMwb6u2D20oUC1pQf5tSsaQjC8UK/I6knhXoN3BomaM/jzuzoov2Z53hOvD85+gNA5kZ/nWAKKAYbjHjrHffNA==
+      integrity: sha512-f3PNvoHcbt+P7dBkJjlvlHzUlF00y5ZTu1TCDgMJizm9nSambmR4HUH6A7Kd/B59zTgzkc5/sZ58kekE0TvzzA==
   /move-concurrently/1.0.1:
     dependencies:
       aproba: 1.2.0
@@ -3173,13 +3174,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-sP2ru2v0P290WFfv49Ap8MF6PkzGNnGlAwHweB4WR4mr5d2d0woiCluUeJ218w7/+PmoBy9JmYgD5A4mLcWOFA==
-  /optimist/0.6.1:
-    dependencies:
-      minimist: 0.0.10
-      wordwrap: 0.0.3
-    dev: true
-    resolution:
-      integrity: sha1-2j6nRob6IaGaERwybpDrFaAZZoY=
   /optionator/0.8.3:
     dependencies:
       deep-is: 0.1.3
@@ -3401,7 +3395,7 @@ packages:
       integrity: sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
   /path-type/1.1.0:
     dependencies:
-      graceful-fs: 4.2.3
+      graceful-fs: 4.2.4
       pify: 2.3.0
       pinkie-promise: 2.0.1
     dev: true
@@ -4356,17 +4350,16 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /uglify-js/3.8.1:
+  /uglify-js/3.9.1:
     dependencies:
       commander: 2.20.3
-      source-map: 0.6.1
     dev: true
     engines:
       node: '>=0.8.0'
     hasBin: true
     optional: true
     resolution:
-      integrity: sha512-W7KxyzeaQmZvUFbGj4+YFshhVrMBGSg2IbcYAjGWGvx8DHvJMclbTDMpffdxFUGPBHjIytk7KJUR/KUXstUGDw==
+      integrity: sha512-JUPoL1jHsc9fOjVFHdQIhqEEJsQvfKDjlubcCilu8U26uZ73qOg8VsN8O1jbuei44ZPlwL7kmbAdM4tzaUvqnA==
   /unique-filename/1.1.1:
     dependencies:
       unique-slug: 2.0.2
@@ -4493,12 +4486,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
-  /wordwrap/0.0.3:
+  /wordwrap/1.0.0:
     dev: true
-    engines:
-      node: '>=0.4.0'
     resolution:
-      integrity: sha1-o9XabNXAvAAI03I0u68b7WMFkQc=
+      integrity: sha1-J1hIEIkUVqQXHI0CJkQa3pDLyus=
   /wrap-ansi/5.1.0:
     dependencies:
       ansi-styles: 3.2.1
