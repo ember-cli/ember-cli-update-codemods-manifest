@@ -11,7 +11,7 @@ importers:
       eslint-config-sane: 0.8.5_b2af8de385cea2a63947ee7cd37f83d0
       eslint-config-sane-node: 0.3.0_8e689b7a9f21dd008ff517bb5ba863f1
       eslint-plugin-json-files: 0.8.1_eslint@6.8.0
-      eslint-plugin-mocha: 6.3.0_eslint@6.8.0
+      eslint-plugin-mocha: 8.0.0_eslint@6.8.0
       eslint-plugin-node: 11.1.0_eslint@6.8.0
       eslint-plugin-prefer-let: 1.0.1
       fs-extra: 8.1.0
@@ -32,7 +32,7 @@ importers:
       eslint-config-sane: 0.8.5
       eslint-config-sane-node: 0.3.0
       eslint-plugin-json-files: 0.8.1
-      eslint-plugin-mocha: ^6.2.2
+      eslint-plugin-mocha: ^8.0.0
       eslint-plugin-node: ^11.0.0
       eslint-plugin-prefer-let: ^1.0.1
       fs-extra: ^8.1.0
@@ -1472,18 +1472,18 @@ packages:
       eslint: '>=5'
     resolution:
       integrity: sha512-4uhEh2q6bow8XE3XjRTK9cg9nio0x91WXmjDiLV5ip0aN6XO0aGaUk7BUcS2AwhLMbsZOc/V93G5hhab955ftg==
-  /eslint-plugin-mocha/6.3.0_eslint@6.8.0:
+  /eslint-plugin-mocha/8.0.0_eslint@6.8.0:
     dependencies:
       eslint: 6.8.0
       eslint-utils: 2.1.0
-      ramda: 0.27.0
+      ramda: 0.27.1
     dev: true
     engines:
-      node: '>=8.0.0'
+      node: '>=10.0.0'
     peerDependencies:
-      eslint: '>= 4.0.0'
+      eslint: '>=7.0.0'
     resolution:
-      integrity: sha512-Cd2roo8caAyG21oKaaNTj7cqeYRWW1I2B5SfpKRp0Ip1gkfwoR1Ow0IGlPWnNjzywdF4n+kHL8/9vM6zCJUxdg==
+      integrity: sha512-n67etbWDz6NQM+HnTwZHyBwz/bLlYPOxUbw7bPuCyFujv7ZpaT/Vn6KTAbT02gf7nRljtYIjWcTxK/n8a57rQQ==
   /eslint-plugin-node/11.1.0_eslint@6.8.0:
     dependencies:
       eslint: 6.8.0
@@ -3638,10 +3638,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
-  /ramda/0.27.0:
+  /ramda/0.27.1:
     dev: true
     resolution:
-      integrity: sha512-pVzZdDpWwWqEVVLshWUHjNwuVP7SfcmPraYuqocJp1yo2U1R7P+5QAfDhdItkuoGqIBnBYrtPp7rEPqDn9HlZA==
+      integrity: sha512-PgIdVpn5y5Yns8vqb8FzBUEYn98V3xcPgawAkkgj0YJ0qDsnHCiNmZYfOGMgOvoB0eWFLpYbhxUR3mxfDIMvpw==
   /rc/1.2.8:
     dependencies:
       deep-extend: 0.6.0
