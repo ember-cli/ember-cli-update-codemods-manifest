@@ -1,3 +1,6 @@
+os:
+- linux
+- osx
 language: node_js
 node_js:
 - '10'
@@ -15,8 +18,10 @@ cache:
 stages:
   - lint
   - test
-  - ember-cli-update
-  - deploy
+  - name: ember-cli-update
+    if: branch = master AND type = pull_request
+  - name: deploy
+    if: branch = master AND tag IS blank AND type = push
 before_install:
 - curl -L https://unpkg.com/@pnpm/self-installer | node
 install:
@@ -24,6 +29,9 @@ install:
 jobs:
   allow_failures:
   - os: osx
+  exclude:
+  - if: os = osx
+    node_js: node
   include:
   - stage: lint
     script:
@@ -32,9 +40,7 @@ jobs:
   - stage: test
     env:
     - TEST_TYPE=addon
-  - os: osx
   - stage: ember-cli-update
-    if: branch = master AND type = pull_request
     script:
     - git checkout $TRAVIS_PULL_REQUEST_SHA
     - git checkout -B $TRAVIS_PULL_REQUEST_BRANCH
@@ -46,7 +52,6 @@ jobs:
       --ignore-to
       --commit-prefix "chore: "
   - stage: deploy
-    if: branch = master AND tag IS blank AND type = push
     script:
     - git checkout -B master
     - git config user.email "travis@travis-ci.org"
