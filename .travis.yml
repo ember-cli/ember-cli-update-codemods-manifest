@@ -1,3 +1,6 @@
+os:
+- linux
+- osx
 language: node_js
 node_js:
 - '10'
@@ -24,6 +27,9 @@ install:
 jobs:
   allow_failures:
   - os: osx
+  exclude:
+  - if: os = osx
+    node_js: node
   include:
   - stage: lint
     script:
@@ -32,7 +38,6 @@ jobs:
   - stage: test
     env:
     - TEST_TYPE=addon
-  - os: osx
   - stage: ember-cli-update
     if: branch = master AND type = pull_request
     script:
