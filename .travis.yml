@@ -16,10 +16,12 @@ env:
 cache:
   npm: false
 stages:
-  - lint
-  - test
-  - ember-cli-update
-  - deploy
+- lint
+- test
+- name: ember-cli-update
+  if: branch = master AND type = pull_request
+- name: deploy
+  if: branch = master AND tag IS blank AND type = push
 before_install:
 - curl -L https://unpkg.com/@pnpm/self-installer | node
 install:
@@ -39,7 +41,6 @@ jobs:
     env:
     - TEST_TYPE=addon
   - stage: ember-cli-update
-    if: branch = master AND type = pull_request
     script:
     - git checkout $TRAVIS_PULL_REQUEST_SHA
     - git checkout -B $TRAVIS_PULL_REQUEST_BRANCH
@@ -51,7 +52,6 @@ jobs:
       --ignore-to
       --commit-prefix "chore: "
   - stage: deploy
-    if: branch = master AND tag IS blank AND type = push
     script:
     - git checkout -B master
     - git config user.email "travis@travis-ci.org"
