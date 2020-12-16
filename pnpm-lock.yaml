@@ -9,7 +9,7 @@ importers:
       ember-cli-update: 0.54.6
       eslint: 7.10.0
       eslint-config-sane: 0.8.5_7919609d1aafdc41139d538ce9748f5f
-      eslint-config-sane-node: 0.3.0_8567ff135e05b812bf2294849685ce75
+      eslint-config-sane-node: 1.0.1_7eaefd09b45f2502da4c64b3c3ab6bf0
       eslint-plugin-json-files: 0.8.1_eslint@7.10.0
       eslint-plugin-mocha: 8.0.0_eslint@7.10.0
       eslint-plugin-node: 11.1.0_eslint@7.10.0
@@ -30,7 +30,7 @@ importers:
       ember-cli-update: 0.54.6
       eslint: ^7.8.1
       eslint-config-sane: 0.8.5
-      eslint-config-sane-node: 0.3.0
+      eslint-config-sane-node: 1.0.1
       eslint-plugin-json-files: 0.8.1
       eslint-plugin-mocha: ^8.0.0
       eslint-plugin-node: ^11.1.0
@@ -1507,22 +1507,18 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
-  /eslint-config-sane-node/0.3.0_8567ff135e05b812bf2294849685ce75:
+  /eslint-config-sane-node/1.0.1_7eaefd09b45f2502da4c64b3c3ab6bf0:
     dependencies:
-      eslint: 7.10.0
       eslint-config-sane: 0.8.5_7919609d1aafdc41139d538ce9748f5f
       eslint-plugin-json-files: 0.8.1_eslint@7.10.0
       eslint-plugin-node: 11.1.0_eslint@7.10.0
-      eslint-plugin-prefer-let: 1.1.0
     dev: true
     peerDependencies:
-      eslint: '>=5 <7'
-      eslint-config-sane: ^0.8.5
-      eslint-plugin-json-files: ^0.6.0
-      eslint-plugin-node: ^9.0.0
-      eslint-plugin-prefer-let: ^1.0.0
+      eslint-config-sane: ^1.0.0
+      eslint-plugin-json-files: ^0.8.1
+      eslint-plugin-node: ^11.1.0
     resolution:
-      integrity: sha512-n8lpLZ0hUG/Za/oNOSk4yH9gvmuIT8gJCAZ7T8b8I5sUKtZA57CWUXOxVc7ORXqVspH79+r/KnVm4kt3cS9mnw==
+      integrity: sha512-dv5DLHQV5fNOfh3khAzC5eqrYkxNSiHAMbXtF1rRMutVm3H45oSBidrb6nNHTHEYX+Qej6G9gxW79GzFBslI0w==
   /eslint-config-sane/0.8.5_7919609d1aafdc41139d538ce9748f5f:
     dependencies:
       eslint: 7.10.0
