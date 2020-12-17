@@ -2,7 +2,7 @@ importers:
   .:
     devDependencies:
       '@crowdstrike/commitlint': 1.0.4
-      '@kellyselden/node-template': 1.3.0
+      '@kellyselden/node-template': 1.4.1
       chai: 4.2.0
       ember-addon-codemods-manifest: 'link:packages/addon'
       ember-app-codemods-manifest: 'link:packages/app'
@@ -23,7 +23,7 @@ importers:
       standard-node-template: 1.0.0
     specifiers:
       '@crowdstrike/commitlint': ^1.0.4
-      '@kellyselden/node-template': 1.3.0
+      '@kellyselden/node-template': 1.4.1
       chai: ^4.2.0
       ember-addon-codemods-manifest: ''
       ember-app-codemods-manifest: ''
@@ -223,12 +223,12 @@ packages:
       node: ^10.12.0 || >=12.0.0
     resolution:
       integrity: sha512-4YVwPkANLeNtRjMekzux1ci8hIaH5eGKktGqR0d3LWsKNn5B2X/1Z6Trxy7jQXl9EBGE6Yj02O+t09FMeRllaA==
-  /@kellyselden/node-template/1.3.0:
+  /@kellyselden/node-template/1.4.1:
     dev: true
     engines:
       node: '>=10.12'
     resolution:
-      integrity: sha512-cuQaF4Gb78GlY/IKtmoLIkUl8xyOLCpX7l+ZwbWkvgYKr96zYvzs1UQl/XaqpIP1Gf5TMNb09GAUpzoXlg/pRg==
+      integrity: sha512-PzGOj53WEBoGVdywoG6EM3AvXRw6wd6ZckicAVmnVR8k9CjYoPP0DRRnTFWXyFW8tVm0+lyr38pk/TbFrPoLAA==
   /@marionebl/sander/0.6.1:
     dependencies:
       graceful-fs: 4.2.4
