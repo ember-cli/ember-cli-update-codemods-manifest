@@ -12,7 +12,7 @@ branches:
   - /^(?:[a-z-]+|@[a-z-]+\/[a-z-]+)@\d+\.\d+\.\d+$/
 env:
   global:
-  - DEBUG=ember-cli-update,boilerplate-update,git-diff-apply,git-fixtures
+  - DEBUG=ember-cli-update,boilerplate-update,git-diff-apply
 cache:
   npm: false
 stages:
