@@ -1,0 +1,19 @@
+name: Publish
+
+on:
+  push:
+    tags: ^(?:[a-z-]+|@[a-z-]+\/[a-z-]+)@\d+\.\d+\.\d+$
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        registry-url: 'https://registry.npmjs.org'
+
+    - run: npm run release
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

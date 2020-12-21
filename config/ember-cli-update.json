@@ -19,7 +19,7 @@
           "name": "@kellyselden/node-template",
           "options": [
             "--repo-slug=ember-cli/ember-cli-update-codemods-manifest",
-            "--travis-ci",
+            "--github-actions",
             "--appveyor=h4qxyasxo2nsrd10",
             "--renovate"
           ]
