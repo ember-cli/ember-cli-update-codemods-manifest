@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+    - uses: pnpm/action-setup@v1.2.1
+      with:
+        version: 5.13.6
+
+    - run: pnpm install
+    - run: npm run lint:git
+    - run: npm run lint:js
+
+  test:
+    needs: lint
+
+    strategy:
+      matrix:
+        os:
+        - ubuntu-latest
+        - macos-latest
+        node:
+        - 10
+        - '*'
+        exclude:
+        - os: macos-latest
+          node: '*'
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node }}
+    - uses: pnpm/action-setup@v1.2.1
+      with:
+        version: 5.13.6
+
+    - run: pnpm install
+    - run: npm test
+      continue-on-error: ${{ matrix.os == 'macos-latest' }}
+      env:
+        TEST_TYPE: addon
+        DEBUG: ember-cli-update,boilerplate-update,git-diff-apply
+
+  ember-cli-update:
+    needs: test
+    if: github.event_name == 'pull_request'
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+        token: ${{ secrets.GitHubToken }}
+    - uses: actions/setup-node@v2
+    - uses: kellyselden/ember-cli-update-action@v2
+      with:
+        autofix_command: npm run lint:js -- --fix
+        ignore_to: true
+        commit_prefix: "chore: "
