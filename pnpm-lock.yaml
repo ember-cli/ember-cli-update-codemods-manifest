@@ -4,8 +4,8 @@ importers:
       '@crowdstrike/commitlint': 1.0.4
       '@kellyselden/node-template': 1.4.1
       chai: 4.2.0
-      ember-addon-codemods-manifest: 'link:packages/addon'
-      ember-app-codemods-manifest: 'link:packages/app'
+      ember-addon-codemods-manifest: link:packages/addon
+      ember-app-codemods-manifest: link:packages/app
       ember-cli-update: 0.55.1
       eslint: 7.15.0
       eslint-config-sane: 1.0.0_73bdecf91b832f4f3c4cb0eaa6959509
@@ -18,7 +18,7 @@ importers:
       git-fixtures: 3.0.0
       mocha: 8.2.1
       mocha-helpers: 5.1.0
-      monorepo-next: 2.1.0
+      monorepo-next: 3.0.0
       renovate-config-standard: 2.1.1
       standard-node-template: 1.0.0
     specifiers:
@@ -39,7 +39,7 @@ importers:
       git-fixtures: ^3.0.0
       mocha: ^8.2.1
       mocha-helpers: ^5.1.0
-      monorepo-next: ^2.0.0
+      monorepo-next: ^3.0.0
       renovate-config-standard: ^2.1.1
       standard-node-template: 1.0.0
   packages/addon:
@@ -1051,7 +1051,7 @@ packages:
     dev: true
     resolution:
       integrity: sha512-suQnFSqCxRwyBxY68pYTsFkG0taIdinHLNEAX5ivtw8bCRnIgnpvcHmlR/yjUyZIrNPYAoXlY1WiEKWgSE4BNg==
-  /conventional-changelog-angular/5.0.11:
+  /conventional-changelog-angular/5.0.12:
     dependencies:
       compare-func: 2.0.0
       q: 1.5.1
@@ -1059,23 +1059,23 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-nSLypht/1yEflhuTogC03i7DX7sOrXGsRn14g131Potqi6cbGbGEE9PSDEHKldabB6N76HiSyw9Ph+kLmC04Qw==
-  /conventional-changelog-atom/2.0.7:
+      integrity: sha512-5GLsbnkR/7A89RyHLvvoExbiGbd9xKdKqDTrArnPbOqBqG/2wIosu0fHwpeIRI8Tl94MhVNBXcLJZl92ZQ5USw==
+  /conventional-changelog-atom/2.0.8:
     dependencies:
       q: 1.5.1
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-7dOREZwzB+tCEMjRTDfen0OHwd7vPUdmU0llTy1eloZgtOP4iSLVzYIQqfmdRZEty+3w5Jz+AbhfTJKoKw1JeQ==
-  /conventional-changelog-codemirror/2.0.7:
+      integrity: sha512-xo6v46icsFTK3bb7dY/8m2qvc8sZemRgdqLb/bjpBsH2UyOS8rKNTgcb5025Hri6IpANPApbXMg15QLb1LJpBw==
+  /conventional-changelog-codemirror/2.0.8:
     dependencies:
       q: 1.5.1
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-Oralk1kiagn3Gb5cR5BffenWjVu59t/viE6UMD/mQa1hISMPkMYhJIqX+CMeA1zXgVBO+YHQhhokEj99GP5xcg==
+      integrity: sha512-z5DAsn3uj1Vfp7po3gpt2Boc+Bdwmw2++ZHa5Ak9k0UKsYAO5mH1UBTN0qSCuJZREIhX6WU4E1p3IW2oRCNzQw==
   /conventional-changelog-config-spec/2.1.0:
     dev: true
     resolution:
@@ -1090,7 +1090,7 @@ packages:
       node: '>=6.9.0'
     resolution:
       integrity: sha512-vC02KucnkNNap+foDKFm7BVUSDAXktXrUJqGszUuYnt6T0J2azsbYz/w9TDc3VsrW2v6JOtiQWVcgZnporHr4Q==
-  /conventional-changelog-conventionalcommits/4.4.0:
+  /conventional-changelog-conventionalcommits/4.5.0:
     dependencies:
       compare-func: 2.0.0
       lodash: 4.17.20
@@ -1099,62 +1099,62 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-ybvx76jTh08tpaYrYn/yd0uJNLt5yMrb1BphDe4WBredMlvPisvMghfpnJb6RmRNcqXeuhR6LfGZGewbkRm9yA==
-  /conventional-changelog-core/4.2.0:
+      integrity: sha512-buge9xDvjjOxJlyxUnar/+6i/aVEVGA7EEh4OafBCXPlLUQPGbRUBhBUveWRxzvR8TEjhKEP4BdepnpG2FSZXw==
+  /conventional-changelog-core/4.2.2:
     dependencies:
       add-stream: 1.0.0
-      conventional-changelog-writer: 4.0.17
-      conventional-commits-parser: 3.1.0
+      conventional-changelog-writer: 4.1.0
+      conventional-commits-parser: 3.2.0
       dateformat: 3.0.3
       get-pkg-repo: 1.4.0
-      git-raw-commits: 2.0.0
+      git-raw-commits: 2.0.9
       git-remote-origin-url: 2.0.0
-      git-semver-tags: 4.1.0
+      git-semver-tags: 4.1.1
       lodash: 4.17.20
-      normalize-package-data: 2.5.0
+      normalize-package-data: 3.0.0
       q: 1.5.1
       read-pkg: 3.0.0
       read-pkg-up: 3.0.0
       shelljs: 0.8.4
-      through2: 3.0.2
+      through2: 4.0.2
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-8+xMvN6JvdDtPbGBqA7oRNyZD4od1h/SIzrWqHcKZjitbVXrFpozEeyn4iI4af1UwdrabQpiZMaV07fPUTGd4w==
-  /conventional-changelog-ember/2.0.8:
+      integrity: sha512-7pDpRUiobQDNkwHyJG7k9f6maPo9tfPzkSWbRq97GGiZqisElhnvUZSvyQH20ogfOjntB5aadvv6NNcKL1sReg==
+  /conventional-changelog-ember/2.0.9:
     dependencies:
       q: 1.5.1
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-JEMEcUAMg4Q9yxD341OgWlESQ4gLqMWMXIWWUqoQU8yvTJlKnrvcui3wk9JvnZQyONwM2g1MKRZuAjKxr8hAXA==
-  /conventional-changelog-eslint/3.0.8:
+      integrity: sha512-ulzIReoZEvZCBDhcNYfDIsLTHzYHc7awh+eI44ZtV5cx6LVxLlVtEmcO+2/kGIHGtw+qVabJYjdI5cJOQgXh1A==
+  /conventional-changelog-eslint/3.0.9:
     dependencies:
       q: 1.5.1
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-5rTRltgWG7TpU1PqgKHMA/2ivjhrB+E+S7OCTvj0zM/QGg4vmnVH67Vq/EzvSNYtejhWC+OwzvDrLk3tqPry8A==
-  /conventional-changelog-express/2.0.5:
+      integrity: sha512-6NpUCMgU8qmWmyAMSZO5NrRd7rTgErjrm4VASam2u5jrZS0n38V7Y9CzTtLT2qwz5xEChDR4BduoWIr8TfwvXA==
+  /conventional-changelog-express/2.0.6:
     dependencies:
       q: 1.5.1
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-pW2hsjKG+xNx/Qjof8wYlAX/P61hT5gQ/2rZ2NsTpG+PgV7Rc8RCfITvC/zN9K8fj0QmV6dWmUefCteD9baEAw==
-  /conventional-changelog-jquery/3.0.10:
+      integrity: sha512-SDez2f3iVJw6V563O3pRtNwXtQaSmEfTCaTBPCqn0oG0mfkq0rX4hHBq5P7De2MncoRixrALj3u3oQsNK+Q0pQ==
+  /conventional-changelog-jquery/3.0.11:
     dependencies:
       q: 1.5.1
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-QCW6wF8QgPkq2ruPaxc83jZxoWQxLkt/pNxIDn/oYjMiVgrtqNdd7lWe3vsl0hw5ENHNf/ejXuzDHk6suKsRpg==
-  /conventional-changelog-jshint/2.0.8:
+      integrity: sha512-x8AWz5/Td55F7+o/9LQ6cQIPwrCjfJQ5Zmfqi8thwUEKHstEn4kTIofXub7plf1xvFA2TqhZlq7fy5OmV6BOMw==
+  /conventional-changelog-jshint/2.0.9:
     dependencies:
       compare-func: 2.0.0
       q: 1.5.1
@@ -1162,50 +1162,50 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-hB/iI0IiZwnZ+seYI+qEQ4b+EMQSEC8jGIvhO2Vpz1E5p8FgLz75OX8oB1xJWl+s4xBMB6f8zJr0tC/BL7YOjw==
+      integrity: sha512-wMLdaIzq6TNnMHMy31hql02OEQ8nCQfExw1SE0hYL5KvU+JCTuPaDO+7JiogGT2gJAxiUGATdtYYfh+nT+6riA==
   /conventional-changelog-preset-loader/2.3.4:
     dev: true
     engines:
       node: '>=10'
     resolution:
       integrity: sha512-GEKRWkrSAZeTq5+YjUZOYxdHq+ci4dNwHvpaBC3+ENalzFWuCWa9EZXSuZBpkr72sMdKB+1fyDV4takK1Lf58g==
-  /conventional-changelog-writer/4.0.17:
+  /conventional-changelog-writer/4.1.0:
     dependencies:
       compare-func: 2.0.0
-      conventional-commits-filter: 2.0.6
+      conventional-commits-filter: 2.0.7
       dateformat: 3.0.3
       handlebars: 4.7.6
       json-stringify-safe: 5.0.1
       lodash: 4.17.20
-      meow: 7.1.1
+      meow: 8.1.2
       semver: 6.3.0
       split: 1.0.1
-      through2: 3.0.2
+      through2: 4.0.2
     dev: true
     engines:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-IKQuK3bib/n032KWaSb8YlBFds+aLmzENtnKtxJy3+HqDq5kohu3g/UdNbIHeJWygfnEbZjnCKFxAW0y7ArZAw==
-  /conventional-changelog/3.1.23:
+      integrity: sha512-WwKcUp7WyXYGQmkLsX4QmU42AZ1lqlvRW9mqoyiQzdD+rJWbTepdWoKJuwXTS+yq79XKnQNa93/roViPQrAQgw==
+  /conventional-changelog/3.1.24:
     dependencies:
-      conventional-changelog-angular: 5.0.11
-      conventional-changelog-atom: 2.0.7
-      conventional-changelog-codemirror: 2.0.7
-      conventional-changelog-conventionalcommits: 4.4.0
-      conventional-changelog-core: 4.2.0
-      conventional-changelog-ember: 2.0.8
-      conventional-changelog-eslint: 3.0.8
-      conventional-changelog-express: 2.0.5
-      conventional-changelog-jquery: 3.0.10
-      conventional-changelog-jshint: 2.0.8
+      conventional-changelog-angular: 5.0.12
+      conventional-changelog-atom: 2.0.8
+      conventional-changelog-codemirror: 2.0.8
+      conventional-changelog-conventionalcommits: 4.5.0
+      conventional-changelog-core: 4.2.2
+      conventional-changelog-ember: 2.0.9
+      conventional-changelog-eslint: 3.0.9
+      conventional-changelog-express: 2.0.6
+      conventional-changelog-jquery: 3.0.11
+      conventional-changelog-jshint: 2.0.9
       conventional-changelog-preset-loader: 2.3.4
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-sScUu2NHusjRC1dPc5p8/b3kT78OYr95/Bx7Vl8CPB8tF2mG1xei5iylDTRjONV5hTlzt+Cn/tBWrKdd299b7A==
-  /conventional-commits-filter/2.0.6:
+      integrity: sha512-ed6k8PO00UVvhExYohroVPXcOJ/K1N0/drJHx/faTH37OIZthlecuLIRX/T6uOp682CAoVoFpu+sSEaeuH6Asg==
+  /conventional-commits-filter/2.0.7:
     dependencies:
       lodash.ismatch: 4.4.0
       modify-values: 1.0.1
@@ -1213,7 +1213,7 @@ packages:
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-4g+sw8+KA50/Qwzfr0hL5k5NWxqtrOVw4DDk3/h6L85a9Gz0/Eqp3oP+CWCNfesBvZZZEFHF7OTEbRe+yYSyKw==
+      integrity: sha512-ASS9SamOP4TbCClsRHxIHXRfcGCnIoQqkvAzCSbZzTFLfcTqJVugB0agRgsEELsqaeWgsXv513eS116wnlSSPA==
   /conventional-commits-parser/3.1.0:
     dependencies:
       JSONStream: 1.3.5
@@ -1229,24 +1229,55 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-RSo5S0WIwXZiRxUGTPuYFbqvrR4vpJ1BDdTlthFgvHt5kEdnd1+pdvwWphWn57/oIl4V72NMmOocFqqJ8mFFhA==
-  /conventional-recommended-bump/6.0.10:
+  /conventional-commits-parser/3.2.0:
+    dependencies:
+      JSONStream: 1.3.5
+      is-text-path: 1.0.1
+      lodash: 4.17.20
+      meow: 8.1.2
+      split2: 2.2.0
+      through2: 4.0.2
+      trim-off-newlines: 1.0.1
+    dev: true
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-XmJiXPxsF0JhAKyfA2Nn+rZwYKJ60nanlbSWwwkGwLQFbugsc0gv1rzc7VbbUWAzJfR1qR87/pNgv9NgmxtBMQ==
+  /conventional-recommended-bump/6.0.11:
     dependencies:
       concat-stream: 2.0.0
       conventional-changelog-preset-loader: 2.3.4
-      conventional-commits-filter: 2.0.6
-      conventional-commits-parser: 3.1.0
+      conventional-commits-filter: 2.0.7
+      conventional-commits-parser: 3.2.0
       git-raw-commits: 2.0.0
-      git-semver-tags: 4.1.0
-      meow: 7.1.1
+      git-semver-tags: 4.1.1
+      meow: 8.1.2
       q: 1.5.1
     dev: true
     engines:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-2ibrqAFMN3ZA369JgVoSbajdD/BHN6zjY7DZFKTHzyzuQejDUCjQ85S5KHxCRxNwsbDJhTPD5hOKcis/jQhRgg==
+      integrity: sha512-FciYBMwzwwBZ1K4NS8c57rsOfSc51e1V6UVSNIosrjH+A6xXkyiA4ELwoWyRKdMhJ+m3O6ru9ZJ7F2QFjjYJdQ==
+  /conventional-recommended-bump/6.1.0:
+    dependencies:
+      concat-stream: 2.0.0
+      conventional-changelog-preset-loader: 2.3.4
+      conventional-commits-filter: 2.0.7
+      conventional-commits-parser: 3.2.0
+      git-raw-commits: 2.0.9
+      git-semver-tags: 4.1.1
+      meow: 8.1.2
+      q: 1.5.1
+    dev: true
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-uiApbSiNGM/kkdL9GTOLAqC4hbptObFo4wW2QRyHsKciGAfQuLU1ShZ1BIVI/+K2BE/W1AWYQMCXAsv4dyKPaw==
   /core-js/2.6.11:
-    deprecated: 'core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.'
+    deprecated: core-js@<3 is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.
     dev: true
     requiresBuild: true
     resolution:
@@ -1329,7 +1360,7 @@ packages:
   /debug/4.2.0:
     dependencies:
       ms: 2.1.2
-    deprecated: 'Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)'
+    deprecated: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
     dev: true
     engines:
       node: '>=6.0'
@@ -1344,7 +1375,7 @@ packages:
     dependencies:
       ms: 2.1.2
       supports-color: 7.2.0
-    deprecated: 'Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)'
+    deprecated: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
     dev: true
     engines:
       node: '>=6.0'
@@ -2213,6 +2244,19 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-SkwrTqrDxw8y0G1uGJ9Zw13F7qu3LF8V4BifyDeiJCxSnjRGZD9SaoMiMqUvvXMXh6S3sOQ1DsBN7L2fMUZW/g==
+  /git-raw-commits/2.0.9:
+    dependencies:
+      dargs: 7.0.0
+      lodash.template: 4.5.0
+      meow: 8.1.2
+      split2: 3.2.2
+      through2: 4.0.2
+    dev: true
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-hSpNpxprVno7IOd4PZ93RQ+gNdzPAIrW0x8av6JQDJGV4k1mR9fE01dl8sEqi2P7aKmmwiGUn1BCPuf16Ae0Qw==
   /git-remote-origin-url/2.0.0:
     dependencies:
       gitconfiglocal: 1.0.0
@@ -2222,16 +2266,16 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-UoJlna4hBxRaERJhEq0yFuxfpl8=
-  /git-semver-tags/4.1.0:
+  /git-semver-tags/4.1.1:
     dependencies:
-      meow: 7.1.1
+      meow: 8.1.2
       semver: 6.3.0
     dev: true
     engines:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-TcxAGeo03HdErzKzi4fDD+xEL7gi8r2Y5YSxH6N2XYdVSV5UkBwfrt7Gqo1b+uSHCjy/sa9Y6BBBxxFLxfbhTg==
+      integrity: sha512-OWyMt5zBe7xFs8vglMmhM9lRQzCWL3WjHtxNNfJTMngGym7pC1kh8sP6jevfydJ6LP3ZvGxfb6ABYgPUM0mtsA==
   /gitconfiglocal/1.0.0:
     dependencies:
       ini: 1.3.5
@@ -3098,6 +3142,24 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-GWHvA5QOcS412WCo8vwKDlTelGLsCGBVevQB5Kva961rmNfun0PCbv5+xta2kUMFJyR8/oWnn7ddeKdosbAPbA==
+  /meow/8.1.2:
+    dependencies:
+      '@types/minimist': 1.2.0
+      camelcase-keys: 6.2.2
+      decamelize-keys: 1.1.0
+      hard-rejection: 2.1.0
+      minimist-options: 4.1.0
+      normalize-package-data: 3.0.0
+      read-pkg-up: 7.0.1
+      redent: 3.0.0
+      trim-newlines: 3.0.0
+      type-fest: 0.18.1
+      yargs-parser: 20.2.4
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-r85E3NdZ+mpYk1C6RjPFEMSE+s1iZMuHtsHAqY0DT3jZczl0diWUZ8g6oU7h0M9cD2EL+PzaYghhCLzR0ZNn5Q==
   /merge-package.json/3.1.8:
     dependencies:
       rfc6902-ordered: 4.0.5
@@ -3331,22 +3393,22 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
-  /monorepo-next/2.1.0:
+  /monorepo-next/3.0.0:
     dependencies:
-      conventional-changelog: 3.1.23
-      conventional-recommended-bump: 6.0.10
-      execa: 4.0.3
+      conventional-changelog: 3.1.24
+      conventional-recommended-bump: 6.1.0
+      execa: 5.0.0
       glob: 7.1.6
       inquirer: 7.3.3
-      semver: 6.3.0
-      standard-version: 9.0.0
+      semver: 7.3.4
+      standard-version: 9.1.0
       yargs: 16.0.3
     dev: true
     engines:
       node: '>=10.12'
     hasBin: true
     resolution:
-      integrity: sha512-ZD4E/RmyrgTnmPmwVj+8ZsjfwjUygVKuD4R+CHAX6ndpIGr8JBt006D2Uv0m8FYgpkD+SUFrLtDcPPYRYTHMXQ==
+      integrity: sha512-1joqQjejmWPjjFz3Cz+rCx8+3dRPLv/iLBZhwolTWt3jOWMSxoFyL55e0ViWi2UhwT8JJhCxeRhRb3cdNuIkXg==
   /ms/2.1.2:
     dev: true
     resolution:
@@ -3406,6 +3468,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==
+  /normalize-package-data/3.0.0:
+    dependencies:
+      hosted-git-info: 3.0.7
+      resolve: 1.17.0
+      semver: 7.3.4
+      validate-npm-package-license: 3.0.4
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-6lUjEI0d3v6kFrtgA/lOx4zHCWULXsFNIjHolnZCKCTLA6m/G625cdn3O7eNmT0iD3jfo6HZ9cdImGZwf21prw==
   /normalize-path/3.0.0:
     dev: true
     engines:
@@ -4147,7 +4220,7 @@ packages:
       tough-cookie: 2.5.0
       tunnel-agent: 0.6.0
       uuid: 3.4.0
-    deprecated: 'request has been deprecated, see https://github.com/request/request/issues/3142'
+    deprecated: request has been deprecated, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>= 6'
@@ -4309,6 +4382,15 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
+  /semver/7.3.4:
+    dependencies:
+      lru-cache: 6.0.0
+    dev: true
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==
   /serialize-javascript/5.0.1:
     dependencies:
       randombytes: 2.1.0
@@ -4447,6 +4529,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-RAb22TG39LhI31MbreBgIuKiIKhVsawfTgEGqKHTK87aG+ul/PB8Sqoi3I7kVdRWiCfrKxK3uo4/YUkpNvhPbw==
+  /split2/3.2.2:
+    dependencies:
+      readable-stream: 3.6.0
+    dev: true
+    resolution:
+      integrity: sha512-9NThjpgZnifTkJpzTZ7Eue85S49QwpNhZTq6GRJwObb6jnLFNGB7Qm73V5HewTROPyxD0C29xqmaI68bQtV+hg==
   /sprintf-js/1.0.3:
     dev: true
     resolution:
@@ -4482,21 +4570,21 @@ packages:
       node: '>=8.10'
     resolution:
       integrity: sha512-biL96veWp9MCnYtajSk1KYNenxihVy3W6syJE6B6k/JK3yh9qC8kNtIOFdREvTzsW2+DMHvOtF2iDNRiXL9QdQ==
-  /standard-version/9.0.0:
+  /standard-version/9.1.0:
     dependencies:
       chalk: 2.4.2
-      conventional-changelog: 3.1.23
+      conventional-changelog: 3.1.24
       conventional-changelog-config-spec: 2.1.0
-      conventional-changelog-conventionalcommits: 4.4.0
-      conventional-recommended-bump: 6.0.10
+      conventional-changelog-conventionalcommits: 4.5.0
+      conventional-recommended-bump: 6.0.11
       detect-indent: 6.0.0
       detect-newline: 3.1.0
       dotgitignore: 2.1.0
       figures: 3.2.0
-      find-up: 4.1.0
+      find-up: 5.0.0
       fs-access: 1.0.1
-      git-semver-tags: 4.1.0
-      semver: 7.3.2
+      git-semver-tags: 4.1.1
+      semver: 7.3.4
       stringify-package: 1.0.1
       yargs: 15.4.1
     dev: true
@@ -4504,7 +4592,7 @@ packages:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-eRR04IscMP3xW9MJTykwz13HFNYs8jS33AGuDiBKgfo5YrO0qX0Nxb4rjupVwT5HDYL/aR+MBEVLjlmVFmFEDQ==
+      integrity: sha512-EJcbKUGKBuHjiDSUL5XjPhT1KGVM+UCvv/ti70fHnJwJyJqTSJWl0mWj/Wj0WwsoskyvKWURESzBsZmCCMUZzg==
   /string-width/1.0.2:
     dependencies:
       code-point-at: 1.1.0
@@ -4727,6 +4815,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-enaDQ4MUyP2W6ZyT6EsMzqBPZaM/avg8iuo+l2d3QCs0J+6RaqkHV/2/lOwDTueBHeJ/2LG9lrLW3d5rWPucuQ==
+  /through2/4.0.2:
+    dependencies:
+      readable-stream: 3.6.0
+    dev: true
+    resolution:
+      integrity: sha512-iOqSav00cVxEEICeD7TjLB1sueEL+81Wpzp2bY17uZjZN0pWZPuo4suZ/61VujxmqSGFfgOcNuTZ85QJwNZQpw==
   /titleize/2.1.0:
     dev: true
     engines:
@@ -4836,6 +4930,12 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-34R7HTnG0XIJcBSn5XhDd7nNFPRcXYRZrBB2O2jdKqYODldSzBAqzsWoZYYvduky73toYS/ESqxPvkDf/F0XMg==
+  /type-fest/0.18.1:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-OIAYXk8+ISY+qTOwkHtKqzAuxchoMiD9Udx+FSGQDuiRR+PJKJHc2NJAXlbhkGwTt/4/nKZxELY1w3ReWOL8mw==
   /type-fest/0.6.0:
     dev: true
     engines:
@@ -5117,6 +5217,12 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-2agPoRFPoIcFzOIp6656gcvsg2ohtscpw2OINr/q46+Sq41xz2OYLqx5HRHabmFU1OARIPAYH5uteICE7mn/5A==
+  /yargs-parser/20.2.4:
+    dev: true
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-WOkpgNhPTlE73h4VFAFsOnomJVaovO8VqLDzy5saChRBFQFBoMYirowyW+Q9HB4HFF4Z7VZTiG3iSzJJA29yRA==
   /yargs-unparser/2.0.0:
     dependencies:
       camelcase: 6.2.0
