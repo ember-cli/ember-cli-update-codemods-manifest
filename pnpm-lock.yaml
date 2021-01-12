@@ -6,7 +6,7 @@ importers:
       chai: 4.2.0
       ember-addon-codemods-manifest: link:packages/addon
       ember-app-codemods-manifest: link:packages/app
-      ember-cli-update: 0.55.1
+      ember-cli-update: 0.55.2
       eslint: 7.15.0
       eslint-config-sane: 1.0.0_73bdecf91b832f4f3c4cb0eaa6959509
       eslint-config-sane-node: 1.0.1_27c9927b2346f3a34ff44394a2fe41c7
@@ -27,7 +27,7 @@ importers:
       chai: ^4.2.0
       ember-addon-codemods-manifest: ''
       ember-app-codemods-manifest: ''
-      ember-cli-update: 0.55.1
+      ember-cli-update: 0.55.2
       eslint: ^7.15.0
       eslint-config-sane: ^1.0.0
       eslint-config-sane-node: ^1.0.1
@@ -279,7 +279,7 @@ packages:
       npm-pick-manifest: 6.1.0
       promise-inflight: 1.0.1
       promise-retry: 1.1.1
-      semver: 7.3.2
+      semver: 7.3.4
       unique-filename: 1.1.1
       which: 2.0.2
     dev: true
@@ -636,12 +636,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-1Yj8h9Q+QDF5FzhMs/c9+6UntbD5MkRfRwac8DoEm9ZfUBZ7tZ55YcGVAzEe4bXsdQHEk+s9S5wsOKVdZrw0tQ==
-  /boilerplate-update/1.0.5:
+  /boilerplate-update/1.0.6:
     dependencies:
       cpr: 3.0.1
       debug: 4.2.0
       execa: 5.0.0
-      git-diff-apply: 2.0.3
+      git-diff-apply: 2.0.4
       https-proxy-agent: 5.0.0
       inquirer: 7.3.3
       merge-package.json: 3.1.8
@@ -651,14 +651,14 @@ packages:
       p-reduce: 2.1.0
       pacote: 11.1.13
       rimraf: 3.0.2
-      semver: 7.3.2
+      semver: 7.3.4
       tmp: 0.2.1
       which: 2.0.2
     dev: true
     engines:
       node: '>=10.12'
     resolution:
-      integrity: sha512-mNImKCqugojABZAYMYabHj93Z2avpqOpR4YLwX8SFx27zTtWG/O2yjBd5ZEEXOmbDzMfuG44F2p5FtjVnGqpwA==
+      integrity: sha512-Rxxt0YxM1uoZbNDaIQAaMaXjJwk3Kpo7YuXMJ3h16sbjRoZaAgB/5oyqOYhcIArrlR429+w9kKCsnFzXQRu4DA==
   /boxen/4.2.0:
     dependencies:
       ansi-align: 3.0.0
@@ -1471,16 +1471,16 @@ packages:
     dev: true
     resolution:
       integrity: sha1-OoOpBOVDUyh4dMVkt1SThoSamMk=
-  /ember-cli-update/0.55.1:
+  /ember-cli-update/0.55.2:
     dependencies:
-      boilerplate-update: 1.0.5
+      boilerplate-update: 1.0.6
       debug: 4.2.0
       execa: 5.0.0
       fs-extra: 9.0.1
       inquirer: 7.3.3
       npm-package-arg: 8.1.0
       resolve: 1.17.0
-      semver: 7.3.2
+      semver: 7.3.4
       tmp: 0.2.1
       update-notifier: 5.0.1
       yargs: 16.0.3
@@ -1489,7 +1489,7 @@ packages:
       node: '>=10.12'
     hasBin: true
     resolution:
-      integrity: sha512-mWtVtdQh5iJxUQ8y3sOydnshj2pnYksiGvS5pgTdWk47LfWtCPg9VDrwb+PyOcxlYDg8TzsmUOc8D1Hys5R98Q==
+      integrity: sha512-GiPM+R2mdKDmeLKdRBSVfzdniITrSwq+589HgUKGLq3akdEct16zuE+afH0idaSj5tMWiTbYArettN/sNLxkeA==
   /emoji-regex/7.0.3:
     dev: true
     resolution:
@@ -2131,7 +2131,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-nkl+2hKMHvDfN8ArqHR2vRkP57ZAAkpwuGSMdgdxodPcDmEmn+uNnUVLXmFbofS12uLE7TLRXPqS7h4O3CjQdg==
-  /git-diff-apply/2.0.3:
+  /git-diff-apply/2.0.4:
     dependencies:
       debug: 4.2.0
       fixturify: 2.1.0
@@ -2144,7 +2144,7 @@ packages:
       node: '>=10.12'
     hasBin: true
     resolution:
-      integrity: sha512-vZlP1eUQYm9C9I2Uyzq3ubiE6e3CRos4xpZL7VdirSluXERhXdO2hHUElu+y3f6FyzG99anGAdTHHzv7Sve2GQ==
+      integrity: sha512-S4KYuqQh/SG5jnz3E4Gx8Wrl3OUO0rIhUDJ+6Hk7sg1xS3b2ej9rtBZ7W/faDCQwF8kHqwdQyarJ6WYvYKin/A==
   /git-fixtures/3.0.0:
     dependencies:
       execa: 4.0.3
@@ -3144,18 +3144,6 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-6T6lH0H8OG9kITm/Jm6tdooIbogG9e0tLgpY6mphXSm/A9u8Nq1ryBG+Qspiub9LjWlBPsPS3tWQ/Botq4FdxA==
-  /minipass-fetch/1.3.1:
-    dependencies:
-      minipass: 3.1.3
-      minipass-sized: 1.0.3
-      minizlib: 2.1.2
-    dev: true
-    engines:
-      node: '>=8'
-    optionalDependencies:
-      encoding: 0.1.13
-    resolution:
-      integrity: sha512-N0ddPAD8OZnoAHUYj1ZH4ZJVna+ucy7if777LrdeIV1ko8f46af4jbyM5EC1gN4xc9Wq5c3C38GnxRJ2gneXRA==
   /minipass-fetch/1.3.2:
     dependencies:
       minipass: 3.1.3
@@ -3328,7 +3316,7 @@ packages:
       npmlog: 4.1.2
       request: 2.88.2
       rimraf: 3.0.2
-      semver: 7.3.2
+      semver: 7.3.4
       tar: 6.0.5
       which: 2.0.2
     dev: true
@@ -3386,7 +3374,7 @@ packages:
       integrity: sha512-gqkfgGePhTpAEgUsGEgcq1rqPXA+tv/aVBlgEzfXwA1yiUJF7xtEt3CtVwOjNYQOVknDk0F20w58Fnm3EtG0fA==
   /npm-install-checks/4.0.0:
     dependencies:
-      semver: 7.3.2
+      semver: 7.3.4
     dev: true
     engines:
       node: '>=10'
@@ -3399,7 +3387,7 @@ packages:
   /npm-package-arg/8.1.0:
     dependencies:
       hosted-git-info: 3.0.7
-      semver: 7.3.2
+      semver: 7.3.4
       validate-npm-package-name: 3.0.0
     dev: true
     engines:
@@ -3422,7 +3410,7 @@ packages:
     dependencies:
       npm-install-checks: 4.0.0
       npm-package-arg: 8.1.0
-      semver: 7.3.2
+      semver: 7.3.4
     dev: true
     resolution:
       integrity: sha512-ygs4k6f54ZxJXrzT0x34NybRlLeZ4+6nECAIbr2i0foTnijtS1TJiyzpqtuUAJOps/hO0tNDr8fRV5g+BtRlTw==
@@ -3432,7 +3420,7 @@ packages:
       lru-cache: 6.0.0
       make-fetch-happen: 8.0.12
       minipass: 3.1.3
-      minipass-fetch: 1.3.1
+      minipass-fetch: 1.3.2
       minipass-json-stream: 1.0.1
       minizlib: 2.1.2
       npm-package-arg: 8.1.0
@@ -4875,7 +4863,7 @@ packages:
       is-yarn-global: 0.3.0
       latest-version: 5.1.0
       pupa: 2.1.1
-      semver: 7.3.2
+      semver: 7.3.4
       semver-diff: 3.1.1
       xdg-basedir: 4.0.0
     dev: true
@@ -5087,12 +5075,6 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-o50j0JeToy/4K6OZcaQmW6lyXXKhq7csREXcDwk2omFPJEwUNOVtJKvmDr9EI1fAJZUyZcRF7kxGBWmRXudrCQ==
-  /yargs-parser/20.2.0:
-    dev: true
-    engines:
-      node: '>=10'
-    resolution:
-      integrity: sha512-2agPoRFPoIcFzOIp6656gcvsg2ohtscpw2OINr/q46+Sq41xz2OYLqx5HRHabmFU1OARIPAYH5uteICE7mn/5A==
   /yargs-parser/20.2.4:
     dev: true
     engines:
@@ -5151,7 +5133,7 @@ packages:
       require-directory: 2.1.1
       string-width: 4.2.0
       y18n: 5.0.1
-      yargs-parser: 20.2.0
+      yargs-parser: 20.2.4
     dev: true
     engines:
       node: '>=10'
