@@ -9,7 +9,7 @@ importers:
       chai: ^4.2.0
       ember-addon-codemods-manifest: ''
       ember-app-codemods-manifest: ''
-      ember-cli-update: 0.55.2
+      ember-cli-update: 0.56.0
       eslint: ^7.15.0
       eslint-config-sane: ^1.0.0
       eslint-config-sane-node: ^1.0.1
@@ -30,7 +30,7 @@ importers:
       chai: 4.2.0
       ember-addon-codemods-manifest: link:packages/addon
       ember-app-codemods-manifest: link:packages/app
-      ember-cli-update: 0.55.2
+      ember-cli-update: 0.56.0
       eslint: 7.15.0
       eslint-config-sane: 1.0.0_73bdecf91b832f4f3c4cb0eaa6959509
       eslint-config-sane-node: 1.0.1_7c19144dadec2da50ae18dc909989c99
@@ -1382,8 +1382,8 @@ packages:
       safer-buffer: 2.1.2
     dev: true
 
-  /ember-cli-update/0.55.2:
-    resolution: {integrity: sha512-GiPM+R2mdKDmeLKdRBSVfzdniITrSwq+589HgUKGLq3akdEct16zuE+afH0idaSj5tMWiTbYArettN/sNLxkeA==}
+  /ember-cli-update/0.56.0:
+    resolution: {integrity: sha512-WEbS/ep3KeftQXYa0mHJlMH4TYOVz/RWqAbX3p793cX52/FBoZ/0vgiibdMDEvWJxB1RM5iAAmjI/fwt5bQekw==}
     engines: {node: '>=10.12'}
     hasBin: true
     dependencies:
@@ -1397,7 +1397,7 @@ packages:
       semver: 7.3.4
       tmp: 0.2.1
       update-notifier: 5.0.1
-      yargs: 16.0.3
+      yargs: 16.2.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2004,7 +2004,7 @@ packages:
       fs-extra: 9.0.1
       tmp: 0.2.1
       uuid: 8.3.2
-      yargs: 16.0.3
+      yargs: 16.2.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4528,6 +4528,7 @@ packages:
 
   /uuid/3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
+    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
     hasBin: true
     dev: true
 
