@@ -15,7 +15,7 @@ jobs:
     - uses: actions/setup-node@v2
     - uses: pnpm/action-setup@v2.0.1
       with:
-        version: 5.13.6
+        version: 6.7.4
 
     - run: pnpm install
     - run: npm run lint:git
@@ -45,7 +45,7 @@ jobs:
         node-version: ${{ matrix.node }}
     - uses: pnpm/action-setup@v2.0.1
       with:
-        version: 5.13.6
+        version: 6.7.4
 
     - run: pnpm install
     - run: npm test
@@ -68,7 +68,7 @@ jobs:
     - uses: actions/setup-node@v2
     - uses: pnpm/action-setup@v2.0.1
       with:
-        version: 5.13.6
+        version: 6.7.4
     - uses: kellyselden/ember-cli-update-action@v2
       with:
         autofix_command: npm run lint:js -- --fix
