@@ -18,7 +18,7 @@ importers:
       eslint-plugin-node: ^11.1.0
       eslint-plugin-prefer-let: ^1.1.0
       fs-extra: ^9.0.0
-      git-fixtures: ^3.0.0
+      git-fixtures: ^4.0.0
       mocha: ^9.0.0
       mocha-helpers: ^6.0.0
       monorepo-next: ^3.0.0
@@ -39,7 +39,7 @@ importers:
       eslint-plugin-node: 11.1.0_eslint@7.28.0
       eslint-plugin-prefer-let: 1.1.0
       fs-extra: 9.0.1
-      git-fixtures: 3.0.0
+      git-fixtures: 4.0.0
       mocha: 9.0.0
       mocha-helpers: 6.0.0
       monorepo-next: 3.0.0
@@ -338,12 +338,6 @@ packages:
 
   /@types/color-name/1.1.1:
     resolution: {integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==}
-    dev: true
-
-  /@types/fs-extra/5.1.0:
-    resolution: {integrity: sha512-AInn5+UBFIK9FK5xc9yP5e3TQSPNNgjHByqYcj9g5elVBnDQcQL7PlO1CIRy2gWlbwK7UPYqi7vRvFA44dCmYQ==}
-    dependencies:
-      '@types/node': 14.11.2
     dev: true
 
   /@types/fs-extra/8.1.1:
@@ -1692,21 +1686,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /execa/4.0.3:
-    resolution: {integrity: sha512-WFDXGHckXPWZX19t1kCsXzOpqX9LWYNqn4C+HqZlk/V0imTkzJZqf87ZBhvpHaftERYknpk0fjSylnXVlVgI0A==}
-    engines: {node: '>=10'}
-    dependencies:
-      cross-spawn: 7.0.3
-      get-stream: 5.2.0
-      human-signals: 1.1.1
-      is-stream: 2.0.0
-      merge-stream: 2.0.0
-      npm-run-path: 4.0.1
-      onetime: 5.1.2
-      signal-exit: 3.0.3
-      strip-final-newline: 2.0.0
-    dev: true
-
   /execa/5.0.0:
     resolution: {integrity: sha512-ov6w/2LCiuyO4RLYGdpFGjkcs0wMTgGE8PrkTHikeUy5iJekXyPIKUjifk5CsE0pt7sMCrMZ3YNqoCj6idQOnQ==}
     engines: {node: '>=10'}
@@ -1829,17 +1808,6 @@ packages:
       path-exists: 4.0.0
     dev: true
 
-  /fixturify/1.3.0:
-    resolution: {integrity: sha512-tL0svlOy56pIMMUQ4bU1xRe6NZbFSa/ABTWMxW2mH38lFGc9TrNAKWcMBQ7eIjo3wqSS8f2ICabFaatFyFmrVQ==}
-    engines: {node: 6.* || 8.* || >= 10.*}
-    dependencies:
-      '@types/fs-extra': 5.1.0
-      '@types/minimatch': 3.0.3
-      '@types/rimraf': 2.0.4
-      fs-extra: 7.0.1
-      matcher-collection: 2.0.1
-    dev: true
-
   /fixturify/2.1.0:
     resolution: {integrity: sha512-gHq6UCv8DE91EpiaRSzrmvLoRvFOBzI961IQ3gXE5wfmMM1TtApDcZAonG2hnp6GJrVFCxHwP01wSw9VQJiJ1w==}
     engines: {node: 10.* || >= 12.*}
@@ -1887,15 +1855,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       null-check: 1.0.0
-    dev: true
-
-  /fs-extra/7.0.1:
-    resolution: {integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==}
-    engines: {node: '>=6 <7 || >=8'}
-    dependencies:
-      graceful-fs: 4.2.4
-      jsonfile: 4.0.0
-      universalify: 0.1.2
     dev: true
 
   /fs-extra/8.1.0:
@@ -2002,27 +1961,12 @@ packages:
       assert-plus: 1.0.0
     dev: true
 
-  /git-diff-apply/0.22.10:
-    resolution: {integrity: sha512-nkl+2hKMHvDfN8ArqHR2vRkP57ZAAkpwuGSMdgdxodPcDmEmn+uNnUVLXmFbofS12uLE7TLRXPqS7h4O3CjQdg==}
-    engines: {node: '>=8.3'}
-    hasBin: true
-    dependencies:
-      debug: 4.2.0
-      fixturify: 1.3.0
-      fs-extra: 8.1.0
-      tmp: 0.2.1
-      uuid: 3.4.0
-      yargs: 15.4.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /git-diff-apply/2.0.4:
     resolution: {integrity: sha512-S4KYuqQh/SG5jnz3E4Gx8Wrl3OUO0rIhUDJ+6Hk7sg1xS3b2ej9rtBZ7W/faDCQwF8kHqwdQyarJ6WYvYKin/A==}
     engines: {node: '>=10.12'}
     hasBin: true
     dependencies:
-      debug: 4.2.0
+      debug: 4.3.1
       fixturify: 2.1.0
       fs-extra: 9.0.1
       tmp: 0.2.1
@@ -2032,14 +1976,14 @@ packages:
       - supports-color
     dev: true
 
-  /git-fixtures/3.0.0:
-    resolution: {integrity: sha512-GYOG1Kx5PX9AI93prMPqgRGEk6K0LSoCVC3zUnW46Asnwx4syWe6gxiKEfHWvy9HiMI72iOw14RpKcvBq/mgtw==}
-    engines: {node: '>=10.12'}
+  /git-fixtures/4.0.0:
+    resolution: {integrity: sha512-hoM4E7LSe9/ty2v04jDx3K1vB0sjZEb+2f1WTOG3pn+/5f1R5forfeGdP+lPO8bc8mXSUN0N2Tq3WXqR5c8Xtw==}
+    engines: {node: '>=12.13'}
     dependencies:
-      execa: 4.0.3
+      execa: 5.0.0
       fixturify: 2.1.0
       fs-extra: 9.0.1
-      git-diff-apply: 0.22.10
+      git-diff-apply: 2.0.4
       tmp: 0.2.1
     transitivePeerDependencies:
       - supports-color
@@ -2285,11 +2229,6 @@ packages:
       debug: 4.2.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /human-signals/1.1.1:
-    resolution: {integrity: sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==}
-    engines: {node: '>=8.12.0'}
     dev: true
 
   /human-signals/2.1.0:
@@ -4003,7 +3942,7 @@ packages:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
     hasBin: true
     dependencies:
-      glob: 7.1.6
+      glob: 7.1.7
     dev: true
 
   /run-async/2.4.1:
