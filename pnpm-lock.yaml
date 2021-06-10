@@ -20,7 +20,7 @@ importers:
       fs-extra: ^9.0.0
       git-fixtures: ^3.0.0
       mocha: ^8.4.0
-      mocha-helpers: ^5.1.1
+      mocha-helpers: ^6.0.0
       monorepo-next: ^3.0.0
       renovate-config-standard: 2.1.2
       standard-node-template: 2.0.0
@@ -41,7 +41,7 @@ importers:
       fs-extra: 9.0.1
       git-fixtures: 3.0.0
       mocha: 8.4.0
-      mocha-helpers: 5.1.1
+      mocha-helpers: 6.0.0
       monorepo-next: 3.0.0
       renovate-config-standard: 2.1.2
       standard-node-template: 2.0.0
@@ -3029,9 +3029,9 @@ packages:
     hasBin: true
     dev: true
 
-  /mocha-helpers/5.1.1:
-    resolution: {integrity: sha512-rlbLqptggji8yv6KLt1s56zBQg3WjLsf6c4C60E+LIf7bFQaCLA4F1fBmSL2Tq2zNgbGMjOJakk+v+o3NaLMjA==}
-    engines: {node: '>=10.12'}
+  /mocha-helpers/6.0.0:
+    resolution: {integrity: sha512-U5zvyn/biIQ74EUFB+nVoPSIf4XrES5x1JZq6gRbmEJUDUQs98JdMmMZ5Qla7Cos9Bwxs4Ag15atBfpHDuD0zA==}
+    engines: {node: '>=12.13'}
     dependencies:
       callsites: 3.1.0
       commondir: 1.0.1
