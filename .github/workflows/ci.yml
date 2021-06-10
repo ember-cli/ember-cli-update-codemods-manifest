@@ -66,6 +66,9 @@ jobs:
         ref: ${{ github.head_ref }}
         token: ${{ secrets.GitHubToken }}
     - uses: actions/setup-node@v2
+    - uses: pnpm/action-setup@v2.0.1
+      with:
+        version: 5.13.6
     - uses: kellyselden/ember-cli-update-action@v2
       with:
         autofix_command: npm run lint:js -- --fix
