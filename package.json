@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@crowdstrike/commitlint": "^3.0.0",
-    "@kellyselden/node-template": "1.4.5",
+    "@kellyselden/node-template": "2.0.0",
     "chai": "^4.3.4",
     "ember-addon-codemods-manifest": "",
     "ember-app-codemods-manifest": "",
