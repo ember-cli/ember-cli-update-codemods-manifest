@@ -13,6 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
+
     - uses: pnpm/action-setup@v2.0.1
       with:
         version: 6.7.4
@@ -43,6 +44,7 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node }}
+
     - uses: pnpm/action-setup@v2.0.1
       with:
         version: 6.7.4
@@ -66,10 +68,12 @@ jobs:
         ref: ${{ github.head_ref }}
         token: ${{ secrets.GitHubToken }}
     - uses: actions/setup-node@v2
+
     - uses: pnpm/action-setup@v2.0.1
       with:
         version: 6.7.4
-    - uses: kellyselden/ember-cli-update-action@v2
+
+    - uses: kellyselden/ember-cli-update-action@v3
       with:
         autofix_command: npm run lint:js -- --fix
         ignore_to: true
