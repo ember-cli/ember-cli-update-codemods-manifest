@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.70...ember-cli-update-codemods-manifest@1.0.0) (2021-06-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* node 12 bump
+
+### Bug Fixes
+
+* add pnpm setup to ember-cli-update-action step ([1fb4fc5](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/1fb4fc5a01ffcb876572663deaaf14b40cdcdad0))
+
+
+* ember-cli-update-action ([6049a9b](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/6049a9bbf3806c370da9b81932bab17e13837ad6))
+
 ### [0.0.70](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.69...ember-cli-update-codemods-manifest@0.0.70) (2020-12-19)
 
 ### [0.0.69](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@0.0.68...ember-cli-update-codemods-manifest@0.0.69) (2020-12-19)
