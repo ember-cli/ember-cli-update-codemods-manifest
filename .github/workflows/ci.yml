@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v2
-    - uses: pnpm/action-setup@v1.2.1
+    - uses: pnpm/action-setup@v2.0.1
       with:
         version: 5.13.6
 
@@ -43,7 +43,7 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node }}
-    - uses: pnpm/action-setup@v1.2.1
+    - uses: pnpm/action-setup@v2.0.1
       with:
         version: 5.13.6
 
