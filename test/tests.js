@@ -35,7 +35,7 @@ if (process.env.TEST_TYPE === 'addon') {
 const codemods = Object.keys(manifest);
 
 describe('runs codemods', function() {
-  this.timeout(5 * 60 * 1000);
+  this.timeout(5 * 60 * 1000 * (process.platform === 'win32' ? 2 : 1));
 
   let tmpPath;
   let applicableCodemods;
