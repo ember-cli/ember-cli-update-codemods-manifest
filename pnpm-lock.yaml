@@ -21,7 +21,7 @@ importers:
       git-fixtures: ^4.0.0
       mocha: ^9.0.0
       mocha-helpers: ^6.0.0
-      monorepo-next: ^6.0.0
+      monorepo-next: ^7.0.0
       renovate-config-standard: 2.1.2
       standard-node-template: 2.0.0
     devDependencies:
@@ -42,7 +42,7 @@ importers:
       git-fixtures: 4.0.0
       mocha: 9.0.0
       mocha-helpers: 6.0.0
-      monorepo-next: 6.0.0
+      monorepo-next: 7.0.0
       renovate-config-standard: 2.1.2
       standard-node-template: 2.0.0
 
@@ -84,7 +84,7 @@ packages:
     engines: {node: '>=v10'}
     dependencies:
       '@commitlint/types': 12.0.0
-      lodash: 4.17.20
+      lodash: 4.17.21
     dev: true
 
   /@commitlint/execute-rule/12.0.0:
@@ -160,7 +160,7 @@ packages:
     engines: {node: '>=v10'}
     dependencies:
       import-fresh: 3.2.1
-      lodash: 4.17.20
+      lodash: 4.17.21
       resolve-from: 5.0.0
       resolve-global: 1.0.0
     dev: true
@@ -191,7 +191,7 @@ packages:
     resolution: {integrity: sha512-ADW/GEwDdgf7ppNq+S2T8J6XgATi2yndXddu+ZV8wlHFpL1DhjPbuPA9RYLnJcp44xQSe/cEV7a7Z43Ryy1S9Q==}
     engines: {node: '>=v10'}
     dependencies:
-      chalk: 4.1.0
+      chalk: 4.1.1
     dev: true
 
   /@crowdstrike/commitlint/3.0.0:
@@ -269,7 +269,7 @@ packages:
       npm-pick-manifest: 6.1.0
       promise-inflight: 1.0.1
       promise-retry: 1.1.1
-      semver: 7.3.4
+      semver: 7.3.5
       unique-filename: 1.1.1
       which: 2.0.2
     dev: true
@@ -640,7 +640,7 @@ packages:
       p-reduce: 2.1.0
       pacote: 11.1.13
       rimraf: 3.0.2
-      semver: 7.3.4
+      semver: 7.3.5
       tmp: 0.2.1
       which: 2.0.2
     transitivePeerDependencies:
@@ -1403,6 +1403,7 @@ packages:
 
   /encoding/0.1.13:
     resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
+    requiresBuild: true
     dependencies:
       iconv-lite: 0.6.2
     dev: true
@@ -1890,6 +1891,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -2254,6 +2256,13 @@ packages:
       minimatch: 3.0.4
     dev: true
 
+  /ignore-walk/4.0.1:
+    resolution: {integrity: sha512-rzDQLaW4jQbh2YrOFlJdCtX8qgJTehFRYiUB2r1osqTeDzV/3+Jh8fz1oAPzUThf3iku8Ds4IDqawI5d8mUiQw==}
+    engines: {node: '>=10'}
+    dependencies:
+      minimatch: 3.0.4
+    dev: true
+
   /ignore/4.0.6:
     resolution: {integrity: sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==}
     engines: {node: '>= 4'}
@@ -2319,15 +2328,15 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       ansi-escapes: 4.3.1
-      chalk: 4.1.0
+      chalk: 4.1.1
       cli-cursor: 3.1.0
       cli-width: 3.0.0
       external-editor: 3.1.0
       figures: 3.2.0
-      lodash: 4.17.20
+      lodash: 4.17.21
       mute-stream: 0.0.8
       run-async: 2.4.1
-      rxjs: 6.6.3
+      rxjs: 6.6.7
       string-width: 4.2.0
       strip-ansi: 6.0.0
       through: 2.3.8
@@ -2732,7 +2741,7 @@ packages:
     resolution: {integrity: sha512-FN8JBzLx6CzeMrB0tg6pqlGU1wCrXW+ZXGH481kfsBqer0hToTIiHdjH4Mq8xJUbvATujKCvaREGWpGUionraA==}
     engines: {node: '>=10'}
     dependencies:
-      chalk: 4.1.0
+      chalk: 4.1.1
     dev: true
 
   /log-symbols/4.1.0:
@@ -3075,23 +3084,26 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /monorepo-next/6.0.0:
-    resolution: {integrity: sha512-HRvG3l7NQHMllDISQO4EN2cj5Fjn9vNf33sBjtO0HbE5PqDpv967DOUNSBlYj9q2GGDIweSMsaVZxvemP7v3CA==}
+  /monorepo-next/7.0.0:
+    resolution: {integrity: sha512-bDTLDRr/QZh/5f4qEm8pIz7sxG3A3X5Elb/lxE5T8XZjb4Gd36IP6FC1Br/MaCbwOLF8oI06mUhbFA6/tUUCvA==}
     engines: {node: '>=12.13'}
     hasBin: true
     dependencies:
       conventional-changelog: 3.1.24
       conventional-recommended-bump: 6.1.0
+      debug: 4.3.1
       execa: 5.0.0
       glob: 7.1.7
       inquirer: 8.1.0
       minimatch: 3.0.4
-      npm-packlist: 2.1.4
+      npm-packlist: 3.0.0
       rfc6902: 4.0.2
       semver: 7.3.5
-      standard-version: 9.3.0
+      standard-version: 9.3.1
       tmp: 0.2.1
       yargs: 17.0.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /ms/2.1.2:
@@ -3138,7 +3150,7 @@ packages:
       npmlog: 4.1.2
       request: 2.88.2
       rimraf: 3.0.2
-      semver: 7.3.4
+      semver: 7.3.5
       tar: 6.0.5
       which: 2.0.2
     dev: true
@@ -3190,7 +3202,7 @@ packages:
     resolution: {integrity: sha512-09OmyDkNLYwqKPOnbI8exiOZU2GVVmQp7tgez2BPi5OZC8M82elDAps7sxC4l//uSUtotWqoEIDwjRvWH4qz8w==}
     engines: {node: '>=10'}
     dependencies:
-      semver: 7.3.4
+      semver: 7.3.5
     dev: true
 
   /npm-normalize-package-bin/1.0.1:
@@ -3202,7 +3214,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       hosted-git-info: 3.0.7
-      semver: 7.3.4
+      semver: 7.3.5
       validate-npm-package-name: 3.0.0
     dev: true
 
@@ -3217,12 +3229,23 @@ packages:
       npm-normalize-package-bin: 1.0.1
     dev: true
 
+  /npm-packlist/3.0.0:
+    resolution: {integrity: sha512-L/cbzmutAwII5glUcf2DBRNY/d0TFd4e/FnaZigJV6JD85RHZXJFGwCndjMWiiViiWSsWt3tiOLpI3ByTnIdFQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      glob: 7.1.7
+      ignore-walk: 4.0.1
+      npm-bundled: 1.1.1
+      npm-normalize-package-bin: 1.0.1
+    dev: true
+
   /npm-pick-manifest/6.1.0:
     resolution: {integrity: sha512-ygs4k6f54ZxJXrzT0x34NybRlLeZ4+6nECAIbr2i0foTnijtS1TJiyzpqtuUAJOps/hO0tNDr8fRV5g+BtRlTw==}
     dependencies:
       npm-install-checks: 4.0.0
       npm-package-arg: 8.1.0
-      semver: 7.3.4
+      semver: 7.3.5
     dev: true
 
   /npm-registry-fetch/9.0.0:
@@ -3947,13 +3970,6 @@ packages:
     resolution: {integrity: sha512-DEqnSRTDw/Tc3FXf49zedI638Z9onwUotBMiUFKmrO2sdFKIbXamXGQ3Axd4qgphxKB4kw/qP1w5kTxnfU1B9Q==}
     dev: true
 
-  /rxjs/6.6.3:
-    resolution: {integrity: sha512-trsQc+xYYXZ3urjOiJOuCOa5N3jAZ3eiSpQB5hIT8zGlL2QfnHLJ2r7GMkBGuIausdJN1OneaI6gQlsqNHHmZQ==}
-    engines: {npm: '>=2.0.0'}
-    dependencies:
-      tslib: 1.13.0
-    dev: true
-
   /rxjs/6.6.7:
     resolution: {integrity: sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==}
     engines: {npm: '>=2.0.0'}
@@ -4173,8 +4189,8 @@ packages:
     engines: {node: '>=12.13'}
     dev: true
 
-  /standard-version/9.3.0:
-    resolution: {integrity: sha512-cYxxKXhYfI3S9+CA84HmrJa9B88H56V5FQ302iFF2TNwJukJCNoU8FgWt+11YtwKFXRkQQFpepC2QOF7aDq2Ow==}
+  /standard-version/9.3.1:
+    resolution: {integrity: sha512-5qMxXw/FxLouC5nANyx/5RY1kiorJx9BppUso8gN07MG64q2uLRmrPb4KfXp3Ql4s/gxjZwZ89e0FwxeLubGww==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -4517,6 +4533,7 @@ packages:
     resolution: {integrity: sha512-e1KQFRCpOxnrJsJVqDUCjURq+wXvIn7cK2sRAx9XL3HYLL9aezOP4Pb1+Y3/o693EPk111Yj2Q+IUXxcpHlygQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -4559,7 +4576,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       boxen: 4.2.0
-      chalk: 4.1.0
+      chalk: 4.1.1
       configstore: 5.0.1
       has-yarn: 2.1.0
       import-lazy: 2.1.0
@@ -4569,7 +4586,7 @@ packages:
       is-yarn-global: 0.3.0
       latest-version: 5.1.0
       pupa: 2.1.1
-      semver: 7.3.4
+      semver: 7.3.5
       semver-diff: 3.1.1
       xdg-basedir: 4.0.0
     dev: true
