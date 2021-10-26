@@ -16,7 +16,7 @@ importers:
       eslint-plugin-json-files: ^1.3.0
       eslint-plugin-mocha: ^9.0.0
       eslint-plugin-node: ^11.1.0
-      eslint-plugin-prefer-let: ^1.1.0
+      eslint-plugin-prefer-let: ^2.0.0
       fs-extra: ^10.0.0
       git-fixtures: ^4.0.0
       mocha: ^9.1.2
@@ -32,12 +32,12 @@ importers:
       ember-app-codemods-manifest: link:packages/app
       ember-cli-update: 1.0.1
       eslint: 8.0.1
-      eslint-config-sane: 1.0.0_060875386da3085fde5d1b344cee8ced
+      eslint-config-sane: 1.0.0_e9cac6fa74cd00e7075dad4689edc87b
       eslint-config-sane-node: 1.1.0_f2a204245a4f36d01771e0ffe0ccf0b5
       eslint-plugin-json-files: 1.3.0_eslint@8.0.1
       eslint-plugin-mocha: 9.0.0_eslint@8.0.1
       eslint-plugin-node: 11.1.0_eslint@8.0.1
-      eslint-plugin-prefer-let: 1.1.0
+      eslint-plugin-prefer-let: 2.0.0
       fs-extra: 10.0.0
       git-fixtures: 4.0.0
       mocha: 9.1.3
@@ -1472,19 +1472,19 @@ packages:
       eslint-plugin-json-files: ^0.8.1
       eslint-plugin-node: ^11.1.0
     dependencies:
-      eslint-config-sane: 1.0.0_060875386da3085fde5d1b344cee8ced
+      eslint-config-sane: 1.0.0_e9cac6fa74cd00e7075dad4689edc87b
       eslint-plugin-json-files: 1.3.0_eslint@8.0.1
       eslint-plugin-node: 11.1.0_eslint@8.0.1
     dev: true
 
-  /eslint-config-sane/1.0.0_060875386da3085fde5d1b344cee8ced:
+  /eslint-config-sane/1.0.0_e9cac6fa74cd00e7075dad4689edc87b:
     resolution: {integrity: sha512-7Oz5QnFO0AT0UQGV7AkGDkzXDSicAiqFGPMsFuxdARk7wuiDHf4fElJEq4HgQnOXIETQU6E3Q9DI/0j6oKo48w==}
     peerDependencies:
       eslint: '>=5 <8'
       eslint-plugin-prefer-let: ^1.0.0
     dependencies:
       eslint: 8.0.1
-      eslint-plugin-prefer-let: 1.1.0
+      eslint-plugin-prefer-let: 2.0.0
     dev: true
 
   /eslint-plugin-es/3.0.1_eslint@8.0.1:
@@ -1537,8 +1537,8 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prefer-let/1.1.0:
-    resolution: {integrity: sha512-d7IhB8FZCtnCNQ20e4UTETPJNF3mIES3ZYan9RK/K3sIkEfuL3NfF9t5gxoNRFjeSkhlGpJmZdLGLRGPmKgVfQ==}
+  /eslint-plugin-prefer-let/2.0.0:
+    resolution: {integrity: sha512-vHCWJtSLq3yQEBgVxnyqBM33U/VCXsXu/SjixFIekd8H+i0mb+dNpBiDzsR/200kEq81XD7J3dDT6BuTQWxTiA==}
     engines: {node: '>=0.10.0'}
     dependencies:
       requireindex: 1.2.0
