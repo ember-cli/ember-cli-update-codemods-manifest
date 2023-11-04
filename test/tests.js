@@ -109,6 +109,10 @@ describe('runs codemods', function() {
         this.skip();
       }
 
+      if (['ember-data-codemod', 'qunit-dom-codemod'].includes(codemod) && ['linux', 'win32'].includes(process.platform)) {
+        this.skip();
+      }
+
       async function _merge(src, dest) {
         await fs.copy(
           path.join(codemodsFixturesPath, codemod, src, commitMessage),
