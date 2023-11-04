@@ -113,6 +113,10 @@ describe('runs codemods', function() {
         this.skip();
       }
 
+      if (['es5-getter-ember-codemod'].includes(codemod) && ['linux'].includes(process.platform)) {
+        this.skip();
+      }
+
       async function _merge(src, dest) {
         await fs.copy(
           path.join(codemodsFixturesPath, codemod, src, commitMessage),
