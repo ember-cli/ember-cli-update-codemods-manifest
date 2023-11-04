@@ -15,7 +15,7 @@ init:
 # Install scripts. (runs after repo cloning)
 install:
   - ps: Install-Product node $env:nodejs_version
-  - curl -L https://unpkg.com/@pnpm/self-installer | node
+  - npm install -g pnpm@6.7.4
   - pnpm install
 
 # Post-install test scripts.
