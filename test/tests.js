@@ -107,7 +107,6 @@ describe('runs codemods', function() {
     it(codemod, async function() {
       if (!applicableCodemods.includes(codemod)) {
         this.skip();
-        return;
       }
 
       async function _merge(src, dest) {
