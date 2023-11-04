@@ -36,10 +36,10 @@ jobs:
         - macos-latest
         node:
         - 12
-        - '*'
+        - 18
         exclude:
         - os: macos-latest
-          node: '*'
+          node: 18
 
     runs-on: ${{ matrix.os }}
 
