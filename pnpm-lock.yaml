@@ -23,7 +23,7 @@ importers:
       mocha-helpers: ^7.1.0
       monorepo-next: ^7.0.0
       renovate-config-standard: 2.1.2
-      standard-node-template: 2.0.0
+      standard-node-template: 2.1.0
     devDependencies:
       '@crowdstrike/commitlint': 5.0.0
       '@kellyselden/node-template': 3.1.0
@@ -44,7 +44,7 @@ importers:
       mocha-helpers: 7.1.0
       monorepo-next: 7.0.0
       renovate-config-standard: 2.1.2
-      standard-node-template: 2.0.0
+      standard-node-template: 2.1.0
 
   packages/addon:
     specifiers: {}
@@ -4146,8 +4146,8 @@ packages:
       minipass: 3.1.3
     dev: true
 
-  /standard-node-template/2.0.0:
-    resolution: {integrity: sha512-ZlSqPMYtkd9s4zWEZq6CJH/dkE3u8gUwKYIhJ+o7ZlWBG2wsJPMhS8gvRQiLMtO0pD1htfYTLNBLvzcTwdxcBw==}
+  /standard-node-template/2.1.0:
+    resolution: {integrity: sha512-5MBzpWbFMFqJON5jUGDIy4ey6CVZlkG/IiXycQIzCwqIwzhY0rWFrviTcJgSzMLcMskolYZJeaKWnigYuL+2Pw==}
     engines: {node: '>=12.13'}
     dev: true
 
