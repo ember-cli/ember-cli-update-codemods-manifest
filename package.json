@@ -42,6 +42,6 @@
     "mocha-helpers": "^8.0.0",
     "monorepo-next": "^7.0.0",
     "renovate-config-standard": "2.1.2",
-    "standard-node-template": "4.1.0"
+    "standard-node-template": "6.0.0"
   }
 }
