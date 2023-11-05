@@ -15,7 +15,7 @@ init:
 # Install scripts. (runs after repo cloning)
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm install -g pnpm@6.7.4
+  - npm install -g pnpm@8.10.2
   - pnpm install
 
 # Post-install test scripts.
