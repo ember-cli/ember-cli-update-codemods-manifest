@@ -23,7 +23,7 @@
     "node": ">=18.12"
   },
   "devDependencies": {
-    "@crowdstrike/commitlint": "^5.0.0",
+    "@crowdstrike/commitlint": "^7.0.0",
     "@kellyselden/node-template": "5.0.0",
     "chai": "^4.3.7",
     "ember-addon-codemods-manifest": "",
