@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@crowdstrike/commitlint': ^5.0.0
-      '@kellyselden/node-template': 4.1.0
+      '@kellyselden/node-template': 5.0.0
       chai: ^4.3.7
       ember-addon-codemods-manifest: ''
       ember-app-codemods-manifest: ''
@@ -26,7 +26,7 @@ importers:
       standard-node-template: 4.1.0
     devDependencies:
       '@crowdstrike/commitlint': 5.0.0
-      '@kellyselden/node-template': 4.1.0
+      '@kellyselden/node-template': 5.0.0
       chai: 4.3.10
       ember-addon-codemods-manifest: link:packages/addon
       ember-app-codemods-manifest: link:packages/app
@@ -338,9 +338,9 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@kellyselden/node-template/4.1.0:
-    resolution: {integrity: sha512-XV2kiAg59iLwq6BA+IeogxXI+BQzMx6blhd2kcmPujRiptrAmio0ZByj4Tuebn1Zs1n9JTtBL2eRznwtoUrhwA==}
-    engines: {node: '>=16.13'}
+  /@kellyselden/node-template/5.0.0:
+    resolution: {integrity: sha512-bJO4wW5m+FGcEWrHqfPdYrIW5ggooOYXFqm0tc/cHYXUAl8XsqOgi2l4B5TbuKvUUqKMif3cVxZRRJ8zSEjCsw==}
+    engines: {node: '>=18.12'}
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
