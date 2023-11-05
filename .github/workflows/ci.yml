@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
-        node-version: 12
+        node-version: 16
 
     - uses: pnpm/action-setup@v2.2.1
       with:
@@ -35,7 +35,7 @@ jobs:
         - ubuntu-latest
         - macos-latest
         node:
-        - 12
+        - 16
 
     runs-on: ${{ matrix.os }}
 
@@ -69,13 +69,13 @@ jobs:
         token: ${{ secrets.GitHubToken }}
     - uses: actions/setup-node@v3
       with:
-        node-version: 12
+        node-version: 16
 
     - uses: pnpm/action-setup@v2.2.1
       with:
         version: 6.7.4
 
-    - uses: kellyselden/ember-cli-update-action@v3
+    - uses: kellyselden/ember-cli-update-action@v4
       with:
         autofix_command: npm run lint:js -- --fix
         ignore_to: true
