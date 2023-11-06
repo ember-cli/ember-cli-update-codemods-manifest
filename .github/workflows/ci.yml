@@ -79,7 +79,7 @@ jobs:
       with:
         version: 8.10.2
 
-    - uses: kellyselden/ember-cli-update-action@v5
+    - uses: kellyselden/ember-cli-update-action@v6
       with:
         autofix_command: npm run lint:js -- --fix
         ignore_to: true
