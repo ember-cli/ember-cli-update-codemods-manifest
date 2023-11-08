@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-update-codemods-manifest",
   "private": true,
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Master list of codemods and their instructions used by ember-cli-update",
   "scripts": {
     "lint:git": "commitlint",
