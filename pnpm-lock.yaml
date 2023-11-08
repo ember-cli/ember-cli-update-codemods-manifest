@@ -60,8 +60,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       monorepo-next:
-        specifier: ^10.0.0
-        version: 10.2.1
+        specifier: ^11.0.0
+        version: 11.0.0
       renovate-config-standard:
         specifier: 2.1.2
         version: 2.1.2
@@ -2799,7 +2799,7 @@ packages:
       foreground-child: 3.1.1
       jackspeak: 2.3.6
       minimatch: 9.0.3
-      minipass: 5.0.0
+      minipass: 7.0.4
       path-scurry: 1.10.1
     dev: true
 
@@ -3931,9 +3931,9 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /monorepo-next@10.2.1:
-    resolution: {integrity: sha512-Y4czrhZh6D7Il/Q52w/kPOKRpRxdzQmm3ZykiFToyJO3TMwm3iaKer83qhWyAREMcThBTu0IxZzXoxKpI3PGZw==}
-    engines: {node: '>=16.13'}
+  /monorepo-next@11.0.0:
+    resolution: {integrity: sha512-2qGgIh/wovOmqxDs5LR8o2vXSEq00/i53GQtSDYRAmGV0YT7loI8KOPmsjSmAUp7eyzXK12paE7YxG9kNmDPgg==}
+    engines: {node: '>=18.12'}
     hasBin: true
     dependencies:
       conventional-changelog: 3.1.25
@@ -4533,7 +4533,7 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       lru-cache: 10.0.1
-      minipass: 5.0.0
+      minipass: 7.0.4
     dev: true
 
   /path-type@3.0.0:
