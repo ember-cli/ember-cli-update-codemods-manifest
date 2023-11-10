@@ -15,7 +15,7 @@ importers:
         specifier: 5.0.1
         version: 5.0.1
       chai:
-        specifier: ^4.3.7
+        specifier: ^4.3.10
         version: 4.3.10
       ember-addon-codemods-manifest:
         specifier: ''
@@ -27,19 +27,19 @@ importers:
         specifier: 2.0.1
         version: 2.0.1
       eslint:
-        specifier: ^8.44.0
+        specifier: ^8.53.0
         version: 8.53.0
       eslint-config-sane:
         specifier: ^1.0.2
         version: 1.0.2(eslint-plugin-prefer-let@3.0.1)(eslint@8.53.0)
       eslint-config-sane-node:
         specifier: ^1.1.1
-        version: 1.1.1(eslint-config-sane@1.0.2)(eslint-plugin-json-files@3.0.0)(eslint-plugin-node@11.1.0)
+        version: 1.1.1(eslint-config-sane@1.0.2)(eslint-plugin-json-files@4.1.0)(eslint-plugin-node@11.1.0)
       eslint-plugin-json-files:
-        specifier: ^3.0.0
-        version: 3.0.0(eslint@8.53.0)
+        specifier: ^4.1.0
+        version: 4.1.0(eslint@8.53.0)
       eslint-plugin-mocha:
-        specifier: ^10.1.0
+        specifier: ^10.2.0
         version: 10.2.0(eslint@8.53.0)
       eslint-plugin-node:
         specifier: ^11.1.0
@@ -57,8 +57,8 @@ importers:
         specifier: ^10.2.0
         version: 10.2.0
       mocha-helpers:
-        specifier: ^8.0.0
-        version: 8.0.0
+        specifier: ^9.0.0
+        version: 9.0.0
       monorepo-next:
         specifier: ^11.0.0
         version: 11.0.0
@@ -2107,7 +2107,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-sane-node@1.1.1(eslint-config-sane@1.0.2)(eslint-plugin-json-files@3.0.0)(eslint-plugin-node@11.1.0):
+  /eslint-config-sane-node@1.1.1(eslint-config-sane@1.0.2)(eslint-plugin-json-files@4.1.0)(eslint-plugin-node@11.1.0):
     resolution: {integrity: sha512-scCanxuZrk9dvO+PPE5HwtrCyfovIvS+jIpKLtK81/VE9bRF6r9z5B8xxt1mpJF5brCSiIoAS0vyxnpJ0gxFUw==}
     peerDependencies:
       eslint-config-sane: '>=1'
@@ -2115,7 +2115,7 @@ packages:
       eslint-plugin-node: '>=11'
     dependencies:
       eslint-config-sane: 1.0.2(eslint-plugin-prefer-let@3.0.1)(eslint@8.53.0)
-      eslint-plugin-json-files: 3.0.0(eslint@8.53.0)
+      eslint-plugin-json-files: 4.1.0(eslint@8.53.0)
       eslint-plugin-node: 11.1.0(eslint@8.53.0)
     dev: true
 
@@ -2140,9 +2140,9 @@ packages:
       regexpp: 3.2.0
     dev: true
 
-  /eslint-plugin-json-files@3.0.0(eslint@8.53.0):
-    resolution: {integrity: sha512-sv9ma6T1i9VxB6WqciiO9mzHxToF+hxeN4rwxGtew75uPTiSAI0E9Zyw4YsCz6p7WJD5XeRpV0JeG7YokI6MOg==}
-    engines: {node: '>=16.13'}
+  /eslint-plugin-json-files@4.1.0(eslint@8.53.0):
+    resolution: {integrity: sha512-oK9SxvFp5vyq+cXo76Ily9rN/iPM2w8T6MtPgJAlKP2jfZeDdeD0qgTIGiMeHZjS0eURXs5Vn+KgYVh0e/u7pA==}
+    engines: {node: '>=18.12'}
     peerDependencies:
       eslint: '>=5'
     dependencies:
@@ -3874,9 +3874,9 @@ packages:
     hasBin: true
     dev: true
 
-  /mocha-helpers@8.0.0:
-    resolution: {integrity: sha512-YkCfhkAkKS+GM6LmDo+lZ7lnMjkA/nJnDGuBMnnwKc8hH7Cl1BV/3mfbxMI/G1GyODFD/iJIbhY7sv52bzhr8A==}
-    engines: {node: '>=16.13'}
+  /mocha-helpers@9.0.0:
+    resolution: {integrity: sha512-iGpMU03QKt9wd2lep8eoVxPLs2nXpyw2PawEwJ25vNaccHsHVd0XeFuHnrw4vPjoa3C17DIULdWu6iK2EimthA==}
+    engines: {node: '>=18.12'}
     dependencies:
       callsites: 3.1.0
       commondir: 1.0.1
