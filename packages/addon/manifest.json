@@ -84,7 +84,7 @@
       "ember-source": ">=3.10.0-beta.1"
     },
     "nodeVersionRange": ">=8",
-    "commands" : ["ember-angle-brackets-codemod@2 angle-brackets addon/templates tests/dummy/app/templates"]
+    "commands" : ["ember-angle-brackets-codemod addon/templates tests/dummy/app/templates"]
   },
   "fpe-on-codemod": {
     "versionRanges": {
