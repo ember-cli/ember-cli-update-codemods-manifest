@@ -1,6 +1,8 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [1.0.11](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-addon-codemods-manifest@1.0.10...ember-addon-codemods-manifest@1.0.11) (2024-11-18)
 
 ### [1.0.10](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-addon-codemods-manifest@1.0.9...ember-addon-codemods-manifest@1.0.10) (2023-11-06)
 
