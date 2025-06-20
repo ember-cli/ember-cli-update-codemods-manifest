@@ -66,8 +66,8 @@ importers:
         specifier: 2.1.2
         version: 2.1.2
       standard-node-template:
-        specifier: 7.0.0
-        version: 7.0.0
+        specifier: 6.0.0
+        version: 6.0.0
 
   packages/addon: {}
 
@@ -5888,9 +5888,9 @@ packages:
       minipass: 3.3.6
     dev: true
 
-  /standard-node-template@7.0.0:
-    resolution: {integrity: sha512-zqx4yqN8VwTuyur8samKXlbCYBn37Y3CPbuzP9yfGxHv8GqMlZ98dHOaJpFzNFzl5bbQzNtLZ5J9/6xul8adug==}
-    engines: {node: '>=20.9'}
+  /standard-node-template@6.0.0:
+    resolution: {integrity: sha512-Ii/Ucgkw8xajSGCCzFdcNTF8TJ6tX8feDVS8ANsX6JtItrZMcBYGAC5mX5tDDTGYrAv5JiCanJ6RFFE9bO7+Xw==}
+    engines: {node: '>=18.12'}
     dev: true
 
   /string-width@4.2.3:
