@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/ember-cli/ember-cli-update-codemods-manifest#readme",
   "engines": {
-    "node": ">=20.9"
+    "node": ">=18.12"
   },
   "devDependencies": {
     "@crowdstrike/commitlint": "^8.0.0",
