@@ -63,8 +63,8 @@ importers:
         specifier: ^12.0.0
         version: 12.0.0
       renovate-config-standard:
-        specifier: 2.1.2
-        version: 2.1.2
+        specifier: 2.2.0
+        version: 2.2.0
       standard-node-template:
         specifier: 7.0.0
         version: 7.0.0
@@ -5516,8 +5516,8 @@ packages:
       rc: 1.2.8
     dev: true
 
-  /renovate-config-standard@2.1.2:
-    resolution: {integrity: sha512-MBG0qAuaQF2X/CMwn63kS8swR3cIuKWhFDYQKm3LQjRY9ryxVW3gXq/O83ACHPMhQrqRDNmT/VzT4LHWX9DsRA==}
+  /renovate-config-standard@2.2.0:
+    resolution: {integrity: sha512-zmqsuAyPnv4/uyjJngLJcoZlaLxSwXKHgKM09ilQMuMZqyALjXpPs9kEv3myvfI6bDzbLGMu/cXG0E2zVCfGFQ==}
     dev: true
 
   /require-directory@2.1.1:
