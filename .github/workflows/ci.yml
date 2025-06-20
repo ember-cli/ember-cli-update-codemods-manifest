@@ -36,6 +36,7 @@ jobs:
         - macos-latest
         node:
         - 18
+
         - '*'
         exclude:
         - os: macos-latest
