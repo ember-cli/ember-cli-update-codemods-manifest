@@ -12,8 +12,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.1(commitlint@7.6.1)(typescript@5.2.2)
       '@kellyselden/node-template':
-        specifier: 5.2.0
-        version: 5.2.0
+        specifier: 6.1.0
+        version: 6.1.0
       chai:
         specifier: ^4.4.1
         version: 4.4.1
@@ -621,9 +621,9 @@ packages:
     resolution: {integrity: sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==}
     dev: true
 
-  /@kellyselden/node-template@5.2.0:
-    resolution: {integrity: sha512-oHRcNsAtBNwbQg5G7w415ARbGGoO8eNtJRjcd5ANPoZNZ9NMmA/kMCGhqLKyu9e6C4OTjvrHSlKqUWRgTB3tQQ==}
-    engines: {node: '>=18.12'}
+  /@kellyselden/node-template@6.1.0:
+    resolution: {integrity: sha512-whetjErnfEudBttgOmC5O2AE8c1xHNjrXRtEbEoG5gOYsOOCmt94VUpirnLdnVGZqjJg6mhrXWRDcxdar1v77A==}
+    engines: {node: '>=20.9'}
     dev: true
 
   /@marionebl/sander@0.6.1:
