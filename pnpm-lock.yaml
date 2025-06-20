@@ -12,8 +12,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.1(commitlint@7.6.1)(typescript@5.2.2)
       '@kellyselden/node-template':
-        specifier: 5.1.0
-        version: 5.1.0
+        specifier: 5.2.0
+        version: 5.2.0
       chai:
         specifier: ^4.4.1
         version: 4.4.1
@@ -621,8 +621,8 @@ packages:
     resolution: {integrity: sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==}
     dev: true
 
-  /@kellyselden/node-template@5.1.0:
-    resolution: {integrity: sha512-50gafmfL/qy8KZrMCJXLel9VyA60Jr3BpyF3dxrqaLSafLQtirjNSFFU3hA3T9TRIF6JoN+a3dxnCpETa0wQmg==}
+  /@kellyselden/node-template@5.2.0:
+    resolution: {integrity: sha512-oHRcNsAtBNwbQg5G7w415ARbGGoO8eNtJRjcd5ANPoZNZ9NMmA/kMCGhqLKyu9e6C4OTjvrHSlKqUWRgTB3tQQ==}
     engines: {node: '>=18.12'}
     dev: true
 
@@ -3933,6 +3933,7 @@ packages:
 
   /lodash.template@4.5.0:
     resolution: {integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==}
+    deprecated: This package is deprecated. Use https://socket.dev/npm/package/eta instead.
     dependencies:
       lodash._reinterpolate: 3.0.0
       lodash.templatesettings: 4.2.0
