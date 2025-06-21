@@ -34,10 +34,10 @@ importers:
         version: 1.0.2(eslint-plugin-prefer-let@4.0.0)(eslint@8.57.1)
       eslint-config-sane-node:
         specifier: ^2.0.0
-        version: 2.0.0(eslint-config-sane@1.0.2)(eslint-plugin-json-files@4.4.2)(eslint-plugin-n@17.20.0)
+        version: 2.0.0(eslint-config-sane@1.0.2)(eslint-plugin-json-files@5.1.0)(eslint-plugin-n@17.20.0)
       eslint-plugin-json-files:
-        specifier: ^4.4.2
-        version: 4.4.2(eslint@8.57.1)
+        specifier: ^5.0.0
+        version: 5.1.0(eslint@8.57.1)
       eslint-plugin-mocha:
         specifier: ^10.5.0
         version: 10.5.0(eslint@8.57.1)
@@ -88,8 +88,22 @@ packages:
       chalk: 2.4.2
     dev: true
 
+  /@babel/code-frame@7.27.1:
+    resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/helper-validator-identifier': 7.27.1
+      js-tokens: 4.0.0
+      picocolors: 1.1.1
+    dev: true
+
   /@babel/helper-validator-identifier@7.22.20:
     resolution: {integrity: sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==}
+    engines: {node: '>=6.9.0'}
+    dev: true
+
+  /@babel/helper-validator-identifier@7.27.1:
+    resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
     engines: {node: '>=6.9.0'}
     dev: true
 
@@ -709,7 +723,7 @@ packages:
       promise-all-reject-late: 1.0.1
       promise-call-limit: 3.0.1
       read-package-json-fast: 3.0.2
-      semver: 7.5.4
+      semver: 7.7.2
       ssri: 10.0.6
       treeverse: 3.0.0
       walk-up-path: 3.0.1
@@ -723,14 +737,14 @@ packages:
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
       '@gar/promisify': 1.1.3
-      semver: 7.5.4
+      semver: 7.7.2
     dev: true
 
   /@npmcli/fs@3.1.1:
     resolution: {integrity: sha512-q9CRWjpHCMIh5sVyefoD1cA7PkvILqCZsnSOEUUivORLjxCO/Irmue2DprETiNgEqktDBZaM1Bi+jrarx1XdCg==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      semver: 7.5.4
+      semver: 7.7.2
     dev: true
 
   /@npmcli/git@3.0.2:
@@ -744,7 +758,7 @@ packages:
       proc-log: 2.0.1
       promise-inflight: 1.0.1
       promise-retry: 2.0.1
-      semver: 7.5.4
+      semver: 7.7.2
       which: 2.0.2
     transitivePeerDependencies:
       - bluebird
@@ -761,7 +775,7 @@ packages:
       proc-log: 4.2.0
       promise-inflight: 1.0.1
       promise-retry: 2.0.1
-      semver: 7.5.4
+      semver: 7.7.2
       which: 4.0.0
     transitivePeerDependencies:
       - bluebird
@@ -790,7 +804,7 @@ packages:
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
       '@npmcli/name-from-folder': 2.0.0
-      glob: 10.3.10
+      glob: 10.4.5
       minimatch: 9.0.5
       read-package-json-fast: 3.0.2
     dev: true
@@ -803,7 +817,7 @@ packages:
       json-parse-even-better-errors: 3.0.2
       pacote: 18.0.6
       proc-log: 4.2.0
-      semver: 7.5.4
+      semver: 7.7.2
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -838,12 +852,12 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/git': 5.0.8
-      glob: 10.3.10
+      glob: 10.4.5
       hosted-git-info: 7.0.2
       json-parse-even-better-errors: 3.0.2
       normalize-package-data: 6.0.2
       proc-log: 4.2.0
-      semver: 7.5.4
+      semver: 7.7.2
     transitivePeerDependencies:
       - bluebird
     dev: true
@@ -1380,13 +1394,13 @@ packages:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
     dev: true
 
-  /better-ajv-errors@1.2.0(ajv@8.12.0):
-    resolution: {integrity: sha512-UW+IsFycygIo7bclP9h5ugkNH8EjCSgqyFB/yQ4Hqqa1OEYDtb0uFIkYE0b6+CjkgJYVM5UKI/pJPxjYe9EZlA==}
-    engines: {node: '>= 12.13.0'}
+  /better-ajv-errors@2.0.2(ajv@8.12.0):
+    resolution: {integrity: sha512-1cLrJXEq46n0hjV8dDYwg9LKYjDb3KbeW7nZTv4kvfoDD9c2DXHIE31nxM+Y/cIfXMggLUfmxbm6h/JoM/yotA==}
+    engines: {node: '>= 18.20.6'}
     peerDependencies:
       ajv: 4.11.8 - 8
     dependencies:
-      '@babel/code-frame': 7.22.13
+      '@babel/code-frame': 7.27.1
       '@humanwhocodes/momoa': 2.0.4
       ajv: 8.12.0
       chalk: 4.1.2
@@ -1498,7 +1512,7 @@ packages:
   /builtins@5.0.1:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
-      semver: 7.5.4
+      semver: 7.7.2
     dev: true
 
   /cacache@16.1.3:
@@ -1533,7 +1547,7 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.1
       fs-minipass: 3.0.3
-      glob: 10.3.10
+      glob: 10.4.5
       lru-cache: 10.4.3
       minipass: 7.0.4
       minipass-collect: 2.0.1
@@ -1807,7 +1821,7 @@ packages:
       figures: 3.2.0
       find-up: 5.0.0
       git-semver-tags: 4.1.1
-      semver: 7.5.4
+      semver: 7.7.2
       stringify-package: 1.0.1
       yargs: 17.7.2
     dev: true
@@ -2098,7 +2112,7 @@ packages:
       handlebars: 4.7.8
       json-stringify-safe: 5.0.1
       meow: 12.1.1
-      semver: 7.5.4
+      semver: 7.7.2
       split2: 4.2.0
     dev: true
 
@@ -2571,7 +2585,7 @@ packages:
       semver: 7.7.2
     dev: true
 
-  /eslint-config-sane-node@2.0.0(eslint-config-sane@1.0.2)(eslint-plugin-json-files@4.4.2)(eslint-plugin-n@17.20.0):
+  /eslint-config-sane-node@2.0.0(eslint-config-sane@1.0.2)(eslint-plugin-json-files@5.1.0)(eslint-plugin-n@17.20.0):
     resolution: {integrity: sha512-stBuWRo5GRb1AAt8Nc31hilMDoBwVrElnZmk+dSWyicyUdPY5GGL5oTis5KsVWVrMKVTC8kjXYbbbxF8hyDXkA==}
     peerDependencies:
       eslint-config-sane: '>=1'
@@ -2579,7 +2593,7 @@ packages:
       eslint-plugin-n: '>=15.1'
     dependencies:
       eslint-config-sane: 1.0.2(eslint-plugin-prefer-let@4.0.0)(eslint@8.57.1)
-      eslint-plugin-json-files: 4.4.2(eslint@8.57.1)
+      eslint-plugin-json-files: 5.1.0(eslint@8.57.1)
       eslint-plugin-n: 17.20.0(eslint@8.57.1)(typescript@5.2.2)
     dev: true
 
@@ -2605,18 +2619,18 @@ packages:
       eslint-compat-utils: 0.5.1(eslint@8.57.1)
     dev: true
 
-  /eslint-plugin-json-files@4.4.2(eslint@8.57.1):
-    resolution: {integrity: sha512-P+bNyzNmz/ia5JmEAjZAwsnMjrm/Zffxlpj3fz+LgF/Ka8qm2bopJIvqiCaBly0wjdy3XYOGQVZzfjefPsHClw==}
-    engines: {node: '>=18.12'}
+  /eslint-plugin-json-files@5.1.0(eslint@8.57.1):
+    resolution: {integrity: sha512-OFXfiNV3hvCT5F9C77OR4KHZZAgpezI6oSvaRP4CcHgv2R0kPr+hctn4dCKbrKSggjr7YK7nn+ErWB68x4BB3w==}
+    engines: {node: '>=20.9'}
     peerDependencies:
       eslint: '>=5'
     dependencies:
       ajv: 8.12.0
-      better-ajv-errors: 1.2.0(ajv@8.12.0)
+      better-ajv-errors: 2.0.2(ajv@8.12.0)
       eslint: 8.57.1
       fast-glob: 3.3.2
       requireindex: 1.2.0
-      semver: 7.5.4
+      semver: 7.7.2
       sort-package-json: 1.57.0
     dev: true
 
@@ -3205,7 +3219,7 @@ packages:
     hasBin: true
     dependencies:
       meow: 12.1.1
-      semver: 7.5.4
+      semver: 7.7.2
     dev: true
 
   /gitconfiglocal@1.0.0:
@@ -3226,18 +3240,6 @@ packages:
     engines: {node: '>=10.13.0'}
     dependencies:
       is-glob: 4.0.3
-    dev: true
-
-  /glob@10.3.10:
-    resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
-    engines: {node: '>=16 || 14 >=14.17'}
-    hasBin: true
-    dependencies:
-      foreground-child: 3.1.1
-      jackspeak: 2.3.6
-      minimatch: 9.0.5
-      minipass: 7.0.4
-      path-scurry: 1.10.1
     dev: true
 
   /glob@10.4.5:
@@ -3311,7 +3313,7 @@ packages:
       dir-glob: 3.0.1
       fast-glob: 3.3.2
       glob: 7.2.3
-      ignore: 5.2.4
+      ignore: 5.3.2
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
@@ -3793,15 +3795,6 @@ packages:
   /isexe@3.1.1:
     resolution: {integrity: sha512-LpB/54B+/2J5hqQ7imZHfdU31OlgQqx7ZicVlkm9kzg9/w8GKLEcFfJl/t7DCEDueOyBAD6zCCwTO6Fzs0NoEQ==}
     engines: {node: '>=16'}
-    dev: true
-
-  /jackspeak@2.3.6:
-    resolution: {integrity: sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ==}
-    engines: {node: '>=14'}
-    dependencies:
-      '@isaacs/cliui': 8.0.2
-    optionalDependencies:
-      '@pkgjs/parseargs': 0.11.0
     dev: true
 
   /jackspeak@3.4.3:
@@ -4596,12 +4589,12 @@ packages:
     dependencies:
       env-paths: 2.2.1
       exponential-backoff: 3.1.1
-      glob: 10.3.10
+      glob: 10.4.5
       graceful-fs: 4.2.11
       make-fetch-happen: 13.0.1
       nopt: 7.2.1
       proc-log: 4.2.0
-      semver: 7.5.4
+      semver: 7.7.2
       tar: 6.2.1
       which: 4.0.0
     transitivePeerDependencies:
@@ -4621,7 +4614,7 @@ packages:
       nopt: 6.0.0
       npmlog: 6.0.2
       rimraf: 3.0.2
-      semver: 7.5.4
+      semver: 7.7.2
       tar: 6.2.0
       which: 2.0.2
     transitivePeerDependencies:
@@ -4660,7 +4653,7 @@ packages:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.13.1
-      semver: 7.5.4
+      semver: 7.7.2
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -4670,7 +4663,7 @@ packages:
     dependencies:
       hosted-git-info: 5.2.1
       is-core-module: 2.13.1
-      semver: 7.5.4
+      semver: 7.7.2
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -4679,7 +4672,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       hosted-git-info: 7.0.2
-      semver: 7.5.4
+      semver: 7.7.2
       validate-npm-package-license: 3.0.4
     dev: true
 
@@ -4717,14 +4710,14 @@ packages:
     resolution: {integrity: sha512-65lUsMI8ztHCxFz5ckCEC44DRvEGdZX5usQFriauxHEwt7upv1FKaQEmAtU0YnOAdwuNWCmk64xYiQABNrEyLA==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
-      semver: 7.5.4
+      semver: 7.7.2
     dev: true
 
   /npm-install-checks@6.3.0:
     resolution: {integrity: sha512-W29RiK/xtpCGqn6f3ixfRYGk+zRyr+Ew9F2E20BfXxT5/euLdA/Nm7fO7OeTGuAmTs30cpgInyJ0cYe708YTZw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      semver: 7.5.4
+      semver: 7.7.2
     dev: true
 
   /npm-normalize-package-bin@1.0.1:
@@ -4747,7 +4740,7 @@ packages:
     dependencies:
       hosted-git-info: 7.0.2
       proc-log: 4.2.0
-      semver: 7.5.4
+      semver: 7.7.2
       validate-npm-package-name: 5.0.0
     dev: true
 
@@ -4756,7 +4749,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       hosted-git-info: 4.1.0
-      semver: 7.5.4
+      semver: 7.7.2
       validate-npm-package-name: 3.0.0
     dev: true
 
@@ -4766,7 +4759,7 @@ packages:
     dependencies:
       hosted-git-info: 5.2.1
       proc-log: 2.0.1
-      semver: 7.5.4
+      semver: 7.7.2
       validate-npm-package-name: 4.0.0
     dev: true
 
@@ -4795,7 +4788,7 @@ packages:
       npm-install-checks: 5.0.0
       npm-normalize-package-bin: 2.0.0
       npm-package-arg: 9.1.2
-      semver: 7.5.4
+      semver: 7.7.2
     dev: true
 
   /npm-pick-manifest@9.1.0:
@@ -4805,7 +4798,7 @@ packages:
       npm-install-checks: 6.3.0
       npm-normalize-package-bin: 3.0.1
       npm-package-arg: 11.0.2
-      semver: 7.5.4
+      semver: 7.7.2
     dev: true
 
   /npm-registry-fetch@13.3.1:
@@ -5177,14 +5170,6 @@ packages:
 
   /path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
-    dev: true
-
-  /path-scurry@1.10.1:
-    resolution: {integrity: sha512-MkhCqzzBEpPvxxQ71Md0b1Kk51W01lrYvlMzSUaIzNsODdd7mqhiimSZlr+VegAz5Z6Vzt9Xg2ttE//XBhH3EQ==}
-    engines: {node: '>=16 || 14 >=14.17'}
-    dependencies:
-      lru-cache: 10.4.3
-      minipass: 7.0.4
     dev: true
 
   /path-scurry@1.11.1:
