@@ -57,8 +57,8 @@ importers:
         specifier: ^11.7.0
         version: 11.7.0
       mocha-helpers:
-        specifier: ^9.0.1
-        version: 9.1.0
+        specifier: ^10.0.0
+        version: 10.0.0
       monorepo-next:
         specifier: ^12.0.0
         version: 12.5.3
@@ -4622,9 +4622,9 @@ packages:
     hasBin: true
     dev: true
 
-  /mocha-helpers@9.1.0:
-    resolution: {integrity: sha512-3uCCYCudqqns7VoLYRB29nXaIC4xSKEwQ3znckECwZNBLwxXsZaCUpAYajbqDIzrKXsU29Tupb5pT7CfZxENrQ==}
-    engines: {node: '>=18.12'}
+  /mocha-helpers@10.0.0:
+    resolution: {integrity: sha512-6lOi+qgeVYkkEZP75L0QzCl2gVvyqKFuFI8wrNOA7sYruHgFK25Ccz8gKtSa+L8DkMC6rbWAFNiJUyfPfB03Qg==}
+    engines: {node: '>=20.9'}
     dependencies:
       callsites: 3.1.0
       commondir: 1.0.1
