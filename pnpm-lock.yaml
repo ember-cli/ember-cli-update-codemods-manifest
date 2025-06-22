@@ -39,8 +39,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(eslint@8.57.1)
       eslint-plugin-mocha:
-        specifier: ^10.5.0
-        version: 10.5.0(eslint@8.57.1)
+        specifier: ^11.0.0
+        version: 11.1.0(eslint@8.57.1)
       eslint-plugin-n:
         specifier: ^17.20.0
         version: 17.20.0(eslint@8.57.1)(typescript@5.2.2)
@@ -2634,16 +2634,14 @@ packages:
       sort-package-json: 1.57.0
     dev: true
 
-  /eslint-plugin-mocha@10.5.0(eslint@8.57.1):
-    resolution: {integrity: sha512-F2ALmQVPT1GoP27O1JTZGrV9Pqg8k79OeIuvw63UxMtQKREZtmkK1NFgkZQ2TW7L2JSSFKHFPTtHu5z8R9QNRw==}
-    engines: {node: '>=14.0.0'}
+  /eslint-plugin-mocha@11.1.0(eslint@8.57.1):
+    resolution: {integrity: sha512-rKntVWRsQFPbf8OkSgVNRVRrcVAPaGTyEgWCEyXaPDJkTl0v5/lwu1vTk5sWiUJU8l2sxwvGUZzSNrEKdVMeQw==}
     peerDependencies:
-      eslint: '>=7.0.0'
+      eslint: '>=9.0.0'
     dependencies:
+      '@eslint-community/eslint-utils': 4.7.0(eslint@8.57.1)
       eslint: 8.57.1
-      eslint-utils: 3.0.0(eslint@8.57.1)
-      globals: 13.24.0
-      rambda: 7.5.0
+      globals: 15.15.0
     dev: true
 
   /eslint-plugin-n@17.20.0(eslint@8.57.1)(typescript@5.2.2):
@@ -2681,21 +2679,6 @@ packages:
     dependencies:
       esrecurse: 4.3.0
       estraverse: 5.3.0
-    dev: true
-
-  /eslint-utils@3.0.0(eslint@8.57.1):
-    resolution: {integrity: sha512-uuQC43IGctw68pJA1RgbQS8/NP7rch6Cwd4j3ZBtgo4/8Flj4eGE7ZYSZRN3iq5pVUv6GPdW5Z1RFleo84uLDA==}
-    engines: {node: ^10.0.0 || ^12.0.0 || >= 14.0.0}
-    peerDependencies:
-      eslint: '>=5'
-    dependencies:
-      eslint: 8.57.1
-      eslint-visitor-keys: 2.1.0
-    dev: true
-
-  /eslint-visitor-keys@2.1.0:
-    resolution: {integrity: sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==}
-    engines: {node: '>=10'}
     dev: true
 
   /eslint-visitor-keys@3.4.3:
@@ -5322,10 +5305,6 @@ packages:
   /quick-lru@4.0.1:
     resolution: {integrity: sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==}
     engines: {node: '>=8'}
-    dev: true
-
-  /rambda@7.5.0:
-    resolution: {integrity: sha512-y/M9weqWAH4iopRd7EHDEQQvpFPHj1AA3oHozE9tfITHUtTR7Z9PSlIRRG2l1GuW7sefC1cXFfIcF+cgnShdBA==}
     dev: true
 
   /randombytes@2.1.0:
