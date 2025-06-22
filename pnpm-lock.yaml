@@ -12,8 +12,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.3(@types/node@24.0.3)(commitlint@7.6.1)(typescript@5.8.3)
       '@kellyselden/node-template':
-        specifier: 6.3.0
-        version: 6.3.0
+        specifier: 6.4.0
+        version: 6.4.0
       chai:
         specifier: ^4.5.0
         version: 4.5.0
@@ -177,7 +177,7 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       babel-runtime: 6.26.0
-      chalk: 2.3.1
+      chalk: 2.4.2
     dev: true
 
   /@commitlint/is-ignored@19.8.1:
@@ -272,7 +272,7 @@ packages:
     dependencies:
       conventional-changelog-angular: 1.6.6
       conventional-commits-parser: 2.1.7
-      lodash: 4.17.11
+      lodash: 4.17.21
     dev: true
 
   /@commitlint/read@19.8.1:
@@ -674,8 +674,8 @@ packages:
     resolution: {integrity: sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==}
     dev: true
 
-  /@kellyselden/node-template@6.3.0:
-    resolution: {integrity: sha512-zoeHG05pzidF+hXGqK1PqZEHNWT4r3M2GyAW5JendUlRzfN48NNe171SYnvCd1jpwjCpajWpCUjyDTcsF4ytEw==}
+  /@kellyselden/node-template@6.4.0:
+    resolution: {integrity: sha512-yzw6wkmY17of5np0SfqY8v5v/R25sMIsToCepkhw50dFo1Gei8mc6luUNOyYaICBp2dhbpEbAQiYOEb6GMmkaQ==}
     engines: {node: '>=20.9'}
     dev: true
 
@@ -2171,7 +2171,7 @@ packages:
     dependencies:
       JSONStream: 1.3.5
       is-text-path: 1.0.1
-      lodash: 4.17.11
+      lodash: 4.17.21
       meow: 4.0.1
       split2: 2.2.0
       through2: 2.0.5
