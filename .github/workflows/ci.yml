@@ -20,7 +20,7 @@ jobs:
 
     - uses: pnpm/action-setup@v4.1.0
       with:
-        version: 8.15.9
+        version: 9.15.9
 
     - run: pnpm install
     - run: npm run lint:git
@@ -52,7 +52,7 @@ jobs:
 
     - uses: pnpm/action-setup@v4.1.0
       with:
-        version: 8.15.9
+        version: 9.15.9
 
     - run: pnpm install
     - run: npm test
@@ -78,7 +78,7 @@ jobs:
 
     - uses: pnpm/action-setup@v4.1.0
       with:
-        version: 8.15.9
+        version: 9.15.9
 
     - uses: kellyselden/ember-cli-update-action@v7
       with:
