@@ -19,10 +19,10 @@ importers:
         version: 4.5.0
       ember-addon-codemods-manifest:
         specifier: ''
-        version: link:packages/addon
+        version: 1.0.11
       ember-app-codemods-manifest:
         specifier: ''
-        version: link:packages/app
+        version: 1.0.10
       ember-cli-update:
         specifier: 2.0.1
         version: 2.0.1
@@ -34,7 +34,7 @@ importers:
         version: 1.0.2(eslint-plugin-prefer-let@4.0.0)(eslint@8.57.1)
       eslint-config-sane-node:
         specifier: ^2.0.0
-        version: 2.0.0(eslint-config-sane@1.0.2)(eslint-plugin-json-files@5.1.0)(eslint-plugin-n@17.21.3)
+        version: 2.0.0(eslint-config-sane@1.0.2(eslint-plugin-prefer-let@4.0.0)(eslint@8.57.1))(eslint-plugin-json-files@5.1.0(eslint@8.57.1))(eslint-plugin-n@17.21.3(eslint@8.57.1)(typescript@5.9.2))
       eslint-plugin-json-files:
         specifier: ^5.1.0
         version: 5.1.0(eslint@8.57.1)
@@ -63,8 +63,8 @@ importers:
         specifier: ^13.0.0
         version: 13.0.0(@types/node@24.1.0)
       renovate-config-standard:
-        specifier: 2.3.0
-        version: 2.3.0
+        specifier: 2.4.2
+        version: 2.4.2
       standard-node-template:
         specifier: 7.2.0
         version: 7.2.0
@@ -1315,6 +1315,12 @@ packages:
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+
+  ember-addon-codemods-manifest@1.0.11:
+    resolution: {integrity: sha512-i1h7jaxMTtFzAl83ufS73tKbnOzEXCLcF7dFVsnn1uNyJVRyESZpWGQR+oc3OOQCbNCxECFVocdkfm2ZqVvozg==}
+
+  ember-app-codemods-manifest@1.0.10:
+    resolution: {integrity: sha512-SCLxLE1gWhcl6QF+C+oGxR+7j4/l5k47jX5R42Lv8OGIdtF7iz9zu7l4mExXhQnkpYedp+P+IfP1n8/fGtMa5A==}
 
   ember-cli-update@2.0.1:
     resolution: {integrity: sha512-xtN9quJ5RtY5O+eQrtXvMhkOz/OsZr8I4U5wM0din5i9jz2KxwUHKGdd7nklQggoF1uwmW3Pt7zKsjnxsEB/XA==}
@@ -3024,8 +3030,8 @@ packages:
     resolution: {integrity: sha512-8acYXXTI0AkQv6RAOjE3vOaIXZkT9wo4LOFbBKYQEEnnMNBpKqdUrI6S4NT0KPIo/WVvJ5tE/X5LF/TQUf0ekw==}
     engines: {node: '>=8'}
 
-  renovate-config-standard@2.3.0:
-    resolution: {integrity: sha512-PI67DLX40491lJ0cmvh4KHW1HxFbCLCM4vPmWHbPOsxmGnT+XF98IbBpW+q9VTU49rSXi+GzUXSn1xsNj+4sYg==}
+  renovate-config-standard@2.4.2:
+    resolution: {integrity: sha512-eLVE5540NauzBag1BGISPMdX4LaG0ju9EnmjP5ha27kKbbgQmijnDoQZVUBSimPUxG2vcjkXuJ4j8b8YN+uxNA==}
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -3737,8 +3743,8 @@ snapshots:
 
   '@asamuzakjp/css-color@3.2.0':
     dependencies:
-      '@csstools/css-calc': 2.1.4(@csstools/css-parser-algorithms@3.0.5)(@csstools/css-tokenizer@3.0.4)
-      '@csstools/css-color-parser': 3.0.10(@csstools/css-parser-algorithms@3.0.5)(@csstools/css-tokenizer@3.0.4)
+      '@csstools/css-calc': 2.1.4(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
+      '@csstools/css-color-parser': 3.0.10(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-tokenizer': 3.0.4
       lru-cache: 10.4.3
@@ -3836,7 +3842,7 @@ snapshots:
       '@commitlint/types': 19.8.1
       chalk: 5.4.1
       cosmiconfig: 9.0.0(typescript@5.9.2)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@24.1.0)(cosmiconfig@9.0.0)(typescript@5.9.2)
+      cosmiconfig-typescript-loader: 6.1.0(@types/node@24.1.0)(cosmiconfig@9.0.0(typescript@5.9.2))(typescript@5.9.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -3951,15 +3957,15 @@ snapshots:
 
   '@csstools/color-helpers@5.0.2': {}
 
-  '@csstools/css-calc@2.1.4(@csstools/css-parser-algorithms@3.0.5)(@csstools/css-tokenizer@3.0.4)':
+  '@csstools/css-calc@2.1.4(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)':
     dependencies:
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-tokenizer': 3.0.4
 
-  '@csstools/css-color-parser@3.0.10(@csstools/css-parser-algorithms@3.0.5)(@csstools/css-tokenizer@3.0.4)':
+  '@csstools/css-color-parser@3.0.10(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)':
     dependencies:
       '@csstools/color-helpers': 5.0.2
-      '@csstools/css-calc': 2.1.4(@csstools/css-parser-algorithms@3.0.5)(@csstools/css-tokenizer@3.0.4)
+      '@csstools/css-calc': 2.1.4(@csstools/css-parser-algorithms@3.0.5(@csstools/css-tokenizer@3.0.4))(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-parser-algorithms': 3.0.5(@csstools/css-tokenizer@3.0.4)
       '@csstools/css-tokenizer': 3.0.4
 
@@ -4017,41 +4023,46 @@ snapshots:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/figures': 1.0.13
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
-      '@types/node': 24.1.0
       ansi-escapes: 4.3.2
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 24.1.0
 
   '@inquirer/confirm@5.1.14(@types/node@24.1.0)':
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
+    optionalDependencies:
       '@types/node': 24.1.0
 
   '@inquirer/core@10.1.15(@types/node@24.1.0)':
     dependencies:
       '@inquirer/figures': 1.0.13
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
-      '@types/node': 24.1.0
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
       wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 24.1.0
 
   '@inquirer/editor@4.2.15(@types/node@24.1.0)':
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
-      '@types/node': 24.1.0
       external-editor: 3.1.0
+    optionalDependencies:
+      '@types/node': 24.1.0
 
   '@inquirer/expand@4.0.17(@types/node@24.1.0)':
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
-      '@types/node': 24.1.0
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 24.1.0
 
   '@inquirer/figures@1.0.13': {}
 
@@ -4059,20 +4070,23 @@ snapshots:
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
+    optionalDependencies:
       '@types/node': 24.1.0
 
   '@inquirer/number@3.0.17(@types/node@24.1.0)':
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
+    optionalDependencies:
       '@types/node': 24.1.0
 
   '@inquirer/password@4.0.17(@types/node@24.1.0)':
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
-      '@types/node': 24.1.0
       ansi-escapes: 4.3.2
+    optionalDependencies:
+      '@types/node': 24.1.0
 
   '@inquirer/prompts@7.8.0(@types/node@24.1.0)':
     dependencies:
@@ -4086,34 +4100,38 @@ snapshots:
       '@inquirer/rawlist': 4.1.5(@types/node@24.1.0)
       '@inquirer/search': 3.1.0(@types/node@24.1.0)
       '@inquirer/select': 4.3.1(@types/node@24.1.0)
+    optionalDependencies:
       '@types/node': 24.1.0
 
   '@inquirer/rawlist@4.1.5(@types/node@24.1.0)':
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
-      '@types/node': 24.1.0
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 24.1.0
 
   '@inquirer/search@3.1.0(@types/node@24.1.0)':
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/figures': 1.0.13
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
-      '@types/node': 24.1.0
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 24.1.0
 
   '@inquirer/select@4.3.1(@types/node@24.1.0)':
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/figures': 1.0.13
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
-      '@types/node': 24.1.0
       ansi-escapes: 4.3.2
       yoctocolors-cjs: 2.1.2
+    optionalDependencies:
+      '@types/node': 24.1.0
 
   '@inquirer/type@3.0.8(@types/node@24.1.0)':
-    dependencies:
+    optionalDependencies:
       '@types/node': 24.1.0
 
   '@isaacs/balanced-match@4.0.1': {}
@@ -5064,7 +5082,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@6.1.0(@types/node@24.1.0)(cosmiconfig@9.0.0)(typescript@5.9.2):
+  cosmiconfig-typescript-loader@6.1.0(@types/node@24.1.0)(cosmiconfig@9.0.0(typescript@5.9.2))(typescript@5.9.2):
     dependencies:
       '@types/node': 24.1.0
       cosmiconfig: 9.0.0(typescript@5.9.2)
@@ -5084,6 +5102,7 @@ snapshots:
       import-fresh: 3.3.1
       js-yaml: 4.1.0
       parse-json: 5.2.0
+    optionalDependencies:
       typescript: 5.9.2
 
   cpr@3.0.1:
@@ -5130,6 +5149,7 @@ snapshots:
   debug@4.4.1(supports-color@8.1.1):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
       supports-color: 8.1.1
 
   decamelize-keys@1.1.1:
@@ -5203,6 +5223,10 @@ snapshots:
   duplexer3@0.1.5: {}
 
   eastasianwidth@0.2.0: {}
+
+  ember-addon-codemods-manifest@1.0.11: {}
+
+  ember-app-codemods-manifest@1.0.10: {}
 
   ember-cli-update@2.0.1:
     dependencies:
@@ -5279,7 +5303,7 @@ snapshots:
       eslint: 8.57.1
       semver: 7.7.2
 
-  eslint-config-sane-node@2.0.0(eslint-config-sane@1.0.2)(eslint-plugin-json-files@5.1.0)(eslint-plugin-n@17.21.3):
+  eslint-config-sane-node@2.0.0(eslint-config-sane@1.0.2(eslint-plugin-prefer-let@4.0.0)(eslint@8.57.1))(eslint-plugin-json-files@5.1.0(eslint@8.57.1))(eslint-plugin-n@17.21.3(eslint@8.57.1)(typescript@5.9.2)):
     dependencies:
       eslint-config-sane: 1.0.2(eslint-plugin-prefer-let@4.0.0)(eslint@8.57.1)
       eslint-plugin-json-files: 5.1.0(eslint@8.57.1)
@@ -5468,7 +5492,7 @@ snapshots:
       reusify: 1.1.0
 
   fdir@6.4.6(picomatch@4.0.3):
-    dependencies:
+    optionalDependencies:
       picomatch: 4.0.3
 
   figures@3.2.0:
@@ -5978,11 +6002,12 @@ snapshots:
       '@inquirer/core': 10.1.15(@types/node@24.1.0)
       '@inquirer/prompts': 7.8.0(@types/node@24.1.0)
       '@inquirer/type': 3.0.8(@types/node@24.1.0)
-      '@types/node': 24.1.0
       ansi-escapes: 4.3.2
       mute-stream: 2.0.0
       run-async: 4.0.5
       rxjs: 7.8.2
+    optionalDependencies:
+      '@types/node': 24.1.0
 
   inquirer@8.2.6:
     dependencies:
@@ -7164,7 +7189,7 @@ snapshots:
     dependencies:
       rc: 1.2.8
 
-  renovate-config-standard@2.3.0: {}
+  renovate-config-standard@2.4.2: {}
 
   require-directory@2.1.1: {}
 
