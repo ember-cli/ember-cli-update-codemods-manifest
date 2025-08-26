@@ -30,7 +30,7 @@
     "ember-app-codemods-manifest": "",
     "ember-cli-update": "2.0.1",
     "eslint": "^8.57.1",
-    "eslint-config-sane": "^1.0.2",
+    "eslint-config-sane": "^4.0.0",
     "eslint-config-sane-node": "^2.0.0",
     "eslint-plugin-json-files": "^5.1.0",
     "eslint-plugin-mocha": "^10.5.0",
