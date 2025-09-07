@@ -1,5 +1,9 @@
 'use strict';
 
 module.exports = {
-  spec: ['test/tests.js']
+  spec: ['test/**/*-test.js'],
+
+  ignore: [
+    'test/fixtures/**'
+  ]
 };
