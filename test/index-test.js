@@ -7,11 +7,11 @@ const path = require('path');
 const {
   buildTmp,
   processBin,
-  fixtureCompare: _fixtureCompare
+  fixtureCompare: _fixtureCompare,
 } = require('git-fixtures');
 const {
   assertNoUnstaged,
-  assertCodemodRan
+  assertCodemodRan,
 } = require('./helpers/assertions');
 
 const fixturesPath = path.resolve(__dirname, 'fixtures');
@@ -42,10 +42,10 @@ describe('runs codemods', function() {
 
   async function merge({
     statsOnly,
-    beforeMerge = () => Promise.resolve()
+    beforeMerge = () => Promise.resolve(),
   }) {
     tmpPath = await buildTmp({
-      fixturesPath: projectFixturesPath
+      fixturesPath: projectFixturesPath,
     });
 
     await beforeMerge();
@@ -54,16 +54,16 @@ describe('runs codemods', function() {
       bin: 'ember-cli-update',
       args: [
         statsOnly ? '--stats-only' : '--run-codemods',
-        `--codemods-json='${JSON.stringify(manifest)}'`
+        `--codemods-json='${JSON.stringify(manifest)}'`,
       ],
       cwd: tmpPath,
       commitMessage,
-      expect
+      expect,
     });
   }
 
   function fixtureCompare({
-    mergeFixtures
+    mergeFixtures,
   }) {
     let actual = tmpPath;
     let expected = mergeFixtures;
@@ -71,16 +71,16 @@ describe('runs codemods', function() {
     _fixtureCompare({
       expect,
       actual,
-      expected
+      expected,
     });
   }
 
   async function getApplicableCodemods() {
     let {
       ps,
-      promise
+      promise,
     } = await merge({
-      statsOnly: true
+      statsOnly: true,
     });
 
     ps.stdout.pipe(process.stdout);
@@ -98,7 +98,6 @@ describe('runs codemods', function() {
     return applicableCodemods;
   }
 
-  // eslint-disable-next-line mocha/no-hooks-for-single-case
   before(async function() {
     applicableCodemods = await getApplicableCodemods();
   });
@@ -119,18 +118,18 @@ describe('runs codemods', function() {
           dest,
           {
             overwrite: true,
-            recursive: true
-          }
+            recursive: true,
+          },
         );
       }
 
       let {
         ps,
-        promise
+        promise,
       } = await merge({
         async beforeMerge() {
           await _merge('local', tmpPath);
-        }
+        },
       });
 
       ps.stdout.pipe(process.stdout);
@@ -151,7 +150,7 @@ describe('runs codemods', function() {
       ps.stdout.on('data', stdoutData);
 
       let {
-        status
+        status,
       } = await promise;
 
       assertNoUnstaged(status);
@@ -167,13 +166,13 @@ describe('runs codemods', function() {
 
       let mergeFixtures = await buildTmp({
         fixturesPath: projectFixturesPath,
-        noGit: true
+        noGit: true,
       });
 
       await _merge(nodeVersion, mergeFixtures);
 
       fixtureCompare({
-        mergeFixtures
+        mergeFixtures,
       });
     });
   }
