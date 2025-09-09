@@ -12,8 +12,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.3(@types/node@24.1.0)(commitlint@7.6.1)(typescript@5.9.2)
       '@kellyselden/node-template':
-        specifier: 6.9.0
-        version: 6.9.0
+        specifier: 6.11.0
+        version: 6.11.0
       chai:
         specifier: ^4.5.0
         version: 4.5.0
@@ -443,8 +443,8 @@ packages:
   '@isaacs/string-locale-compare@1.1.0':
     resolution: {integrity: sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==}
 
-  '@kellyselden/node-template@6.9.0':
-    resolution: {integrity: sha512-6VoRfF4oEjY4TU1BnvHKqF2EUolUrJA4/ecyy/YYe4zOj0VrNRK8q/CtqFArkJv1AdZpSZUDcG0vmlAKNKEQ1w==}
+  '@kellyselden/node-template@6.11.0':
+    resolution: {integrity: sha512-LlP4LBYxWzH33QptXkUp3KxVxtGHQRG8ejQpR0/leSucnOpG70rFXe6tGipXjU13YdGigeSJpbHfgFXArdi2TQ==}
     engines: {node: '>=20.9'}
 
   '@marionebl/sander@0.6.1':
@@ -4205,7 +4205,7 @@ snapshots:
 
   '@isaacs/string-locale-compare@1.1.0': {}
 
-  '@kellyselden/node-template@6.9.0': {}
+  '@kellyselden/node-template@6.11.0': {}
 
   '@marionebl/sander@0.6.1':
     dependencies:
