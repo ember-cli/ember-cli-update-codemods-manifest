@@ -26,7 +26,7 @@
     "chai": "^4.5.0",
     "ember-addon-codemods-manifest": "",
     "ember-app-codemods-manifest": "",
-    "ember-cli-update": "2.0.1",
+    "ember-cli-update": "3.0.1",
     "eslint": "^9.34.0",
     "fs-extra": "^11.0.0",
     "git-fixtures": "^9.0.0",
