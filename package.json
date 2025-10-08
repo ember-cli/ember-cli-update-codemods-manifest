@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-update-codemods-manifest",
-  "version": "3.0.23",
+  "version": "3.0.24",
   "private": true,
   "description": "Master list of codemods and their instructions used by ember-cli-update",
   "homepage": "https://github.com/ember-cli/ember-cli-update-codemods-manifest#readme",
