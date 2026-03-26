@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v5
 
-    - uses: actions/setup-node@v5
+    - uses: actions/setup-node@v6
       with:
         node-version: 20
 
@@ -50,7 +50,7 @@ jobs:
     steps:
     - uses: actions/checkout@v5
 
-    - uses: actions/setup-node@v5
+    - uses: actions/setup-node@v6
       with:
         node-version: ${{ matrix.node }}
 
@@ -78,7 +78,7 @@ jobs:
         ref: ${{ github.head_ref }}
         token: ${{ secrets.GitHubToken }}
 
-    - uses: actions/setup-node@v5
+    - uses: actions/setup-node@v6
       with:
         node-version: 20
 
