@@ -28,7 +28,7 @@ jobs:
 
     - uses: pnpm/action-setup@v5.0.0
       with:
-        version: 10.34.1
+        version: 10.34.3
 
     - run: pnpm install
 
