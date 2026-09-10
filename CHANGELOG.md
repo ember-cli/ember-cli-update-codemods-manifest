@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [4.0.0](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@3.0.41...ember-cli-update-codemods-manifest@4.0.0) (2026-09-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* use node 22
+
+* ember-cli-update-action ([7eb0efe](https://github.com/ember-cli/ember-cli-update-codemods-manifest/commit/7eb0efe1a1a5a60f9a47728382e5831de264d87e))
+
 ## [3.0.41](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@3.0.40...ember-cli-update-codemods-manifest@3.0.41) (2026-09-10)
 
 ## [3.0.40](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@3.0.39...ember-cli-update-codemods-manifest@3.0.40) (2026-09-10)
