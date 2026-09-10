@@ -15,8 +15,8 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(eslint@9.39.5(jiti@2.6.1)(supports-color@8.1.1))(typescript@7.0.2)
       '@kellyselden/node-template':
-        specifier: 6.13.0
-        version: 6.13.0
+        specifier: 7.0.0
+        version: 7.0.0
       chai:
         specifier: ^4.5.0
         version: 4.5.0
@@ -455,9 +455,9 @@ packages:
     resolution: {integrity: sha512-AtiS1RtNZ6Ub6D0yzrctB0UmHCix4HW6/tjUBIOBKhvuJp7Wr3VExjnPHblfC6sm14+rwvAMhm4972LJjgVLzA==}
     engines: {node: '>=20.9'}
 
-  '@kellyselden/node-template@6.13.0':
-    resolution: {integrity: sha512-SF4fOr+9mjvIcbW4uxwL9E2/GLr4NkG/uqWqLHjjXUHgdwIOz6Aes3OMiPPS4HW6/VCfyGebEo0PSqANb0giwg==}
-    engines: {node: '>=20.9'}
+  '@kellyselden/node-template@7.0.0':
+    resolution: {integrity: sha512-nrDHrAAfnySpgAU4mxhI69+pOyAgxVK31qhSrnlXhDhRQXPQ6wb9OHyK6Y1PRyXqjBs0UX/LlP6Ii2Ob4oIbTg==}
+    engines: {node: '>=22.11'}
 
   '@marionebl/sander@0.6.1':
     resolution: {integrity: sha512-7f3zZddAk92G1opoX/glbDO6YbrzmMAJAw0RJAcvunnV7sR4L9llyBUAABptKoF1Jf37UQ1QTJy5p2H4J4rBNA==}
@@ -4363,7 +4363,7 @@ snapshots:
       - eslint
       - typescript
 
-  '@kellyselden/node-template@6.13.0': {}
+  '@kellyselden/node-template@7.0.0': {}
 
   '@marionebl/sander@0.6.1':
     dependencies:
