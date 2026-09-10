@@ -51,8 +51,8 @@ importers:
         specifier: 2.4.2
         version: 2.4.2
       standard-node-template:
-        specifier: 7.2.0
-        version: 7.2.0
+        specifier: 8.0.0
+        version: 8.0.0
 
   packages/addon: {}
 
@@ -3425,9 +3425,9 @@ packages:
     resolution: {integrity: sha512-o57Wcn66jMQvfHG1FlYbWeZWW/dHZhJXjpIcTfXldXEk5nz5lStPo3mK0OJQfGR3RbZUlbISexbljkJzuEj/8Q==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
 
-  standard-node-template@7.2.0:
-    resolution: {integrity: sha512-MhOZI6wkUkeF+pEcXafc1vqPZRRnbUtIi2ZBoqaUEZj0z1U1gj77lfLnYDez9vtpsqpgZ078p1zyEbBO1330hA==}
-    engines: {node: '>=20.9'}
+  standard-node-template@8.0.0:
+    resolution: {integrity: sha512-BhDhFs8T9xrzIEabTNSCv5uEec4hbmjnwcVdSQN3WWr/Oh/m/QYnA9Cp/7BJocIeXb93uoxreqmebdYWrPZbUQ==}
+    engines: {node: '>=22.11'}
 
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -7657,7 +7657,7 @@ snapshots:
     dependencies:
       minipass: 3.3.6
 
-  standard-node-template@7.2.0: {}
+  standard-node-template@8.0.0: {}
 
   string-width@4.2.3:
     dependencies:
