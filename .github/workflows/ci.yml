@@ -17,7 +17,7 @@ jobs:
 
     - uses: actions/setup-node@v5
       with:
-        node-version: 20
+        node-version: 22
 
     - uses: pnpm/action-setup@v5.0.0
       with:
@@ -38,7 +38,7 @@ jobs:
         - ubuntu-latest
         - macos-latest
         node:
-        - 20
+        - 22
 
         - '*'
         exclude:
@@ -80,7 +80,7 @@ jobs:
 
     - uses: actions/setup-node@v5
       with:
-        node-version: 20
+        node-version: 22
 
     - uses: pnpm/action-setup@v5.0.0
       with:
