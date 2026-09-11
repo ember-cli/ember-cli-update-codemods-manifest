@@ -22,7 +22,7 @@
   "devDependencies": {
     "@commitlint/cli": "^21.2.2",
     "@commitlint/config-conventional": "^21.2.2",
-    "@kellyselden/eslint-config": "^1.0.0",
+    "@kellyselden/eslint-config": "^2.0.0",
     "@kellyselden/node-template": "7.1.0",
     "chai": "^4.5.0",
     "ember-addon-codemods-manifest": "",
