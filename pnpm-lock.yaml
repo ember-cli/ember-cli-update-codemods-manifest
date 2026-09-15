@@ -18,8 +18,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(eslint@9.39.5(jiti@2.6.1)(supports-color@8.1.1))(typescript@7.0.2)
       '@kellyselden/node-template':
-        specifier: 7.7.0
-        version: 7.7.0
+        specifier: 7.8.0
+        version: 7.8.0
       chai:
         specifier: ^4.5.0
         version: 4.5.0
@@ -414,8 +414,8 @@ packages:
     resolution: {integrity: sha512-tplYJQ3nBtWGRPtuFO8X0zcvcuG3N5Y2heBxazwfB8VomjRFJD82JRJyVeXz3VW3CvCn2DkoXN1pbqxkuPD7cQ==}
     engines: {node: '>=22.11'}
 
-  '@kellyselden/node-template@7.7.0':
-    resolution: {integrity: sha512-n3CgRLyQFzh+783aScsp1WApHJai8yan0aJMj+Hkhrlh8E4ZbXqUqGKuuwpN6DkPTiYP2KJgxKaOcFRuRVFshg==}
+  '@kellyselden/node-template@7.8.0':
+    resolution: {integrity: sha512-7cZcRSrs1+hBB3zxyWcG+pGlisSd9v5+YeOhjmQ9PjFA9XvL3uba90GihXp80695jn6Cn5c6UZu6OYnri2mbMQ==}
     engines: {node: '>=22.11'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -3984,7 +3984,7 @@ snapshots:
       - eslint
       - typescript
 
-  '@kellyselden/node-template@7.7.0': {}
+  '@kellyselden/node-template@7.8.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
