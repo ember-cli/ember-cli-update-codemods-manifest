@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [4.0.11](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@4.0.10...ember-cli-update-codemods-manifest@4.0.11) (2026-10-23)
+
 ## [4.0.10](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@4.0.9...ember-cli-update-codemods-manifest@4.0.10) (2026-10-12)
 
 ## [4.0.9](https://github.com/ember-cli/ember-cli-update-codemods-manifest/compare/ember-cli-update-codemods-manifest@4.0.8...ember-cli-update-codemods-manifest@4.0.9) (2026-09-28)
